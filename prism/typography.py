@@ -60,3 +60,61 @@ def measure(
     metrics = load_metrics(family, weight)
     total = sum(metrics.advances.get(ord(ch), metrics.default_advance) for ch in text)
     return total * size / metrics.units_per_em
+
+
+def _break_word(
+    word: str, max_width: float, size: float, family: str, weight: int
+) -> list[str]:
+    """Hard-break a word that cannot fit on any line."""
+    pieces: list[str] = []
+    current = ""
+    for ch in word:
+        candidate = current + ch
+        if current and measure(candidate, size, family, weight) > max_width:
+            pieces.append(current)
+            current = ch
+        else:
+            current = candidate
+    if current:
+        pieces.append(current)
+    return pieces
+
+
+def wrap(
+    text: str,
+    max_width: float,
+    size: float,
+    family: str = "grotesque",
+    weight: int = 400,
+) -> list[str]:
+    """Greedily wrap `text` to `max_width`, honouring existing newlines."""
+    lines: list[str] = []
+
+    for paragraph in text.split("\n"):
+        words = paragraph.split()
+        if not words:
+            lines.append("")
+            continue
+
+        current = ""
+        for word in words:
+            candidate = f"{current} {word}" if current else word
+            if measure(candidate, size, family, weight) <= max_width:
+                current = candidate
+                continue
+
+            if current:
+                lines.append(current)
+                current = ""
+
+            if measure(word, size, family, weight) <= max_width:
+                current = word
+            else:
+                pieces = _break_word(word, max_width, size, family, weight)
+                lines.extend(pieces[:-1])
+                current = pieces[-1]
+
+        if current:
+            lines.append(current)
+
+    return lines or [""]
