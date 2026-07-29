@@ -59,7 +59,7 @@ def _f(element: ET.Element, name: str, default: float = 0.0) -> float:
 
 
 _NUMBER = r"[-+]?(?:\d*\.\d+|\d+\.?)(?:[eE][-+]?\d+)?"
-_LEADING_REL_MOVE = re.compile(rf"^m\s*({_NUMBER})[,\s]*({_NUMBER})\s*(.*)$", re.S)
+_LEADING_REL_MOVE = re.compile(rf"^m\s*({_NUMBER})[,\s]*({_NUMBER})\s*(.*)$", re.DOTALL)
 
 
 def _absolutize_start(d: str) -> str:

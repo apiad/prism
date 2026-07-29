@@ -1,0 +1,22 @@
+type: flow
+title: Ingestion pipeline
+subtitle: as of Q3
+caption: "Source: internal architecture review"
+direction: right
+steps:
+  - id: ingest
+    label: Ingest
+    sublabel: S3 + Kafka
+    icon: database
+    accent: 0
+  - id: verify
+    label: Verify
+    sublabel: schema + dedupe
+    icon: shield-check
+    accent: 1
+  - id: publish
+    label: Publish
+    sublabel: warehouse
+    icon: send
+    accent: 2
+    emphasis: strong

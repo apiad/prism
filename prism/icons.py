@@ -57,7 +57,7 @@ class IconShape(Visual):
         # after the group transform is applied.
         return (
             f'<g transform="scale({scale}) translate({offset} {offset})">'
-            f"<path d={quoteattr(self._d)} fill=\"none\" "
+            f'<path d={quoteattr(self._d)} fill="none" '
             f'stroke="{self.stroke}" stroke-width="{self.width / scale}" '
             'stroke-linecap="round" stroke-linejoin="round"/></g>'
         )

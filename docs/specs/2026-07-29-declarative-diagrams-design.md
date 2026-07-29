@@ -442,6 +442,7 @@ The `Archetype` protocol:
 class Archetype(Protocol):
     name: str
     spec_model: type[BaseModel]
+
     def build(self, spec: BaseModel, theme: Theme) -> tesserax.Canvas: ...
 ```
 

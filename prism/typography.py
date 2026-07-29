@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass
-from functools import lru_cache
+from functools import cache
 from pathlib import Path
 
 from .errors import PrismError, UnknownToken
@@ -34,7 +34,7 @@ class FontMetrics:
     advances: dict[int, int]
 
 
-@lru_cache(maxsize=None)
+@cache
 def load_metrics(family: str, weight: int) -> FontMetrics:
     if family not in FAMILIES:
         raise UnknownToken(family, FAMILIES)

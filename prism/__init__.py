@@ -20,7 +20,7 @@ from .theme import load_theme
 
 __version__ = "0.1.0.dev0"
 
-__all__ = ["render", "render_str", "PrismError", "SpecError", "__version__"]
+__all__ = ["PrismError", "SpecError", "__version__", "render", "render_str"]
 
 _ENVELOPE_KEYS = set(Envelope.model_fields)
 

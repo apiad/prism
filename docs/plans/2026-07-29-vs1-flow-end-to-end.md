@@ -243,9 +243,12 @@ import pytest
 
 METRICS_DIR = Path(__file__).parent.parent / "prism" / "vendor" / "metrics"
 EXPECTED = [
-    "grotesque-400", "grotesque-700",
-    "serif-400", "serif-700",
-    "mono-400", "mono-700",
+    "grotesque-400",
+    "grotesque-700",
+    "serif-400",
+    "serif-700",
+    "mono-400",
+    "mono-700",
 ]
 
 
@@ -523,9 +526,7 @@ def measure(
 ) -> float:
     """Width of `text` in user units at `size`."""
     metrics = load_metrics(family, weight)
-    total = sum(
-        metrics.advances.get(ord(ch), metrics.default_advance) for ch in text
-    )
+    total = sum(metrics.advances.get(ord(ch), metrics.default_advance) for ch in text)
     return total * size / metrics.units_per_em
 ```
 
@@ -1095,9 +1096,7 @@ def bundled_themes() -> list[str]:
     return sorted(p.stem for p in _THEMES_DIR.glob("*.yaml"))
 
 
-def load_theme(
-    ref: str = "default", overrides: dict[str, Any] | None = None
-) -> Theme:
+def load_theme(ref: str = "default", overrides: dict[str, Any] | None = None) -> Theme:
     path = Path(ref)
     if not path.suffix:
         path = _THEMES_DIR / f"{ref}.yaml"
@@ -1249,15 +1248,11 @@ def _rounded_rect(x, y, w, h, rx, ry) -> str:
 
 
 def _circle(cx, cy, r) -> str:
-    return (
-        f"M{cx - r} {cy}a{r} {r} 0 1 0 {2 * r} 0a{r} {r} 0 1 0 {-2 * r} 0Z"
-    )
+    return f"M{cx - r} {cy}a{r} {r} 0 1 0 {2 * r} 0a{r} {r} 0 1 0 {-2 * r} 0Z"
 
 
 def _ellipse(cx, cy, rx, ry) -> str:
-    return (
-        f"M{cx - rx} {cy}a{rx} {ry} 0 1 0 {2 * rx} 0a{rx} {ry} 0 1 0 {-2 * rx} 0Z"
-    )
+    return f"M{cx - rx} {cy}a{rx} {ry} 0 1 0 {2 * rx} 0a{rx} {ry} 0 1 0 {-2 * rx} 0Z"
 
 
 def _points_to_path(points: str, close: bool) -> str:
@@ -1286,9 +1281,12 @@ def convert(svg_text: str) -> str:
             case "rect":
                 parts.append(
                     _rounded_rect(
-                        _f(child, "x"), _f(child, "y"),
-                        _f(child, "width"), _f(child, "height"),
-                        _f(child, "rx"), _f(child, "ry"),
+                        _f(child, "x"),
+                        _f(child, "y"),
+                        _f(child, "width"),
+                        _f(child, "height"),
+                        _f(child, "rx"),
+                        _f(child, "ry"),
                     )
                 )
             case "circle":
@@ -1296,8 +1294,10 @@ def convert(svg_text: str) -> str:
             case "ellipse":
                 parts.append(
                     _ellipse(
-                        _f(child, "cx"), _f(child, "cy"),
-                        _f(child, "rx"), _f(child, "ry"),
+                        _f(child, "cx"),
+                        _f(child, "cy"),
+                        _f(child, "rx"),
+                        _f(child, "ry"),
                     )
                 )
             case "line":
@@ -1413,7 +1413,7 @@ class IconShape(Visual):
         # after the group transform is applied.
         return (
             f'<g transform="scale({scale}) translate({offset} {offset})">'
-            f"<path d={quoteattr(self._d)} fill=\"none\" "
+            f'<path d={quoteattr(self._d)} fill="none" '
             f'stroke="{self.stroke}" stroke-width="{self.width / scale}" '
             'stroke-linecap="round" stroke-linejoin="round"/></g>'
         )
@@ -1501,17 +1501,15 @@ def test_long_label_wraps_instead_of_overflowing(ctx):
 
 def test_sublabel_makes_the_box_taller(ctx):
     plain = build_node_box(Node(label="Ingest"), ctx).local().height
-    with_sub = build_node_box(
-        Node(label="Ingest", sublabel="S3 + Kafka"), ctx
-    ).local().height
+    with_sub = (
+        build_node_box(Node(label="Ingest", sublabel="S3 + Kafka"), ctx).local().height
+    )
     assert with_sub > plain
 
 
 def test_icon_makes_the_box_wider(ctx):
     plain = build_node_box(Node(label="Ingest"), ctx).local().width
-    with_icon = build_node_box(
-        Node(label="Ingest", icon="database"), ctx
-    ).local().width
+    with_icon = build_node_box(Node(label="Ingest", icon="database"), ctx).local().width
     assert with_icon > plain
 
 
@@ -1607,9 +1605,7 @@ def _border_color(node: Node, theme: Theme):
     return theme.color("line")
 
 
-def build_node_box(
-    node: Node, ctx: RenderContext, max_width: float = 160
-) -> Container:
+def build_node_box(node: Node, ctx: RenderContext, max_width: float = 160) -> Container:
     theme = ctx.theme
     ink = theme.color("ink") if node.emphasis != "muted" else theme.color("muted")
 
@@ -1945,15 +1941,23 @@ def test_single_step_flow_has_no_connectors(ctx):
 
 
 def test_steps_grow_the_diagram(ctx):
-    two = get("flow").build(
-        FlowSpec(steps=[{"label": "A"}, {"label": "B"}]), ctx
-    ).local().width
-    four = get("flow").build(
-        FlowSpec(
-            steps=[{"label": "A"}, {"label": "B"}, {"label": "C"}, {"label": "D"}]
-        ),
-        ctx,
-    ).local().width
+    two = (
+        get("flow")
+        .build(FlowSpec(steps=[{"label": "A"}, {"label": "B"}]), ctx)
+        .local()
+        .width
+    )
+    four = (
+        get("flow")
+        .build(
+            FlowSpec(
+                steps=[{"label": "A"}, {"label": "B"}, {"label": "C"}, {"label": "D"}]
+            ),
+            ctx,
+        )
+        .local()
+        .width
+    )
     assert four > two
 ```
 
@@ -2385,7 +2389,7 @@ def test_example_matches_golden():
     expected = normalize(GOLDEN.read_text())
     assert actual == expected, (
         "Rendered output changed. If this is intentional, regenerate with:\n"
-        "  uv run python -c \"import prism,pathlib; "
+        '  uv run python -c "import prism,pathlib; '
         "pathlib.Path('tests/golden/flow-ingestion.svg').write_text("
         "prism.render_str('examples/flow-ingestion.yaml'))\""
     )

@@ -11,9 +11,7 @@ from prism.icons import build_icon, icon_names
 INK = parse_hex("#111827")
 
 _SCRIPT = Path(__file__).parent.parent / "scripts" / "build_icons.py"
-_ICON_DATA = (
-    Path(__file__).parent.parent / "prism" / "vendor" / "lucide" / "icons.json"
-)
+_ICON_DATA = Path(__file__).parent.parent / "prism" / "vendor" / "lucide" / "icons.json"
 
 
 def _build_icons_module():

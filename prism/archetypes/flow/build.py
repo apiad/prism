@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
-from tesserax import Arrow, Group
+from tesserax import Group
 from tesserax.layout import ColumnLayout, RowLayout
 
+from ...connectors import connect
 from ...nodebox import RenderContext, build_node_box
 from .schema import FlowSpec
 
@@ -25,12 +26,7 @@ class FlowArchetype:
             tail, head = "bottom", "top"
 
         connectors = [
-            Arrow(
-                (lambda i=i: boxes[i].anchor(tail)),
-                (lambda i=i: boxes[i + 1].anchor(head)),
-                stroke=theme.color("line"),
-                width=theme.geometry.stroke,
-            )
+            connect(boxes[i], boxes[i + 1], tail, head, theme)
             for i in range(len(boxes) - 1)
         ]
 

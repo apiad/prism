@@ -7,6 +7,7 @@ from xml.sax.saxutils import escape
 from tesserax import Canvas, Group
 from tesserax.layout import ColumnLayout
 
+from .connectors import define_arrowhead
 from .envelope import Envelope
 from .nodebox import RenderContext
 from .text import TextBlock
@@ -14,10 +15,12 @@ from .text import TextBlock
 
 def frame(body: Group, envelope: Envelope, ctx: RenderContext) -> Canvas:
     theme = ctx.theme
-    parts: list = []
+    # Title and subtitle read as one header block, so they sit closer to each
+    # other than the header does to the diagram.
+    header: list = []
 
     if envelope.title:
-        parts.append(
+        header.append(
             TextBlock(
                 envelope.title,
                 envelope.width,
@@ -29,7 +32,7 @@ def frame(body: Group, envelope: Envelope, ctx: RenderContext) -> Canvas:
             )
         )
     if envelope.subtitle:
-        parts.append(
+        header.append(
             TextBlock(
                 envelope.subtitle,
                 envelope.width,
@@ -41,6 +44,9 @@ def frame(body: Group, envelope: Envelope, ctx: RenderContext) -> Canvas:
             )
         )
 
+    parts: list = []
+    if header:
+        parts.append(ColumnLayout(header, align="middle", gap=theme.geometry.gap / 4))
     parts.append(body)
 
     if envelope.caption:
@@ -59,6 +65,7 @@ def frame(body: Group, envelope: Envelope, ctx: RenderContext) -> Canvas:
     stacked = ColumnLayout(parts, align="middle", gap=theme.geometry.gap)
 
     canvas = Canvas(width=envelope.width, height=envelope.width)
+    define_arrowhead(canvas, theme)
     canvas.add(stacked, mode="loose")
     canvas.fit(padding=theme.geometry.gap)
     return canvas

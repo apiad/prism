@@ -1,5 +1,5 @@
 """Importing this package registers every bundled archetype."""
 
-from . import flow  # noqa: F401
+from . import flow
 
 __all__ = ["flow"]
