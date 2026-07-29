@@ -1,0 +1,73 @@
+import pytest
+import tesserax
+
+import prism
+from prism.errors import SpecError, UnknownArchetype
+
+SPEC = """
+type: flow
+title: Ingestion
+caption: "Source: internal"
+steps:
+  - label: Ingest
+    icon: database
+  - label: Verify
+  - label: Publish
+"""
+
+
+def test_render_str_emits_svg():
+    svg = prism.render_str(SPEC)
+    assert svg.startswith("<svg")
+    assert svg.rstrip().endswith("</svg>")
+
+
+def test_render_writes_a_file(tmp_path):
+    out = prism.render(SPEC, tmp_path / "d.svg")
+    assert out.exists()
+    assert out.read_text().startswith("<svg")
+
+
+def test_title_and_caption_appear_in_the_output():
+    svg = prism.render_str(SPEC)
+    assert "Ingestion" in svg
+    assert "internal" in svg
+
+
+def test_output_carries_accessibility_metadata():
+    svg = prism.render_str(SPEC)
+    assert 'role="img"' in svg
+    assert "<title>" in svg
+    assert "<desc>" in svg
+
+
+def test_rendering_is_deterministic():
+    assert prism.render_str(SPEC) == prism.render_str(SPEC)
+
+
+def test_unknown_archetype_raises():
+    with pytest.raises(UnknownArchetype):
+        prism.render_str("type: flowchart\nsteps: [{label: A}]\n")
+
+
+def test_invalid_payload_raises_spec_error():
+    with pytest.raises(SpecError):
+        prism.render_str("type: flow\nsteps: []\n")
+
+
+def test_unknown_field_raises_spec_error():
+    with pytest.raises(SpecError):
+        prism.render_str("type: flow\nsteps: [{label: A, colour: red}]\n")
+
+
+def test_inline_token_overrides_apply():
+    # tesserax serialises colours as rgba(), not hex.
+    svg = prism.render_str(SPEC + "tokens:\n  palette.ink: '#ff0000'\n")
+    assert "rgba(255,0,0" in svg
+
+
+def test_render_does_not_leak_into_a_users_canvas():
+    """tesserax's Group.stack is global; prism must not attach shapes to it."""
+    with tesserax.Canvas() as canvas:
+        prism.render_str(SPEC)
+    assert canvas.shapes == []
