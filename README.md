@@ -171,6 +171,19 @@ uv run python scripts/build_gallery.py    # regenerate docs/gallery + doc pages
 uv run quarto render docs                 # build the docs site
 ```
 
+### Releasing
+
+Publishing uses [PyPI trusted publishing](https://docs.pypi.org/trusted-publishers/)
+— OIDC, no API token stored anywhere. To ship a version:
+
+1. Bump `version` in `pyproject.toml` and `__version__` in `prism/__init__.py`.
+2. Move the `CHANGELOG.md` entries under a new heading.
+3. Publish a GitHub release tagged `vX.Y.Z`.
+
+`.github/workflows/release.yaml` then runs the gates, verifies the tag matches
+the packaged version, builds an sdist and a wheel, and publishes through the
+`pypi` environment.
+
 Two vendoring scripts regenerate bundled data and are not run at install time:
 `scripts/build_metrics.py` (font advance widths, from the Liberation faces) and
 `scripts/build_icons.py` (Lucide icons, normalised to path data).
