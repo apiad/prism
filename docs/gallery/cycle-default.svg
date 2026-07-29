@@ -1,0 +1,54 @@
+<svg width="348.12104808014027" height="335.06962718329095" viewBox="-174.06052404007013 -24.0 348.12104808014027 335.06962718329095" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Build-measure-learn</title>
+<desc>Build-measure-learn</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(107,114,128,1.0)" stroke="rgba(107,114,128,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 143.53481359164547) rotate(0.0) scale(1.0 1.0)">
+<rect x="-174.06052404007013" y="-167.53481359164547" width="348.12104808014027" height="335.06962718329095" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 10.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="20.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Build-measure-learn</text>
+</g>
+<g transform="translate(-4.337036132812528 185.1) rotate(0.0) scale(1.0 1.0)">
+<path d="M 48.60688070966085 -109.71495407498833 A 192.24050626150282 192.24050626150282 0 0 1 119.93973998822177 3.8024691396187795" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<path d="M 63.262904866127144 101.96962718329094 A 190.69744721043742 190.69744721043742 0 0 1 -69.6620377309849 97.7097768862811" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<path d="M -119.45016784712146 11.47420591128255 A 201.28441637186037 201.28441637186037 0 0 1 -48.606880709660835 -109.71495407498834" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<g transform="translate(-28.346826171874994 -120.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="80.69365234375" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(15,118,110,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M15 12l-9.373 9.373a1 1 0 0 1-3.001-3L12 9M18 15l4-4M21.5 11.5l-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(40.446826171875 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Build</text>
+</g>
+</g>
+</g>
+<g transform="translate(65.44853673538265 59.99999999999998) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="100.9490234375" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(180,83,9,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M12 14l4-4M3.34 19a10 10 0 1 1 17.32 0" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(50.57451171875 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Measure</text>
+</g>
+</g>
+</g>
+<g transform="translate(-133.7234879072576 60.00000000000004) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="83.60087890625" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(67,56,202,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(41.900439453125 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Learn</text>
+</g>
+</g>
+</g>
+<g transform="translate(0.0 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Kaizen</text>
+</g>
+</g>
+</g>
+</svg>

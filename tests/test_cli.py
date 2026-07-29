@@ -5,12 +5,12 @@ from prism.cli import main
 
 def test_render_writes_output(tmp_path):
     out = tmp_path / "d.svg"
-    assert main(["render", "examples/flow-ingestion.yaml", "-o", str(out)]) == 0
+    assert main(["render", "examples/flow.yaml", "-o", str(out)]) == 0
     assert out.read_text().startswith("<svg")
 
 
 def test_render_to_stdout_when_no_output_given(capsys):
-    assert main(["render", "examples/flow-ingestion.yaml"]) == 0
+    assert main(["render", "examples/flow.yaml"]) == 0
     assert capsys.readouterr().out.startswith("<svg")
 
 

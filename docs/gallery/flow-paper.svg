@@ -1,0 +1,63 @@
+<svg width="449.76874999999995" height="156.33333333333331" viewBox="-224.88437499999998 -26.0 449.76874999999995 156.33333333333331" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Ingestion pipeline</title>
+<desc>Ingestion pipeline</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(140,123,99,1.0)" stroke="rgba(140,123,99,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 52.16666666666666) rotate(0.0) scale(1.0 1.0)">
+<rect x="-224.88437499999998" y="-78.16666666666666" width="449.76874999999995" height="156.33333333333331" stroke="rgba(0,0,0,0.0)" fill="rgba(253,251,246,1.0)" />
+</g>
+  <g transform="translate(0.0 11.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="22.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">Ingestion pipeline</text>
+</g>
+<g transform="translate(-198.88437499999998 76.16666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(13.0 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-13.0" y="-28.166666666666664" width="106.855859375" height="56.33333333333333" rx="2.0" ry="2.0" fill="rgba(253,251,246,1.0)" stroke="rgba(140,90,43,1.0)" stroke-width="1.2" />
+<g transform="translate(9.799999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.8166666666666665) translate(-12.0 -12.0)"><path d="M3.0 5.0a9.0 3.0 0 1 0 18.0 0a9.0 3.0 0 1 0 -18.0 0ZM3 5V19A9 3 0 0 0 21 19V5M3 12A9 3 0 0 0 21 12" fill="none" stroke="rgba(47,37,25,1.0)" stroke-width="1.469387755102041" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(53.477929687499994 -15.166666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 7.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="14.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">Ingest</text>
+</g>
+<g transform="translate(0.0 18.333333333333332) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="12.0" font-weight="400" fill="rgba(140,123,99,1.0)" text-anchor="middle" dominant-baseline="middle">S3 + Kafka</text>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(145.855859375 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-13.0" y="-28.166666666666664" width="135.50234375" height="56.33333333333333" rx="2.0" ry="2.0" fill="rgba(253,251,246,1.0)" stroke="rgba(79,107,82,1.0)" stroke-width="1.2" />
+<g transform="translate(9.799999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.8166666666666665) translate(-12.0 -12.0)"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1zM9 12l2 2 4-4" fill="none" stroke="rgba(47,37,25,1.0)" stroke-width="1.469387755102041" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(67.801171875 -15.166666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 7.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="14.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">Verify</text>
+</g>
+<g transform="translate(0.0 18.333333333333332) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="12.0" font-weight="400" fill="rgba(140,123,99,1.0)" text-anchor="middle" dominant-baseline="middle">schema + dedupe</text>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(307.358203125 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-13.0" y="-28.166666666666664" width="103.410546875" height="56.33333333333333" rx="2.0" ry="2.0" fill="rgba(253,251,246,1.0)" stroke="rgba(122,75,107,1.0)" stroke-width="1.2" />
+<g transform="translate(9.799999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.8166666666666665) translate(-12.0 -12.0)"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11zM21.854 2.147l-10.94 10.939" fill="none" stroke="rgba(47,37,25,1.0)" stroke-width="1.469387755102041" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(51.755273437499994 -15.166666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 7.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="14.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">Publish</text>
+</g>
+<g transform="translate(0.0 18.333333333333332) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="12.0" font-weight="400" fill="rgba(140,123,99,1.0)" text-anchor="middle" dominant-baseline="middle">warehouse</text>
+</g>
+</g>
+</g>
+</g>
+<path d="M 106.855859375 0.0 L 132.855859375 0.0" fill="rgba(0,0,0,0.0)" stroke="rgba(140,123,99,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<path d="M 268.358203125 0.0 L 294.358203125 0.0" fill="rgba(0,0,0,0.0)" stroke="rgba(140,123,99,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+</g>
+</svg>

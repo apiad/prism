@@ -1,0 +1,69 @@
+<svg width="298.0234375" height="265.0" viewBox="-149.01171875 -22.0 298.0234375 265.0" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>System decomposition</title>
+<desc>System decomposition</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(110,110,110,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 110.5) rotate(0.0) scale(1.0 1.0)">
+<rect x="-149.01171875" y="-132.5" width="298.0234375" height="265.0" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 8.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="17.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">System decomposition</text>
+</g>
+<g transform="translate(0.0 39.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(-39.9546875 19.4) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="101.909375" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16ZM3.3 7l8.7 5 8.7-5M12 22V12" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(51.1046875 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Platform</text>
+</g>
+</g>
+</g>
+<g transform="translate(-65.903515625 93.4) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="65.903515625" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M4.0 2.0h16.0a2.0 2.0 0 0 1 2.0 2.0v4.0a2.0 2.0 0 0 1 -2.0 2.0h-16.0a2.0 2.0 0 0 1 -2.0 -2.0v-4.0a2.0 2.0 0 0 1 2.0 -2.0ZM4.0 14.0h16.0a2.0 2.0 0 0 1 2.0 2.0v4.0a2.0 2.0 0 0 1 -2.0 2.0h-16.0a2.0 2.0 0 0 1 -2.0 -2.0v-4.0a2.0 2.0 0 0 1 2.0 -2.0ZM6.0 6.0L6.01 6.0M6.0 18.0L6.01 18.0" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(33.1017578125 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">API</text>
+</g>
+</g>
+</g>
+<g transform="translate(-101.609375 159.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-25.40234375" y="-11.0" width="50.8046875" height="34.0" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2" />
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Auth</text>
+</g>
+</g>
+<g transform="translate(-18.0029296875 159.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-36.2041015625" y="-11.0" width="72.408203125" height="34.0" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2" />
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Billing</text>
+</g>
+</g>
+<g transform="translate(22.0 93.4) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="65.903515625" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M2.0 12.0a10.0 10.0 0 1 0 20.0 0a10.0 10.0 0 1 0 -20.0 0ZM12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(33.1017578125 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Web</text>
+</g>
+</g>
+</g>
+<g transform="translate(83.6064453125 159.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-43.4052734375" y="-11.0" width="86.810546875" height="34.0" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2" />
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Dashboard</text>
+</g>
+</g>
+<path d="M -43.9517578125 112.80000000000001 L -101.609375 148.0" fill="rgba(0,0,0,0.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<path d="M -43.9517578125 112.80000000000001 L -18.0029296875 148.0" fill="rgba(0,0,0,0.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<path d="M 0.0 38.8 L -43.9517578125 74.0" fill="rgba(0,0,0,0.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<path d="M 43.9517578125 112.80000000000001 L 83.6064453125 148.0" fill="rgba(0,0,0,0.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<path d="M 0.0 38.8 L 43.9517578125 74.0" fill="rgba(0,0,0,0.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+</g>
+</svg>

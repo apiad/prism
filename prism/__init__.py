@@ -20,7 +20,15 @@ from .theme import load_theme
 
 __version__ = "0.1.0.dev0"
 
-__all__ = ["PrismError", "SpecError", "__version__", "render", "render_str"]
+__all__ = [
+    "Diagram",
+    "PrismError",
+    "SpecError",
+    "__version__",
+    "diagram",
+    "render",
+    "render_str",
+]
 
 _ENVELOPE_KEYS = set(Envelope.model_fields)
 
@@ -70,3 +78,35 @@ def render(source: str | Path, out_path: str | Path) -> Path:
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(render_str(source), encoding="utf-8")
     return out
+
+
+class Diagram:
+    """A rendered diagram that displays itself in notebooks and Quarto.
+
+    Quarto's Jupyter engine embeds whatever a cell returns, using the richest
+    `_repr_*_` it finds. Exposing `_repr_svg_` means a figure needs no
+    intermediate file and is never rasterised.
+    """
+
+    def __init__(self, svg: str) -> None:
+        self.svg = svg
+
+    def _repr_svg_(self) -> str:
+        return self.svg
+
+    def __str__(self) -> str:
+        return self.svg
+
+    def __repr__(self) -> str:
+        return f"<prism.Diagram {len(self.svg)} bytes>"
+
+    def save(self, out_path: str | Path) -> Path:
+        out = Path(out_path)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(self.svg, encoding="utf-8")
+        return out
+
+
+def diagram(source: str | Path) -> Diagram:
+    """Render a spec and return it as a self-displaying object."""
+    return Diagram(render_str(source))

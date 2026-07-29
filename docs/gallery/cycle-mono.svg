@@ -1,0 +1,54 @@
+<svg width="339.35312815826524" height="322.53579157541617" viewBox="-169.67656407913262 -22.0 339.35312815826524 322.53579157541617" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Build-measure-learn</title>
+<desc>Build-measure-learn</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(110,110,110,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 139.26789578770808) rotate(0.0) scale(1.0 1.0)">
+<rect x="-169.67656407913262" y="-161.26789578770808" width="339.35312815826524" height="322.53579157541617" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 8.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="17.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Build-measure-learn</text>
+</g>
+<g transform="translate(-3.6005859375 178.4) rotate(0.0) scale(1.0 1.0)">
+<path d="M 47.74183174426761 -110.09413018731763 A 197.37713561435174 197.37713561435174 0 0 1 119.78380233862929 7.200048423461344" fill="rgba(0,0,0,0.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<path d="M 66.1273260125103 100.13579157541614 A 197.37713561435174 197.37713561435174 0 0 1 -71.47339767763447 96.39270420739692" fill="rgba(0,0,0,0.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<path d="M -119.21522942190211 13.701425979920787 A 204.96982156219417 204.96982156219417 0 0 1 -47.74183174426759 -110.09413018731763" fill="rgba(0,0,0,0.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<g transform="translate(-29.15292968749999 -120.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="80.305859375" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(20,20,20,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M15 12l-9.373 9.373a1 1 0 0 1-3.001-3L12 9M18 15l4-4M21.5 11.5l-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(40.3029296875 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Build</text>
+</g>
+</g>
+</g>
+<g transform="translate(67.56894689163263 59.99999999999998) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="94.708203125" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(74,74,74,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M12 14l4-4M3.34 19a10 10 0 1 1 17.32 0" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(47.5041015625 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Measure</text>
+</g>
+</g>
+</g>
+<g transform="translate(-133.07597814163262 60.00000000000004) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="80.305859375" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(40.3029296875 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Learn</text>
+</g>
+</g>
+</g>
+<g transform="translate(0.0 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Kaizen</text>
+</g>
+</g>
+</g>
+</svg>

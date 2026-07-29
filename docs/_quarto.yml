@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: _site
+  # Only the authored pages. specs/ and plans/ are internal design history,
+  # not documentation.
+  render:
+    - "*.qmd"
+  resources:
+    - "gallery/**"
+
+website:
+  title: "prism"
+  description: "Declarative YAML to SVG diagrams"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: catalog.qmd
+        text: Catalog
+      - href: themes.qmd
+        text: Themes
+      - href: agents.qmd
+        text: For agents
+      - href: quarto.qmd
+        text: In Quarto
+    right:
+      - icon: github
+        href: https://github.com/apiad/prism
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    css: styles.css

@@ -1,0 +1,78 @@
+<svg width="492.56640625" height="551.0" viewBox="-246.283203125 -24.0 492.56640625 551.0" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Effort versus impact</title>
+<desc>Effort versus impact</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(107,114,128,1.0)" stroke="rgba(107,114,128,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 251.5) rotate(0.0) scale(1.0 1.0)">
+<rect x="-246.283203125" y="-275.5" width="492.56640625" height="551.0" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 10.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="20.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Effort versus impact</text>
+</g>
+<g transform="translate(12.0 273.5) rotate(0.0) scale(1.0 1.0)">
+<rect x="-200.0" y="-200.0" width="400.0" height="400.0" stroke="rgba(209,213,219,1.0)" fill="rgba(255,255,255,1.0)" />
+<path d="M -200.0 0 L 200.0 0" fill="rgba(0,0,0,0.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5"   />
+<path d="M 0 -200.0 L 0 200.0" fill="rgba(0,0,0,0.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5"   />
+<g transform="translate(-182.0 -182.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(107,114,128,1.0)" text-anchor="start" dominant-baseline="middle">Quick wins</text>
+</g>
+<g transform="translate(182.0 -182.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(107,114,128,1.0)" text-anchor="end" dominant-baseline="middle">Big bets</text>
+</g>
+<g transform="translate(-182.0 182.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(107,114,128,1.0)" text-anchor="start" dominant-baseline="middle">Fill-ins</text>
+</g>
+<g transform="translate(182.0 182.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(107,114,128,1.0)" text-anchor="end" dominant-baseline="middle">Thankless</text>
+</g>
+<g transform="translate(0.0 224.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="11.0" font-weight="400" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Effort</text>
+</g>
+<g transform="translate(-183.49462890625 -224.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="11.0" font-weight="400" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Impact</text>
+</g>
+<g transform="translate(-200.0 212.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">Low</text>
+</g>
+<g transform="translate(200.0 212.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">High</text>
+</g>
+<g transform="translate(-224.0 200.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">Low</text>
+</g>
+<g transform="translate(-224.0 -200.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">High</text>
+</g>
+<g transform="translate(120.00000000000001 -140.0) rotate(0.0) scale(1.0 1.0)">
+<circle cx="0" cy="0" r="5.0" stroke="rgba(255,255,255,1.0)" fill="rgba(15,118,110,1.0)" />
+</g>
+<g transform="translate(120.00000000000001 -164.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Search rewrite</text>
+</g>
+</g>
+<g transform="translate(-120.0 -79.99999999999999) rotate(0.0) scale(1.0 1.0)">
+<circle cx="0" cy="0" r="5.0" stroke="rgba(255,255,255,1.0)" fill="rgba(180,83,9,1.0)" />
+</g>
+<g transform="translate(-120.0 -103.99999999999999) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Dark mode</text>
+</g>
+</g>
+<g transform="translate(-100.0 120.0) rotate(0.0) scale(1.0 1.0)">
+<circle cx="0" cy="0" r="5.0" stroke="rgba(255,255,255,1.0)" fill="rgba(67,56,202,1.0)" />
+</g>
+<g transform="translate(-100.0 96.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Log cleanup</text>
+</g>
+</g>
+<g transform="translate(140.0 100.0) rotate(0.0) scale(1.0 1.0)">
+<circle cx="0" cy="0" r="5.0" stroke="rgba(255,255,255,1.0)" fill="rgba(190,18,60,1.0)" />
+</g>
+<g transform="translate(140.0 76.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Legacy migration</text>
+</g>
+</g>
+</g>
+</svg>

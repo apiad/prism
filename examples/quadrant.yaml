@@ -1,0 +1,11 @@
+type: quadrant
+title: Effort versus impact
+axes:
+  x: {label: Effort, low: Low, high: High}
+  y: {label: Impact, low: Low, high: High}
+quadrant_labels: [Quick wins, Big bets, Fill-ins, Thankless]
+items:
+  - {label: Search rewrite, x: 0.8, y: 0.85}
+  - {label: Dark mode, x: 0.2, y: 0.7}
+  - {label: Log cleanup, x: 0.25, y: 0.2}
+  - {label: Legacy migration, x: 0.85, y: 0.25}

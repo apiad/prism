@@ -1,0 +1,77 @@
+<svg width="329.8017578125" height="284.4666666666667" viewBox="-164.90087890625 -22.0 329.8017578125 284.4666666666667" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Platform tiers</title>
+<desc>Platform tiers</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(110,110,110,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 120.23333333333335) rotate(0.0) scale(1.0 1.0)">
+<rect x="-164.90087890625" y="-142.23333333333335" width="329.8017578125" height="284.4666666666667" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 8.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="17.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Platform tiers</text>
+</g>
+<g transform="translate(-10.90087890625 39.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 23.833333333333332) rotate(0.0) scale(1.0 1.0)">
+<rect x="-132.0" y="-23.833333333333332" width="264.0" height="47.666666666666664" stroke="rgba(20,20,20,1.0)" fill="rgba(255,255,255,1.0)" />
+<g transform="translate(0.0 -12.833333333333332) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Application</text>
+</g>
+<g transform="translate(0.0 15.666666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="10.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="middle" dominant-baseline="middle">product surfaces</text>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(0.0 75.1) rotate(0.0) scale(1.0 1.0)">
+<rect x="-132.0" y="-23.833333333333332" width="264.0" height="47.666666666666664" stroke="rgba(74,74,74,1.0)" fill="rgba(255,255,255,1.0)" />
+<g transform="translate(0.0 -12.833333333333332) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Services</text>
+</g>
+<g transform="translate(0.0 15.666666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="10.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="middle" dominant-baseline="middle">domain APIs</text>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(0.0 126.36666666666666) rotate(0.0) scale(1.0 1.0)">
+<rect x="-132.0" y="-23.833333333333332" width="264.0" height="47.666666666666664" stroke="rgba(110,110,110,1.0)" fill="rgba(255,255,255,1.0)" />
+<g transform="translate(0.0 -12.833333333333332) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Data</text>
+</g>
+<g transform="translate(0.0 15.666666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="10.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="middle" dominant-baseline="middle">warehouse + lake</text>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(0.0 177.63333333333335) rotate(0.0) scale(1.0 1.0)">
+<rect x="-132.0" y="-23.833333333333332" width="264.0" height="47.666666666666664" stroke="rgba(143,143,143,1.0)" fill="rgba(255,255,255,1.0)" />
+<g transform="translate(0.0 -12.833333333333332) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Infrastructure</text>
+</g>
+<g transform="translate(0.0 15.666666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="10.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="middle" dominant-baseline="middle">compute + network</text>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(143.0 23.833333333333332) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="9.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="start" dominant-baseline="middle">L7</text>
+</g>
+<g transform="translate(143.0 75.1) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="9.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="start" dominant-baseline="middle">L5</text>
+</g>
+<g transform="translate(143.0 126.36666666666666) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="9.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="start" dominant-baseline="middle">L3</text>
+</g>
+<g transform="translate(143.0 177.63333333333335) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="9.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="start" dominant-baseline="middle">L1</text>
+</g>
+</g>
+</svg>

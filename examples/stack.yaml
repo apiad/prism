@@ -1,0 +1,7 @@
+type: stack
+title: Platform tiers
+layers:
+  - {label: Application, sublabel: product surfaces, side: L7}
+  - {label: Services, sublabel: domain APIs, side: L5}
+  - {label: Data, sublabel: warehouse + lake, side: L3}
+  - {label: Infrastructure, sublabel: compute + network, side: L1}

@@ -1,0 +1,74 @@
+<svg width="227.6298828125" height="230.0" viewBox="-113.81494140625 -22.0 227.6298828125 230.0" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Revenue by quarter</title>
+<desc>Revenue by quarter</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(110,110,110,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 93.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-113.81494140625" y="-115.0" width="227.6298828125" height="230.0" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 8.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="17.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Revenue by quarter</text>
+</g>
+<g transform="translate(-76.20703125 39.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(14.40234375 6.0) rotate(0.0) scale(1.0 1.0)">
+
+</g>
+<g transform="translate(65.20703125 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Q1</text>
+</g>
+</g>
+<g transform="translate(127.01171875 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Q2</text>
+</g>
+</g>
+<g transform="translate(14.40234375 34.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">EMEA</text>
+</g>
+</g>
+<g transform="translate(65.20703125 34.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-25.40234375" y="-11.0" width="50.8046875" height="34.0" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(20,20,20,1.0)" stroke-width="1.2" />
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">1.2M</text>
+</g>
+</g>
+<g transform="translate(127.01171875 34.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-25.40234375" y="-11.0" width="50.8046875" height="34.0" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(20,20,20,1.0)" stroke-width="1.2" />
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">1.4M</text>
+</g>
+</g>
+<g transform="translate(14.40234375 79.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">AMER</text>
+</g>
+</g>
+<g transform="translate(65.20703125 79.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-25.40234375" y="-11.0" width="50.8046875" height="34.0" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(74,74,74,1.0)" stroke-width="1.2" />
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">2.1M</text>
+</g>
+</g>
+<g transform="translate(127.01171875 79.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-25.40234375" y="-11.0" width="50.8046875" height="34.0" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(74,74,74,1.0)" stroke-width="1.2" />
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">2.6M</text>
+</g>
+</g>
+<g transform="translate(14.40234375 124.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">APAC</text>
+</g>
+</g>
+<g transform="translate(65.20703125 130.0) rotate(0.0) scale(1.0 1.0)">
+
+</g>
+<g transform="translate(127.01171875 124.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-25.40234375" y="-11.0" width="50.8046875" height="34.0" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2" />
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">0.8M</text>
+</g>
+</g>
+</g>
+</svg>

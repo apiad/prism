@@ -1,0 +1,15 @@
+type: hierarchy
+title: System decomposition
+root:
+  label: Platform
+  icon: box
+  children:
+    - label: API
+      icon: server
+      children:
+        - {label: Auth}
+        - {label: Billing}
+    - label: Web
+      icon: globe
+      children:
+        - {label: Dashboard}

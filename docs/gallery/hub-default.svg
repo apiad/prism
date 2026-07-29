@@ -1,0 +1,84 @@
+<svg width="430.4991791980974" height="402.6703999614442" viewBox="-215.2495895990487 -24.0 430.4991791980974 402.6703999614442" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Shared platform</title>
+<desc>Shared platform</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(107,114,128,1.0)" stroke="rgba(107,114,128,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 177.3351999807221) rotate(0.0) scale(1.0 1.0)">
+<rect x="-215.2495895990487" y="-201.3351999807221" width="430.4991791980974" height="402.6703999614442" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 10.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="20.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Shared platform</text>
+</g>
+<g transform="translate(2.8945312499999716 213.50678710937498) rotate(0.0) scale(1.0 1.0)">
+<path d="M 0 -21.1 L 9.087294840261938e-15 -127.306787109375" fill="rgba(0,0,0,0.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5"   />
+<path d="M 64.93912263439785 -21.1 L 93.93142553654869 -30.520170252059252" fill="rgba(0,0,0,0.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5"   />
+<path d="M 15.330047340913117 21.1 L 71.90127346208622 98.96361285206925" fill="rgba(0,0,0,0.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5"   />
+<path d="M -15.330047340913113 21.1 L -71.9012734620862 98.96361285206925" fill="rgba(0,0,0,0.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5"   />
+<path d="M -64.93912263439789 -21.1 L -88.14236303654869 -28.63918982308594" fill="rgba(0,0,0,0.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5"   />
+<g transform="translate(-54.714990234374994 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="133.42998046875" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(17,24,39,1.0)" stroke-width="3.0" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16ZM3.3 7l8.7 5 8.7-5M12 22V12" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(66.814990234375 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Core platform</text>
+</g>
+</g>
+</g>
+<g transform="translate(-42.809960937499994 -148.406787109375) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="109.619921875" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(15,118,110,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M4.0 5.0h16.0a2.0 2.0 0 0 1 2.0 2.0v10.0a2.0 2.0 0 0 1 -2.0 2.0h-16.0a2.0 2.0 0 0 1 -2.0 -2.0v-10.0a2.0 2.0 0 0 1 2.0 -2.0ZM2.0 10.0L22.0 10.0" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(54.9099609375 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Payments</text>
+</g>
+</g>
+</g>
+<g transform="translate(105.93142553654869 -45.86021929738175) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="94.4236328125" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(180,83,9,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4zM16.0 7.5a0.5 0.5 0 1 0 1.0 0a0.5 0.5 0 1 0 -1.0 0Z" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(47.31181640625 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Identity</text>
+</g>
+</g>
+</g>
+<g transform="translate(53.45090088112433 120.06361285206926) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="91.56083984375" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(67,56,202,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M21 21l-4.34-4.34M3.0 11.0a8.0 8.0 0 1 0 16.0 0a8.0 8.0 0 1 0 -16.0 0Z" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(45.880419921875 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Search</text>
+</g>
+</g>
+</g>
+<g transform="translate(-132.9231176779993 120.06361285206926) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="115.38359375" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(190,18,60,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(57.791796875 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Messaging</text>
+</g>
+</g>
+</g>
+<g transform="translate(-182.14412084904868 -45.86021929738173) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="106.0017578125" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(3,105,161,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M3 3v16a2 2 0 0 0 2 2h16M19 9l-5 5-4-4-3 3" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(53.10087890625 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Analytics</text>
+</g>
+</g>
+</g>
+</g>
+</svg>

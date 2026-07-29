@@ -1,0 +1,15 @@
+type: matrix
+title: Revenue by quarter
+rows:
+  - {id: emea, label: EMEA}
+  - {id: amer, label: AMER}
+  - {id: apac, label: APAC}
+columns:
+  - {id: q1, label: Q1}
+  - {id: q2, label: Q2}
+cells:
+  - {row: emea, column: q1, label: 1.2M, accent: 0}
+  - {row: emea, column: q2, label: 1.4M, accent: 0}
+  - {row: amer, column: q1, label: 2.1M, accent: 1}
+  - {row: amer, column: q2, label: 2.6M, accent: 1}
+  - {row: apac, column: q2, label: 0.8M, accent: 2}

@@ -1,0 +1,51 @@
+<svg width="478.67720703125" height="260.0" viewBox="-239.338603515625 -24.0 478.67720703125 260.0" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Needs</title>
+<desc>Needs</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(107,114,128,1.0)" stroke="rgba(107,114,128,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 106.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-239.338603515625" y="-130.0" width="478.67720703125" height="260.0" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 10.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="20.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Needs</text>
+</g>
+<g transform="translate(-5.33860351562501 128.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 -68.4) rotate(0.0) scale(1.0 1.0)">
+<path d="M -58.800000000000004 -15.6 L 58.800000000000004 -15.6 L 89.04 15.6 L -89.04 15.6 Z" fill="rgba(255,255,255,1.0)" stroke="rgba(15,118,110,1.0)" stroke-width="1.5"   />
+</g>
+<g transform="translate(166.85860351562502 -74.9) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Self-actualisation</text>
+</g>
+</g>
+<g transform="translate(0.0 -34.2) rotate(0.0) scale(1.0 1.0)">
+<path d="M -89.04 -15.6 L 89.04 -15.6 L 119.28000000000002 15.6 L -119.28000000000002 15.6 Z" fill="rgba(255,255,255,1.0)" stroke="rgba(180,83,9,1.0)" stroke-width="1.5"   />
+</g>
+<g transform="translate(0.0 -40.7) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Esteem</text>
+</g>
+</g>
+<path d="M -119.28000000000002 -15.6 L 119.28000000000002 -15.6 L 149.51999999999998 15.6 L -149.51999999999998 15.6 Z" fill="rgba(255,255,255,1.0)" stroke="rgba(67,56,202,1.0)" stroke-width="1.5"   />
+<g transform="translate(0.0 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Belonging</text>
+</g>
+</g>
+<g transform="translate(0.0 34.2) rotate(0.0) scale(1.0 1.0)">
+<path d="M -149.51999999999998 -15.6 L 149.51999999999998 -15.6 L 179.76 15.6 L -179.76 15.6 Z" fill="rgba(255,255,255,1.0)" stroke="rgba(190,18,60,1.0)" stroke-width="1.5"   />
+</g>
+<g transform="translate(0.0 27.700000000000003) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Safety</text>
+</g>
+</g>
+<g transform="translate(0.0 68.4) rotate(0.0) scale(1.0 1.0)">
+<path d="M -179.76 -15.6 L 179.76 -15.6 L 210.0 15.6 L -210.0 15.6 Z" fill="rgba(255,255,255,1.0)" stroke="rgba(3,105,161,1.0)" stroke-width="1.5"   />
+</g>
+<g transform="translate(0.0 61.900000000000006) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Physiological</text>
+</g>
+</g>
+</g>
+</svg>

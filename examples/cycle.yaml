@@ -1,0 +1,7 @@
+type: cycle
+title: Build-measure-learn
+center: {label: Kaizen}
+steps:
+  - {label: Build, icon: hammer, accent: 0}
+  - {label: Measure, icon: gauge, accent: 1}
+  - {label: Learn, icon: lightbulb, accent: 2}

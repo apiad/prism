@@ -1,0 +1,91 @@
+---
+title: "In Quarto"
+subtitle: "Figures for books, papers and websites"
+---
+
+prism was built with books in mind as much as agents. Diagrams are SVG, so they
+stay sharp at any size, keep their text selectable and searchable, and diff
+sensibly in git.
+
+## The short version
+
+prism results render themselves in any IPython-compatible environment, which
+includes Quarto's Jupyter engine. Return the object from a code cell:
+
+````markdown
+```{{python}}
+#| label: fig-pipeline
+#| fig-cap: "The ingestion pipeline"
+#| echo: false
+import prism
+prism.diagram("pipeline.yaml")
+```
+````
+
+`prism.diagram()` returns an object with a `_repr_svg_`, so Quarto embeds the
+SVG inline — no intermediate file, no rasterisation.
+
+## Writing the spec inline
+
+For a one-off figure it is often clearest to keep the spec in the document:
+
+````markdown
+```{{python}}
+#| echo: false
+import prism
+prism.diagram("""
+type: cycle
+title: Build-measure-learn
+center: {label: Kaizen}
+steps:
+  - {label: Build, icon: hammer, accent: 0}
+  - {label: Measure, icon: gauge, accent: 1}
+  - {label: Learn, icon: lightbulb, accent: 2}
+""")
+```
+````
+
+## Matching the document's theme
+
+Point `theme:` at a YAML file next to your manuscript and every figure in the
+book picks up the same palette and typography:
+
+```yaml
+type: flow
+theme: ../theme/house.yaml
+steps:
+  - {label: Draft}
+  - {label: Review}
+  - {label: Ship}
+```
+
+The bundled `paper` theme is a reasonable starting point for print: serif
+typography, warm surface, square corners, hairline strokes.
+
+## Rendering to PDF
+
+Quarto's Typst and LaTeX paths both accept SVG figures. Because prism paints
+its own surface colour, a figure keeps its intended background rather than
+inheriting the page.
+
+One caveat worth stating plainly: prism measures text against the metrics of
+Arial, Times New Roman and Courier New. Those have metric-compatible clones
+almost everywhere (Helvetica on macOS; Liberation or Croscore on Linux), so
+boxes fit. If you override `typography.family` with a font prism has not
+measured, expect looser boxes — see [Themes](themes.qmd).
+
+## Batch rendering
+
+For a manuscript with many figures, render them all ahead of the build:
+
+```bash
+for spec in figures/*.yaml; do
+  prism render "$spec" -o "figures/$(basename "${spec%.yaml}").svg"
+done
+```
+
+The same approach builds this site's gallery — see
+`scripts/build_gallery.py` in the repository, which renders every bundled
+example in every bundled theme and generates the [Catalog](catalog.qmd) and
+[Themes](themes.qmd) pages from the result. Documentation that is generated
+from the examples cannot drift from them.

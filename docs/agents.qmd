@@ -1,0 +1,107 @@
+---
+title: "For agents"
+subtitle: "A closed vocabulary, a JSON Schema, and errors written to be recovered from"
+---
+
+prism is built to be driven by a language model. The agent does the part models
+are good at — reading prose and deciding what shape the idea has — and prism
+does the part models are bad at: geometry, spacing, alignment and colour.
+
+prism itself never calls a model. It is deterministic: the same spec always
+produces byte-identical SVG.
+
+## The envelope
+
+Every spec is a YAML mapping whose top-level `type` selects an archetype.
+
+```yaml
+type: flow                   # required — one of the ten archetypes
+theme: default               # bundled name, or a path to your own YAML
+title: "Ingestion pipeline"  # optional
+subtitle: "as of Q3"         # optional
+caption: "Source: review"    # optional
+width: 900                   # layout hint in px; height follows the content
+tokens:                      # optional per-spec theme overrides, dotted paths
+  palette.ink: "#0b1020"
+```
+
+Everything else in the mapping is the archetype's own payload.
+
+## The shared node
+
+Every archetype consumes the same node shape. This is the vocabulary worth
+memorising, because it is the same in all ten:
+
+```yaml
+id: ingest                 # optional; needed only when something references it
+label: "Ingest"            # required
+sublabel: "S3 + Kafka"     # optional
+icon: database             # optional; a Lucide icon name
+badge: "1"                 # optional; 4 characters or fewer
+accent: 2                  # optional; ramp index 0-5, or a palette token name
+emphasis: normal           # strong | normal | muted
+note: "runs nightly"       # optional
+```
+
+## Getting the schema
+
+```bash
+prism schema flow
+```
+
+emits JSON Schema for the archetype's payload, suitable for structured output
+or a tool definition. Every archetype rejects unknown fields, so a typo fails
+loudly at validation rather than silently rendering the wrong picture.
+
+## Icons
+
+prism vendors all 1756 [Lucide](https://lucide.dev) icons. That is far too many
+for a model to choose from reliably, so use this shortlist and reach for
+`prism icons` only when nothing here fits:
+
+`activity` `triangle-alert` `archive` `bell` `book` `box` `brain` `briefcase`
+`building` `calendar` `chart-line` `check` `circle-check` `clock` `cloud`
+`code` `cog` `compass` `cpu` `credit-card` `database` `eye` `file-text`
+`funnel` `flag` `flask-conical` `folder` `gauge` `git-branch` `globe` `hammer`
+`heart` `key-round` `layers` `lightbulb` `link` `lock` `mail` `map-pin`
+`message-circle` `package` `pencil` `phone` `chart-pie` `play` `plug` `rocket`
+`search` `send` `server` `settings` `shield` `shield-check` `shopping-cart`
+`sparkles` `sprout` `star` `target` `terminal` `trending-up` `truck` `upload`
+`users` `wallet` `wrench` `zap`
+
+An unknown icon name fails with a suggestion rather than rendering a blank.
+
+## Errors are part of the interface
+
+prism's exceptions are written for a recovery loop, not for a stack trace. Each
+one names the offending value and points at the valid neighbours:
+
+```
+unknown icon 'databse' — did you mean: database, data-flow?
+unknown archetype 'flowchart' — did you mean: flow?
+unknown token 'palette.inc' — did you mean: palette.ink, palette.line?
+cell references unknown row 'emae'; known rows: ['emea', 'amer', 'apac']
+era 'Pre-revenue' spans unknown event id(s) ['sed']; known ids: ['seed', 'beta']
+```
+
+An agent's ability to fix its own output is bounded by the quality of the error
+string, so this is treated as a feature surface rather than as diagnostics.
+
+## Choosing an archetype
+
+The decision is about the *shape of the meaning*, not the subject matter:
+
+| If the content is… | Use |
+|---|---|
+| ordered steps, a process, a pipeline | `flow` |
+| containment or reporting structure | `hierarchy` |
+| a process that returns to its start | `cycle` |
+| events in time | `timeline` |
+| two or more options weighed against each other | `comparison` |
+| items placed against two independent dimensions | `quadrant` |
+| layers of magnitude, or stages that shed volume | `pyramid` |
+| tiers of a system, bottom to top | `stack` |
+| one centre with several dependents | `hub` |
+| values at the intersection of two lists | `matrix` |
+
+When two fit, prefer the one with fewer nodes on screen.

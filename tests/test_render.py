@@ -83,3 +83,19 @@ def test_output_paints_the_theme_surface():
 def test_light_theme_also_paints_a_background():
     svg = prism.render_str(SPEC)
     assert "rgba(255,255,255" in svg
+
+
+def test_diagram_displays_itself_as_svg():
+    """Quarto and Jupyter embed whatever _repr_svg_ returns."""
+    result = prism.diagram(SPEC)
+    assert result._repr_svg_().startswith("<svg")
+    assert result.svg == prism.render_str(SPEC)
+
+
+def test_diagram_saves_itself(tmp_path):
+    out = prism.diagram(SPEC).save(tmp_path / "nested" / "d.svg")
+    assert out.read_text().startswith("<svg")
+
+
+def test_diagram_repr_is_not_the_whole_svg():
+    assert repr(prism.diagram(SPEC)).startswith("<prism.Diagram")

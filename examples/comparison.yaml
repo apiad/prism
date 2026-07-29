@@ -1,0 +1,14 @@
+type: comparison
+title: Build versus buy
+criteria: [Time to value, Ongoing cost, Control]
+columns:
+  - header: {label: Build, icon: hammer}
+    items:
+      - {label: 6-9 months}
+      - {label: Engineering time}
+      - {label: Total}
+  - header: {label: Buy, icon: shopping-cart}
+    items:
+      - {label: 2 weeks}
+      - {label: Subscription}
+      - {label: Vendor roadmap}

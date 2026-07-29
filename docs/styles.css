@@ -1,0 +1,25 @@
+/* The gallery SVGs carry their own surface colour, so give them a frame
+   rather than a background of our own. */
+.gallery-figure img,
+p > img[src^="gallery/"] {
+  max-width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.theme-grid figure {
+  margin: 0;
+}
+
+.theme-grid figcaption {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-top: 0.35rem;
+}

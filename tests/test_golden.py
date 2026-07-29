@@ -9,15 +9,15 @@ from prism.text import TextBlock
 from prism.theme import load_theme
 from prism.typography import measure
 
-EXAMPLE = Path(__file__).parent.parent / "examples" / "flow-ingestion.yaml"
-GOLDEN = Path(__file__).parent / "golden" / "flow-ingestion.svg"
+EXAMPLE = Path(__file__).parent.parent / "examples" / "flow.yaml"
+GOLDEN = Path(__file__).parent / "golden" / "flow.svg"
 
 _NUMBER = re.compile(r"-?\d+\.\d+")
 
 REGENERATE = (
     'uv run python -c "import prism, pathlib; '
-    "pathlib.Path('tests/golden/flow-ingestion.svg').write_text("
-    "prism.render_str('examples/flow-ingestion.yaml'))\""
+    "pathlib.Path('tests/golden/flow.svg').write_text("
+    "prism.render_str('examples/flow.yaml'))\""
 )
 
 

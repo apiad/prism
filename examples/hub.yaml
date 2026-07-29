@@ -1,0 +1,9 @@
+type: hub
+title: Shared platform
+center: {label: Core platform, icon: box}
+spokes:
+  - {label: Payments, icon: credit-card, accent: 0}
+  - {label: Identity, icon: key-round, accent: 1}
+  - {label: Search, icon: search, accent: 2}
+  - {label: Messaging, icon: message-circle, accent: 3}
+  - {label: Analytics, icon: chart-line, accent: 4}
