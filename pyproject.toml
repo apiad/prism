@@ -15,7 +15,13 @@ export = ["tesserax[export]>=0.12"]
 prism = "prism.cli:main"
 
 [dependency-groups]
-dev = ["pytest>=8.0", "ruff>=0.6", "fonttools>=4.53"]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+    "fonttools>=4.53",
+    "resvg-py>=0.3.3",
+    "pillow>=12.3.0",
+]
 
 [build-system]
 requires = ["hatchling"]
