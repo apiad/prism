@@ -3,7 +3,10 @@
 **Date:** 2026-07-29
 **Status:** Design — approved, pending spec review
 **Repo:** `apiad/prism` (new, public, MIT) — distribution `prism-svg`, import `prism`
-**Depends on:** `tesserax` (`apiad/tesserax`, public, MIT)
+**Depends on:** `tesserax` (`apiad/tesserax`, public, MIT), `pyyaml`, `pydantic>=2`
+(pydantic earns its place by giving JSON Schema export for the agent surface for
+free). Optional extra `export` pulls `tesserax[export]` for PNG. Dev-only:
+`pytest`, `ruff`, `fonttools` (metric extraction, never imported at runtime).
 
 ## Goal
 
@@ -139,6 +142,11 @@ Custom families are permitted and documented as falling back to estimated metric
 with a widened safety pad. Georgia and Inter are deliberately excluded from v1:
 neither has a metric-compatible clone in the standard Linux font set.
 
+**Only weights 400 and 700 are permitted**, for the same reason. Metrics are
+extracted from the Liberation faces, which ship Regular and Bold only; a token
+asking for 600 would be synthesised by the viewer at an advance width we never
+measured. The theme schema rejects any other value.
+
 **Rejected:** converting text to outlines. Perfectly accurate, but kills
 selectable, searchable, copyable text — unacceptable when the target is books.
 
@@ -155,10 +163,19 @@ pure outline stroke, so **icons inherit theme tokens for free** (ink color, stro
 width) and route through the `sketch` texture like any other geometry. Phosphor
 and Material mix fill and stroke and would fight the token system.
 
-A build script normalizes every icon to pure `Path` data — converting `rect`,
-`circle` and `line` children to path commands — into a single `icons.json`.
-Rendering then needs only tesserax's `Path` primitive: no raw-SVG injection
-escape hatch, and sketch texture applies uniformly.
+A build script normalizes every icon to a single `d` string — converting `rect`,
+`circle`, `line`, `polyline` and `polygon` children to path commands — into one
+`icons.json`.
+
+**Correction found during planning:** `tesserax.Path` has no raw `d` attribute. It
+builds an internal command list through `jump_to` / `line_to` / `cubic_to` / `arc`
+and derives bounds from the points it has seen, so prism cannot hand it a path
+string. v1 therefore renders icons through a small `IconShape(Visual)` that emits
+the `<path>` directly and reports exact bounds — which it can, because the source
+viewBox is known to be 24×24. The consequence is that **`texture: sketch` does not
+apply to icons in v1**, since tesserax's sketch pass works through `trace()`.
+Revisit in VS2: either write a `d`-parser feeding a real `tesserax.Path`, or accept
+clean icons inside sketch diagrams as a deliberate look.
 
 An agent cannot reliably choose from 1600 names, so the shipped skill exposes a
 **curated ~150-name concept vocabulary** (`users`, `database`, `shield`,
@@ -384,7 +401,7 @@ palette:
 typography:
   family: grotesque              # grotesque | serif | mono | <custom stack>
   scale: {title: 20, label: 13, sublabel: 11, note: 10, badge: 10}
-  weight: {label: 600, sublabel: 400}
+  weight: {label: 700, sublabel: 400}   # 400 and 700 only — see below
   line_height: 1.35
 geometry:
   radius: 6
