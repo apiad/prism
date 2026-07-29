@@ -1,5 +1,5 @@
 """Importing this package registers every bundled archetype."""
 
-from . import flow, pyramid, stack
+from . import cycle, flow, hierarchy, pyramid, stack, timeline
 
-__all__ = ["flow", "pyramid", "stack"]
+__all__ = ["cycle", "flow", "hierarchy", "pyramid", "stack", "timeline"]
