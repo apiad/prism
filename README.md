@@ -97,9 +97,9 @@ tokens:
 ```python
 import prism
 
-prism.render("spec.yaml", "out.svg")     # write a file
-svg = prism.render_str(spec_text)        # get the string
-prism.diagram("spec.yaml")               # self-displaying, for Jupyter/Quarto
+prism.render("spec.yaml", "out.svg")  # write a file
+svg = prism.render_str(spec_text)  # get the string
+prism.diagram("spec.yaml")  # self-displaying, for Jupyter/Quarto
 ```
 
 ```bash
