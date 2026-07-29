@@ -1,0 +1,67 @@
+name: release
+
+# Publishing runs on a published GitHub release, so cutting a release is the
+# single action that ships a version.
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install the Liberation fonts
+        run: sudo apt-get update && sudo apt-get install -y fonts-liberation
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - run: uv sync --all-extras
+
+      - name: Refuse to ship a failing build
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+          uv run python -m pytest -q
+
+      - name: Check the tag matches the packaged version
+        # A release tagged v0.2.0 that ships 0.1.0 is worse than a failed build.
+        if: github.event_name == 'release'
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          packaged="$(uv run python -c 'import prism; print(prism.__version__)')"
+          if [ "$tag" != "$packaged" ]; then
+            echo "tag $tag does not match packaged version $packaged" >&2
+            exit 1
+          fi
+
+      - name: Build sdist and wheel
+        run: uv build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/prism-svg
+    permissions:
+      # Mandatory for trusted publishing: the job mints an OIDC token that PyPI
+      # verifies against the configured publisher. No API token is stored.
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@v1.14.1
