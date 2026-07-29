@@ -68,3 +68,25 @@ def test_agent_shortlist_icons_all_exist():
     named = set(re.findall(r"`([a-z][a-z0-9-]+)`", shortlist))
     assert named, "shortlist parsed as empty"
     assert named <= known, f"agents.qmd names unknown icons: {sorted(named - known)}"
+
+
+def test_skill_file_covers_every_archetype():
+    """The agent-facing skill must document the whole catalog."""
+    skill = (ROOT / "SKILL.md").read_text()
+    for name in names():
+        assert f"type: {name}" in skill, f"SKILL.md does not document {name}"
+
+
+def test_skill_file_names_only_real_icons():
+    skill = (ROOT / "SKILL.md").read_text()
+    shortlist = skill.split("## Icons")[1].split("## Rules")[0]
+    known = set(icon_names())
+    named = set(re.findall(r"`([a-z][a-z0-9-]+)`", shortlist))
+    assert named, "shortlist parsed as empty"
+    assert named <= known, f"SKILL.md names unknown icons: {sorted(named - known)}"
+
+
+def test_skill_file_names_only_real_themes():
+    skill = (ROOT / "SKILL.md").read_text()
+    for theme in bundled_themes():
+        assert theme in skill
