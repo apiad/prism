@@ -73,7 +73,11 @@ class Theme(BaseModel):
     palette: Palette
     typography: Typography
     geometry: Geometry
-    texture: Literal["clean", "sketch"] = "clean"
+    # Only `clean` in v1. tesserax's Sketch flattens a shape tree but drops
+    # each group's own transform (see the comment in tesserax/sketch.py), so a
+    # sketched prism diagram collapses every nested layout onto the origin.
+    # Accepting the token without honouring it would be worse than refusing it.
+    texture: Literal["clean"] = "clean"
 
     def color(self, ref: int | str | None = None) -> Color:
         if ref is None:

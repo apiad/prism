@@ -71,3 +71,15 @@ def test_render_does_not_leak_into_a_users_canvas():
     with tesserax.Canvas() as canvas:
         prism.render_str(SPEC)
     assert canvas.shapes == []
+
+
+def test_output_paints_the_theme_surface():
+    """A transparent SVG makes a dark theme's light ink unreadable."""
+    svg = prism.render_str(SPEC.replace("type:", "theme: dark\ntype:", 1))
+    # The dark surface must appear before any content.
+    assert "rgba(15,23,42" in svg.split("<title>")[0] + svg[:2000]
+
+
+def test_light_theme_also_paints_a_background():
+    svg = prism.render_str(SPEC)
+    assert "rgba(255,255,255" in svg

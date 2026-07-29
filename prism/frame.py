@@ -4,7 +4,9 @@ from __future__ import annotations
 
 from xml.sax.saxutils import escape
 
-from tesserax import Canvas, Group
+from tesserax import Canvas, Group, Rect
+from tesserax.color import Colors
+from tesserax.core import Point
 from tesserax.layout import ColumnLayout
 
 from .connectors import define_arrowhead
@@ -68,7 +70,28 @@ def frame(body: Group, envelope: Envelope, ctx: RenderContext) -> Canvas:
     define_arrowhead(canvas, theme)
     canvas.add(stacked, mode="loose")
     canvas.fit(padding=theme.geometry.gap)
+    _paint_background(canvas, ctx)
     return canvas
+
+
+def _paint_background(canvas: Canvas, ctx: RenderContext) -> None:
+    """Fill the fitted viewport with the theme's surface colour.
+
+    Without this an SVG is transparent, so a dark theme's light ink lands on
+    whatever page it is embedded in and becomes unreadable. Painted after
+    fit(), and inserted underneath everything, so it never affects layout.
+    """
+    x, y, width, height = canvas._viewbox
+    background = Rect(
+        width,
+        height,
+        fill=ctx.theme.color("surface"),
+        stroke=Colors.Transparent,
+        width=0,
+    )
+    background.move_to(Point(x + width / 2, y + height / 2), "center")
+    background.parent = canvas
+    canvas.shapes.insert(0, background)
 
 
 def with_accessibility(svg: str, envelope: Envelope) -> str:

@@ -1,0 +1,22 @@
+name: mono
+palette:
+  surface: "#ffffff"
+  ink: "#141414"
+  muted: "#6e6e6e"
+  line: "#c4c4c4"
+  ramp: ["#141414", "#4a4a4a", "#6e6e6e", "#8f8f8f", "#2f2f2f", "#5c5c5c"]
+  ok: "#2f2f2f"
+  warn: "#6e6e6e"
+  bad: "#141414"
+typography:
+  family: mono
+  scale: {title: 17, subtitle: 12, label: 12, sublabel: 10, note: 9, badge: 9}
+  weight: {title: 700, subtitle: 400, label: 700, sublabel: 400, note: 400, badge: 700}
+  line_height: 1.45
+geometry:
+  radius: 0
+  stroke: 1.2
+  gap: 22
+  pad: 11
+  arrow: thin
+texture: clean

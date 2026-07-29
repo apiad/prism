@@ -1,0 +1,22 @@
+name: paper
+palette:
+  surface: "#fdfbf6"
+  ink: "#2f2519"
+  muted: "#8c7b63"
+  line: "#ddd0ba"
+  ramp: ["#8c5a2b", "#4f6b52", "#7a4b6b", "#2f5d75", "#9a6a1f", "#5b5340"]
+  ok: "#4f6b52"
+  warn: "#9a6a1f"
+  bad: "#8c3b2b"
+typography:
+  family: serif
+  scale: {title: 22, subtitle: 14, label: 14, sublabel: 12, note: 11, badge: 11}
+  weight: {title: 700, subtitle: 400, label: 700, sublabel: 400, note: 400, badge: 700}
+  line_height: 1.4
+geometry:
+  radius: 2
+  stroke: 1.2
+  gap: 26
+  pad: 13
+  arrow: thin
+texture: clean

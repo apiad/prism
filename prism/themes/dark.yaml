@@ -1,0 +1,22 @@
+name: dark
+palette:
+  surface: "#0f172a"
+  ink: "#e2e8f0"
+  muted: "#94a3b8"
+  line: "#334155"
+  ramp: ["#2dd4bf", "#fbbf24", "#818cf8", "#fb7185", "#38bdf8", "#a3e635"]
+  ok: "#4ade80"
+  warn: "#fbbf24"
+  bad: "#f87171"
+typography:
+  family: grotesque
+  scale: {title: 20, subtitle: 13, label: 13, sublabel: 11, note: 10, badge: 10}
+  weight: {title: 700, subtitle: 400, label: 700, sublabel: 400, note: 400, badge: 700}
+  line_height: 1.35
+geometry:
+  radius: 6
+  stroke: 1.5
+  gap: 24
+  pad: 12
+  arrow: standard
+texture: clean
