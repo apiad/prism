@@ -21,6 +21,8 @@ dev = [
     "fonttools>=4.53",
     "resvg-py>=0.3.3",
     "pillow>=12.3.0",
+    "jupyter>=1.1.1",
+    "ipykernel>=7.3.0",
 ]
 
 [build-system]

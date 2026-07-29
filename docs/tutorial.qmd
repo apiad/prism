@@ -1,0 +1,310 @@
+---
+title: "Tutorial"
+subtitle: "From nothing to a themed diagram, one step at a time"
+---
+
+This page is meant to be followed along with. Every diagram below is rendered
+by prism while this page is built — nothing here is a screenshot, and if any
+step stopped working the site would fail to build.
+
+## Step 0 — install
+
+```bash
+pip install prism-svg
+```
+
+The import name is `prism`; the distribution is `prism-svg` because `prism` was
+already taken on PyPI. Check it worked:
+
+```bash
+prism archetypes
+```
+
+You should see ten names. If you have `uv`, `uvx --from prism-svg prism archetypes`
+works without installing anything.
+
+## Step 1 — your first diagram
+
+A prism spec is YAML. It needs exactly one thing: a `type`, naming the
+archetype. Here is the smallest useful diagram there is.
+
+```{python}
+import prism
+
+spec = """
+type: flow
+steps:
+  - label: Draft
+  - label: Review
+  - label: Ship
+"""
+
+prism.diagram(spec)
+```
+
+That is the whole loop: write YAML, get SVG. You never positioned anything —
+prism chose the box sizes, the spacing, the arrow geometry and the colours.
+
+Save that YAML to `first.yaml` and you can do the same from a terminal:
+
+```bash
+prism render first.yaml -o first.svg
+```
+
+## Step 2 — give the nodes some substance
+
+Every archetype in prism consumes the *same* node shape. Learn it once and it
+works in all ten. The useful fields are `sublabel`, `icon` and `accent`.
+
+```{python}
+spec = """
+type: flow
+steps:
+  - label: Draft
+    sublabel: outline + notes
+    icon: pencil
+    accent: 0
+  - label: Review
+    sublabel: two readers
+    icon: eye
+    accent: 1
+  - label: Ship
+    sublabel: to production
+    icon: rocket
+    accent: 2
+"""
+
+prism.diagram(spec)
+```
+
+`accent` is an index into the theme's colour ramp, **not** a colour. That
+indirection is the point: the theme owns the palette, so the same spec restyles
+cleanly. There are 1756 icons available (`prism icons`), all from
+[Lucide](https://lucide.dev).
+
+## Step 3 — title, subtitle, caption
+
+These live at the top level of the spec, alongside `type`, because they belong
+to the diagram rather than to any node.
+
+```{python}
+spec = """
+type: flow
+title: Editorial process
+subtitle: for long-form pieces
+caption: "Source: the house style guide"
+steps:
+  - {label: Draft, icon: pencil, accent: 0}
+  - {label: Review, icon: eye, accent: 1}
+  - {label: Ship, icon: rocket, accent: 2}
+"""
+
+prism.diagram(spec)
+```
+
+That inline `{label: Draft, icon: pencil}` form is ordinary YAML — use whichever
+style you find more readable.
+
+## Step 4 — change the direction
+
+Most archetypes take a small number of structural options. `flow` takes
+`direction`.
+
+```{python}
+spec = """
+type: flow
+direction: down
+steps:
+  - {label: Draft, icon: pencil, accent: 0}
+  - {label: Review, icon: eye, accent: 1}
+  - {label: Ship, icon: rocket, accent: 2}
+"""
+
+prism.diagram(spec)
+```
+
+## Step 5 — pick the archetype by the shape of the meaning
+
+This is the one judgement prism asks of you. Not *what is this about*, but
+*what shape is the idea*. The same three-stage editorial process, told as a
+loop rather than a line, wants `cycle`:
+
+```{python}
+spec = """
+type: cycle
+title: Editorial loop
+center: {label: A piece}
+steps:
+  - {label: Draft, icon: pencil, accent: 0}
+  - {label: Review, icon: eye, accent: 1}
+  - {label: Revise, icon: wrench, accent: 2}
+"""
+
+prism.diagram(spec)
+```
+
+And the same content as a judgement about two independent dimensions wants
+`quadrant`, where items carry coordinates in `0..1`:
+
+```{python}
+spec = """
+type: quadrant
+title: What to write next
+axes:
+  x: {label: Effort, low: Low, high: High}
+  y: {label: Reach, low: Narrow, high: Wide}
+quadrant_labels: [Quick posts, Flagship, Notes, Slog]
+items:
+  - {label: Weekly note, x: 0.15, y: 0.3}
+  - {label: Field guide, x: 0.8, y: 0.85}
+  - {label: Talk writeup, x: 0.45, y: 0.6}
+"""
+
+prism.diagram(spec)
+```
+
+The [catalog](catalog.qmd) shows all ten with the spec that produced each.
+
+## Step 6 — hierarchies, the one recursive case
+
+`hierarchy` is the only archetype whose *data* nests, through `children`. That
+is data recursion, not template composition — you still cannot put one
+archetype inside another.
+
+```{python}
+spec = """
+type: hierarchy
+title: A book
+root:
+  label: Manuscript
+  icon: book
+  children:
+    - label: Part I
+      children:
+        - {label: Chapter 1}
+        - {label: Chapter 2}
+    - label: Part II
+      children:
+        - {label: Chapter 3}
+"""
+
+prism.diagram(spec)
+```
+
+## Step 7 — switch the theme
+
+Add one line. Nothing else about the spec changes.
+
+```{python}
+spec = """
+type: flow
+theme: dark
+title: Editorial process
+steps:
+  - {label: Draft, icon: pencil, accent: 0}
+  - {label: Review, icon: eye, accent: 1}
+  - {label: Ship, icon: rocket, accent: 2}
+"""
+
+prism.diagram(spec)
+```
+
+Four themes ship: `default`, `dark`, `paper` and `mono`. `paper` is the one to
+reach for in print — serif typography, warm surface, hairline strokes:
+
+```{python}
+prism.diagram(spec.replace("theme: dark", "theme: paper"))
+```
+
+## Step 8 — nudge a single token
+
+You rarely need a whole new theme to change one thing. `tokens:` overrides
+individual theme values by dotted path.
+
+```{python}
+spec = """
+type: flow
+theme: paper
+tokens:
+  geometry.radius: 0
+  geometry.gap: 44
+title: Wider gaps, square corners
+steps:
+  - {label: Draft, icon: pencil, accent: 0}
+  - {label: Review, icon: eye, accent: 1}
+  - {label: Ship, icon: rocket, accent: 2}
+"""
+
+prism.diagram(spec)
+```
+
+A mistyped path fails loudly rather than being ignored — try
+`geometry.radiuss` and prism will tell you what it expected.
+
+## Step 9 — your own theme
+
+For a whole document set, copy a bundled theme and point `theme:` at your file:
+
+```bash
+python -c "import prism, pathlib, shutil; \
+  shutil.copy(pathlib.Path(prism.__file__).parent / 'themes/default.yaml', 'house.yaml')"
+```
+
+```yaml
+type: flow
+theme: ./house.yaml
+steps:
+  - {label: Draft}
+```
+
+Two constraints are enforced when the theme loads, and both exist for the same
+reason. `typography.family` must be `grotesque`, `serif` or `mono`, and
+`typography.weight` values must be `400` or `700` — those are exactly the fonts
+and weights whose metrics prism has vendored. Offering others would mean
+measuring text against a font the viewer does not have, and labels would
+overflow their boxes.
+
+## Step 10 — when something is wrong
+
+prism's errors are written to be acted on. Each names the bad value and points
+at the valid neighbours.
+
+```{python}
+#| error: true
+prism.render_str("""
+type: flow
+steps:
+  - {label: Draft, icon: pencl}
+""")
+```
+
+The same holds for unknown archetypes, unknown theme tokens, and dangling
+references such as a `matrix` cell naming a row that does not exist.
+
+## Step 11 — put it in your own Quarto document
+
+Everything above is a real Quarto page. The pattern is:
+
+````markdown
+```{{python}}
+#| label: fig-process
+#| fig-cap: "The editorial process"
+#| echo: false
+import prism
+prism.diagram("figures/process.yaml")
+```
+````
+
+`prism.diagram()` accepts a path or a spec string and returns an object that
+knows how to display itself, so Quarto embeds the SVG directly — no
+intermediate file and no rasterisation. See [In Quarto](quarto.qmd) for PDF
+output and batch rendering.
+
+## Where to go next
+
+- The [catalog](catalog.qmd) — all ten archetypes and their fields.
+- [Themes](themes.qmd) — every archetype in every theme, side by side.
+- [For agents](agents.qmd) — if you are wiring prism up to a language model.
+
+And when you want a field prism does not have, `prism schema <archetype>` is
+the authoritative answer on what a given archetype accepts.
