@@ -145,8 +145,15 @@ def write_themes(themes: list[str], showcase: str = "flow") -> None:
 
     parts.append(
         "\n## Writing your own\n\n"
-        "Copy a bundled theme and edit the tokens. Two constraints are"
-        " enforced at load time:\n\n"
+        "Scaffold a theme file from whichever bundled theme is closest:\n\n"
+        "```bash\n"
+        "prism new-theme house                 # from `default`\n"
+        "prism new-theme house --from paper    # from the print theme\n"
+        "prism new-theme house -o themes/house.yaml\n"
+        "```\n\n"
+        "Then point a spec at it with `theme: ./house.yaml`. The generated file"
+        " carries a header explaining the two constraints, which are enforced"
+        " at load time:\n\n"
         "- `typography.family` must be `grotesque`, `serif` or `mono` — the"
         " three stacks whose font metrics prism vendors.\n"
         "- `typography.weight.*` must be `400` or `700`, for the same reason."

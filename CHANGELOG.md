@@ -5,6 +5,14 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- `prism new-theme <name> [--from <theme>] [-o <path>] [--force]` — scaffolds an
+  editable theme file from a bundled one, renames it, prepends a header
+  explaining the family and weight constraints, and validates the result before
+  writing it. Replaces the `python -c "... shutil.copy ..."` incantation the
+  tutorial previously asked readers to type.
+
 ## [0.1.0] - 2026-07-29
 
 First release. prism is now a declarative YAML → SVG diagram library built on

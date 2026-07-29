@@ -243,12 +243,22 @@ A mistyped path fails loudly rather than being ignored — try
 
 ## Step 9 — your own theme
 
-For a whole document set, copy a bundled theme and point `theme:` at your file:
+For a whole document set you want a theme file of your own. Scaffold one:
 
 ```bash
-python -c "import prism, pathlib, shutil; \
-  shutil.copy(pathlib.Path(prism.__file__).parent / 'themes/default.yaml', 'house.yaml')"
+prism new-theme house
 ```
+
+That writes `house.yaml` here, copied from the `default` theme and already
+carrying its new name. Start from whichever bundled theme is closest:
+
+```bash
+prism new-theme house --from paper      # start from the print theme
+prism new-theme house -o themes/house.yaml
+```
+
+The file opens with a comment explaining the two rules you have to respect,
+so you do not have to remember them. Then point any spec at it:
 
 ```yaml
 type: flow
@@ -257,12 +267,15 @@ steps:
   - {label: Draft}
 ```
 
-Two constraints are enforced when the theme loads, and both exist for the same
-reason. `typography.family` must be `grotesque`, `serif` or `mono`, and
-`typography.weight` values must be `400` or `700` — those are exactly the fonts
-and weights whose metrics prism has vendored. Offering others would mean
-measuring text against a font the viewer does not have, and labels would
-overflow their boxes.
+Edit the tokens and every diagram that references the file restyles at once.
+
+The two rules, since they surprise people: `typography.family` must be
+`grotesque`, `serif` or `mono`, and `typography.weight` values must be `400`
+or `700`. Those are exactly the fonts and weights whose metrics prism has
+vendored. Anything else would mean measuring text against a font your reader
+does not have, and labels would overflow their boxes. `prism new-theme`
+validates the file it writes, so a bad edit fails when you next render rather
+than producing a quietly broken picture.
 
 ## Step 10 — when something is wrong
 

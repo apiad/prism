@@ -106,6 +106,7 @@ prism.diagram("spec.yaml")  # self-displaying, for Jupyter/Quarto
 prism render spec.yaml -o out.svg
 prism archetypes     # list the catalog
 prism themes         # list bundled themes
+prism new-theme house --from paper   # scaffold an editable theme file
 prism icons          # list the 1756 vendored Lucide icons
 prism schema flow    # JSON Schema, for tool calling
 ```

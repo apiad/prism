@@ -150,7 +150,15 @@ Every archetype renders in every theme. A few, side by side:
 
 ## Writing your own
 
-Copy a bundled theme and edit the tokens. Two constraints are enforced at load time:
+Scaffold a theme file from whichever bundled theme is closest:
+
+```bash
+prism new-theme house                 # from `default`
+prism new-theme house --from paper    # from the print theme
+prism new-theme house -o themes/house.yaml
+```
+
+Then point a spec at it with `theme: ./house.yaml`. The generated file carries a header explaining the two constraints, which are enforced at load time:
 
 - `typography.family` must be `grotesque`, `serif` or `mono` — the three stacks whose font metrics prism vendors.
 - `typography.weight.*` must be `400` or `700`, for the same reason. A weight prism has not measured would be synthesised by the viewer at a width prism never accounted for, and labels would overflow their boxes.

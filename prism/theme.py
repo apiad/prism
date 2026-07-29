@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from typing import Any, Literal
 
@@ -148,3 +149,64 @@ def load_theme(ref: str = "default", overrides: dict[str, Any] | None = None) ->
     except ValidationError as exc:
         # pydantic wraps validator exceptions, so re-raise as our own type.
         raise SpecError(f"invalid theme {ref!r}: {exc}") from exc
+
+
+_SCAFFOLD_HEADER = """\
+# {name} — a prism theme.
+# Created with: prism new-theme {name} --from {source}
+#
+# Archetypes read these tokens and never literal values, so editing this file
+# restyles every diagram that points at it. Use it with:
+#
+#   type: flow
+#   theme: ./{filename}
+#
+# Two constraints are checked when the theme loads, and both exist for the
+# same reason — prism measures every label before drawing its box, and can
+# only measure what it has vendored metrics for:
+#
+#   typography.family        grotesque | serif | mono
+#   typography.weight.*      400 or 700
+#
+# Anything else would be measured against a font the reader does not have,
+# and labels would overflow their boxes.
+"""
+
+
+def scaffold_theme(
+    name: str,
+    source: str = "default",
+    out_path: str | Path | None = None,
+    directory: str | Path | None = None,
+    force: bool = False,
+) -> Path:
+    """Copy a bundled theme to an editable file and return where it landed."""
+    if name != Path(name).name or not name:
+        raise PrismError(
+            f"theme name {name!r} is not a plain file name; pass a path with "
+            "--output instead"
+        )
+
+    origin = _THEMES_DIR / f"{source}.yaml"
+    if not origin.exists():
+        raise UnknownToken(source, bundled_themes())
+
+    target = (
+        Path(out_path)
+        if out_path is not None
+        else Path(directory or Path.cwd()) / f"{name}.yaml"
+    )
+    if target.exists() and not force:
+        raise PrismError(f"{target} already exists; pass --force to overwrite it")
+
+    body = re.sub(
+        r"^name:.*$", f"name: {name}", origin.read_text(), count=1, flags=re.MULTILINE
+    )
+    header = _SCAFFOLD_HEADER.format(name=name, source=source, filename=target.name)
+
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(f"{header}\n{body}", encoding="utf-8")
+
+    # Fail here rather than the first time the reader tries to render with it.
+    load_theme(str(target))
+    return target

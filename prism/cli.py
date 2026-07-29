@@ -11,7 +11,7 @@ from .errors import PrismError
 from .icons import icon_names
 from .registry import get
 from .registry import names as archetype_names
-from .theme import bundled_themes
+from .theme import bundled_themes, scaffold_theme
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -29,6 +29,24 @@ def _build_parser() -> argparse.ArgumentParser:
     sub.add_parser("themes", help="list bundled themes")
     sub.add_parser("icons", help="list available icon names")
     sub.add_parser("archetypes", help="list available archetypes")
+
+    new_theme = sub.add_parser(
+        "new-theme", help="scaffold an editable theme file from a bundled one"
+    )
+    new_theme.add_argument("name", help="name for the new theme")
+    new_theme.add_argument(
+        "--from",
+        dest="source",
+        default="default",
+        metavar="THEME",
+        help="bundled theme to copy (default: default)",
+    )
+    new_theme.add_argument(
+        "-o", "--output", help="where to write it (default: <name>.yaml here)"
+    )
+    new_theme.add_argument(
+        "--force", action="store_true", help="overwrite an existing file"
+    )
 
     schema_cmd = sub.add_parser(
         "schema", help="print an archetype's JSON Schema for tool calling"
@@ -54,6 +72,15 @@ def main(argv: list[str] | None = None) -> int:
                 print("\n".join(icon_names()))
             case "archetypes":
                 print("\n".join(archetype_names()))
+            case "new-theme":
+                written = scaffold_theme(
+                    args.name,
+                    source=args.source,
+                    out_path=args.output,
+                    force=args.force,
+                )
+                print(f"wrote {written}")
+                print(f"use it with:  theme: {written}")
             case "schema":
                 schema = get(args.archetype).spec_model.model_json_schema()
                 print(json.dumps(schema, indent=2))
