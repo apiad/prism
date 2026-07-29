@@ -1,0 +1,22 @@
+name: default
+palette:
+  surface: "#ffffff"
+  ink: "#111827"
+  muted: "#6b7280"
+  line: "#d1d5db"
+  ramp: ["#0f766e", "#b45309", "#4338ca", "#be123c", "#0369a1", "#65a30d"]
+  ok: "#15803d"
+  warn: "#b45309"
+  bad: "#b91c1c"
+typography:
+  family: grotesque
+  scale: {title: 20, subtitle: 13, label: 13, sublabel: 11, note: 10, badge: 10}
+  weight: {title: 700, subtitle: 400, label: 700, sublabel: 400, note: 400, badge: 700}
+  line_height: 1.35
+geometry:
+  radius: 6
+  stroke: 1.5
+  gap: 24
+  pad: 12
+  arrow: standard
+texture: clean
