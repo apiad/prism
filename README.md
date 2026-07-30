@@ -5,6 +5,12 @@ decides the geometry, spacing, typography and colour.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org)
+[![Docs](https://img.shields.io/badge/docs-apiad.github.io%2Fprism-0f766e.svg)](https://apiad.github.io/prism)
+
+📖 **[Documentation](https://apiad.github.io/prism)** — [tutorial](https://apiad.github.io/prism/tutorial.html)
+· [catalog](https://apiad.github.io/prism/catalog.html)
+· [themes](https://apiad.github.io/prism/themes.html)
+· [for agents](https://apiad.github.io/prism/agents.html)
 
 ```yaml
 type: flow
@@ -66,7 +72,7 @@ Ten archetypes, chosen by the *shape of the meaning* rather than the subject:
 </p>
 
 Every archetype, with the spec that produced it, is in the
-[catalog](docs/catalog.qmd).
+[catalog](https://apiad.github.io/prism/catalog.html).
 
 ## Themes
 
@@ -129,7 +135,8 @@ unknown archetype 'flowchart' — did you mean: flow?
 cell references unknown row 'emae'; known rows: ['emea', 'amer', 'apac']
 ```
 
-See the [agent guide](docs/agents.qmd).
+See the [agent guide](https://apiad.github.io/prism/agents.html), or hand a model
+[`SKILL.md`](SKILL.md) directly.
 
 ## For books and Quarto
 
@@ -144,7 +151,7 @@ prism.diagram("figures/pipeline.yaml")
 ````
 
 SVG stays sharp at any size, keeps text selectable and searchable, and diffs
-sensibly in git. See [using prism in Quarto](docs/quarto.qmd).
+sensibly in git. See [using prism in Quarto](https://apiad.github.io/prism/quarto.html).
 
 ## One detail worth knowing
 
@@ -187,6 +194,18 @@ the packaged version, builds an sdist and a wheel, and publishes through the
 Two vendoring scripts regenerate bundled data and are not run at install time:
 `scripts/build_metrics.py` (font advance widths, from the Liberation faces) and
 `scripts/build_icons.py` (Lucide icons, normalised to path data).
+
+### Working on prism
+
+[`AGENTS.md`](AGENTS.md) is the door — the pipeline, the conventions and the
+sharp edges — with procedure docs in [`know-how/`](know-how/):
+[adding an archetype](know-how/adding-an-archetype.md),
+[authoring a theme](know-how/authoring-a-theme.md),
+[typography and icons](know-how/typography-and-icons.md),
+[releasing](know-how/releasing.md).
+
+The full design is at
+[`docs/specs/2026-07-29-declarative-diagrams-design.md`](docs/specs/2026-07-29-declarative-diagrams-design.md).
 
 ## Credits
 

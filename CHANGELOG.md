@@ -5,7 +5,20 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+- `badge` and `note` are no longer part of the documented node vocabulary in
+  `SKILL.md` and the agent guide. Both are still accepted by the models — and
+  still appear in `prism schema` — but no archetype draws them, so emitting one
+  silently changed nothing. A drift guard now fails if the agent-facing docs
+  advertise a `Node` field that no builder reads.
+- README prose links point at the published docs site rather than at
+  `docs/*.qmd`, which GitHub renders as raw Quarto source.
+
 ### Added
+
+- `AGENTS.md` and `know-how/` — the repo's own orientation and procedure docs
+  (adding an archetype, authoring a theme, typography and icons, releasing).
 
 - `prism new-theme <name> [--from <theme>] [-o <path>] [--force]` — scaffolds an
   editable theme file from a bundled one, renames it, prepends a header

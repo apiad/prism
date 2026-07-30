@@ -37,11 +37,14 @@ id: ingest                 # optional; needed only when something references it
 label: "Ingest"            # required
 sublabel: "S3 + Kafka"     # optional
 icon: database             # optional; a Lucide icon name
-badge: "1"                 # optional; 4 characters or fewer
 accent: 2                  # optional; ramp index 0-5, or a palette token name
 emphasis: normal           # strong | normal | muted
-note: "runs nightly"       # optional
 ```
+
+Two fields are accepted but **not yet drawn**: `badge` and `note` validate and
+then change nothing about the output. They appear in `prism schema` because the
+model declares them; ignore them until this page says otherwise, and put the
+text in `sublabel` instead.
 
 ## Getting the schema
 

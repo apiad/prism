@@ -57,10 +57,12 @@ id: ingest              # only needed when something references it
 label: "Ingest"         # required
 sublabel: "S3 + Kafka"  # optional
 icon: database          # optional, Lucide name
-badge: "1"              # optional, <= 4 chars
 accent: 0               # optional, ramp index 0-5, or a palette token name
 emphasis: normal        # strong | normal | muted
 ```
+
+`prism schema <type>` also accepts `badge` and `note`, but nothing draws them
+yet — emitting them changes nothing. Put that text in `sublabel` instead.
 
 ## The archetypes
 
