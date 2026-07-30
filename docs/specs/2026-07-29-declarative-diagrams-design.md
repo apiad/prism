@@ -1,7 +1,7 @@
 # prism: declarative YAML → SVG diagrams
 
 **Date:** 2026-07-29
-**Status:** Design — approved, pending spec review
+**Status:** Implemented — v0.1.0 (`dcc1576`). Not yet on PyPI.
 **Repo:** `apiad/prism` (new, public, MIT) — distribution `prism-svg`, import `prism`
 **Depends on:** `tesserax` (`apiad/tesserax`, public, MIT), `pyyaml`, `pydantic>=2`
 (pydantic earns its place by giving JSON Schema export for the agent surface for

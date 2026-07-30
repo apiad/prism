@@ -1,5 +1,10 @@
 # prism VS1 — `flow` End-to-End Implementation Plan
 
+**Status:** Implemented — all 13 tasks landed in v0.1.0 (`dcc1576`). The
+follow-up slices this plan deferred (the other nine archetypes, the `dark` /
+`paper` / `mono` themes, `SKILL.md`, the docs site) also shipped in the same
+release, so the "deliberately leaves out" list below is historical.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Render a YAML `type: flow` spec into a themed, typographically-correct SVG diagram through the complete prism stack — envelope, registry, theme, typography, icons, archetype, framing, public API and CLI.
@@ -31,7 +36,7 @@
 - Consumes: nothing.
 - Produces: `prism.__version__: str`.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_package.py
@@ -43,12 +48,12 @@ def test_package_exposes_version():
     assert prism.__version__ == "0.1.0.dev0"
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_package.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'prism'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```toml
 # pyproject.toml
@@ -91,12 +96,12 @@ __version__ = "0.1.0.dev0"
 
 Create an empty `prism/py.typed`. Write `LICENSE` as the standard MIT text, copyright `2026 Alejandro Piad`. Write a `README.md` with a one-paragraph description; it gets its real content in Task 13.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_package.py -v`
 Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add pyproject.toml prism/ tests/ LICENSE README.md
@@ -115,7 +120,7 @@ git commit -m "chore: scaffold prism-svg package"
 
 Every downstream task raises these rather than bare `ValueError`. The message format matters: an agent's recovery loop is only as good as the error string.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_errors.py
@@ -151,12 +156,12 @@ def test_prism_error_is_catchable_as_exception():
         raise UnknownIcon("x", ["database"])
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_errors.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'prism.errors'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 # prism/errors.py
@@ -208,12 +213,12 @@ class UnknownToken(_UnknownName):
     noun = "token"
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_errors.py -v`
 Expected: PASS (5 tests)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add prism/errors.py tests/test_errors.py
@@ -232,7 +237,7 @@ git commit -m "feat(errors): agent-legible exceptions with did-you-mean"
 
 The Liberation faces are metric-compatible with Arial, Times New Roman and Courier New, which is exactly why those three stacks were chosen. The script is run once by a developer; `fonttools` never ships as a runtime dependency.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_metrics_data.py
@@ -275,12 +280,12 @@ def test_mono_font_has_uniform_advances():
     assert data["advances"][str(ord("i"))] == data["advances"][str(ord("W"))]
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_metrics_data.py -v`
 Expected: FAIL — `FileNotFoundError` for `grotesque-400.json`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 # scripts/build_metrics.py
@@ -378,12 +383,12 @@ Add to `pyproject.toml` under `[tool.hatch.build.targets.wheel]` so the data shi
 "prism/vendor" = "prism/vendor"
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_metrics_data.py -v`
 Expected: PASS (8 tests)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add scripts/build_metrics.py prism/vendor/metrics/ tests/test_metrics_data.py pyproject.toml
@@ -405,7 +410,7 @@ git commit -m "feat(typography): vendor Liberation-derived advance-width tables"
   - `load_metrics(family: str, weight: int) -> FontMetrics` (cached).
   - `measure(text: str, size: float, family: str = "grotesque", weight: int = 400) -> float`.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_typography_measure.py
@@ -457,12 +462,12 @@ def test_unknown_weight_raises_prism_error():
         measure("x", 12, weight=600)
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_typography_measure.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'prism.typography'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 # prism/typography.py
@@ -530,12 +535,12 @@ def measure(
     return total * size / metrics.units_per_em
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_typography_measure.py -v`
 Expected: PASS (9 tests)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add prism/typography.py tests/test_typography_measure.py
@@ -553,7 +558,7 @@ git commit -m "feat(typography): measure text against vendored metrics"
 **Interfaces:**
 - Produces: `wrap(text: str, max_width: float, size: float, family: str = "grotesque", weight: int = 400) -> list[str]`.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_typography_wrap.py
@@ -595,12 +600,12 @@ def test_runs_of_whitespace_collapse():
     assert wrap("Ingest    events", 500, 12) == ["Ingest events"]
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_typography_wrap.py -v`
 Expected: FAIL — `ImportError: cannot import name 'wrap'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 Append to `prism/typography.py`:
 
@@ -663,12 +668,12 @@ def wrap(
     return lines or [""]
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_typography_wrap.py -v`
 Expected: PASS (7 tests)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add prism/typography.py tests/test_typography_wrap.py
@@ -690,7 +695,7 @@ git commit -m "feat(typography): greedy word-wrap with hard-break fallback"
 
 This is the component that makes tesserax's layout engines correct for us: they consume `Bounds`, and we hand them true ones.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_text.py
@@ -747,12 +752,12 @@ def test_text_block_height_grows_with_line_count():
     assert many.local().height > one
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_text.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'prism.text'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 # prism/text.py
@@ -847,14 +852,14 @@ class TextBlock(ColumnLayout):
         )
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_text.py -v`
 Expected: PASS (8 tests)
 
 (`tesserax.layout.Align` is `Literal["start", "middle", "end"]`, so the mapping above is an identity — it exists to make the anchor/align relationship explicit at the call site.)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add prism/text.py tests/test_text.py
@@ -874,7 +879,7 @@ git commit -m "feat(text): MeasuredText and TextBlock with true bounds"
   - `Theme.color(ref: int | str | None) -> Color` — resolves a ramp index, a palette token name, or `None` (→ `ink`).
   - `load_theme(ref: str = "default", overrides: dict[str, Any] | None = None) -> Theme` — `ref` is a bundled name or a path to a YAML file; `overrides` keys are dotted paths (`palette.ink`).
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_theme.py
@@ -934,12 +939,12 @@ def test_weight_other_than_400_or_700_is_rejected():
         load_theme("default", {"typography.weight": {"label": 600}})
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_theme.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'prism.theme'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```yaml
 # prism/themes/default.yaml
@@ -1120,14 +1125,14 @@ Import `ValidationError` from pydantic and `SpecError` from `.errors` alongside 
 
 Note: `UnknownToken`'s message says "token", which reads correctly for both a bad theme name and a bad dotted path.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_theme.py -v`
 Expected: PASS (9 tests)
 
 Pydantic wraps validator exceptions in `ValidationError`, so `test_weight_other_than_400_or_700_is_rejected` may fail. If it does, catch `ValidationError` in `load_theme` and re-raise as `SpecError` with the original message — that is behaviour we want anyway, so make it explicit rather than loosening the test.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add prism/theme.py prism/themes/ tests/test_theme.py
@@ -1150,7 +1155,7 @@ Every Lucide icon is uniform 24×24, `fill="none"`, `stroke="currentColor"`, `st
 
 **Important correction to the spec:** `tesserax.Path` has no raw `d` attribute — it builds an internal `_commands` list through `jump_to` / `line_to` / `cubic_to` / `arc` / `close` and derives its bounds from the points it has seen. So prism cannot hand it a `d` string. VS1 therefore renders icons through a small `IconShape(Visual)` that emits the `<path>` directly and reports exact bounds, which it can do because the source viewBox is known to be 24×24. The consequence: **`texture: sketch` will not apply to icons in v1**, because tesserax's sketch pass works through `trace()`. Revisit in VS2 — either write a `d`-parser that feeds a real `tesserax.Path`, or accept clean icons inside sketch diagrams as a deliberate look.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_icons.py
@@ -1201,12 +1206,12 @@ def test_stroke_width_compensates_for_scaling():
     assert small != large
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_icons.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'prism.icons'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 # scripts/build_icons.py
@@ -1424,12 +1429,12 @@ def build_icon(name: str, size: float, color: Color, stroke: float) -> IconShape
     return IconShape(name, size, color, stroke)
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_icons.py -v`
 Expected: PASS (5 tests)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add scripts/build_icons.py prism/vendor/lucide/ prism/icons.py tests/test_icons.py
@@ -1451,7 +1456,7 @@ git commit -m "feat(icons): vendor Lucide as normalized path data"
 
 `build_node_box` is the single place that decides what a node *looks* like, shared by all ten archetypes. Getting it right once is most of the visual quality.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_nodebox.py
@@ -1523,12 +1528,12 @@ def test_muted_emphasis_uses_the_muted_token(ctx):
     assert str(box.stroke) == str(ctx.theme.color("muted"))
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_nodebox.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'prism.nodebox'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 # prism/nodes.py
@@ -1655,12 +1660,12 @@ def build_node_box(node: Node, ctx: RenderContext, max_width: float = 160) -> Co
     )
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_nodebox.py -v`
 Expected: PASS (9 tests)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add prism/nodes.py prism/nodebox.py tests/test_nodebox.py
@@ -1681,7 +1686,7 @@ git commit -m "feat(nodes): shared Node model and node box builder"
   - `Archetype` protocol: `name: str`, `spec_model: type[BaseModel]`, `build(spec, ctx) -> tesserax.Group`.
   - `ARCHETYPES: dict[str, Archetype]`, `register(archetype)`, `get(name) -> Archetype` (raises `UnknownArchetype`).
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_envelope.py
@@ -1757,12 +1762,12 @@ def test_unknown_archetype_raises_with_suggestion():
     assert "fake" in str(excinfo.value)
 ```
 
-- [ ] **Step 2: Run tests to verify they fail**
+- [x] **Step 2: Run tests to verify they fail**
 
 Run: `uv run pytest tests/test_envelope.py tests/test_registry.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'prism.envelope'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 # prism/envelope.py
@@ -1857,12 +1862,12 @@ def names() -> list[str]:
     return sorted(ARCHETYPES)
 ```
 
-- [ ] **Step 4: Run tests to verify they pass**
+- [x] **Step 4: Run tests to verify they pass**
 
 Run: `uv run pytest tests/test_envelope.py tests/test_registry.py -v`
 Expected: PASS (8 tests)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add prism/envelope.py prism/registry.py tests/test_envelope.py tests/test_registry.py
@@ -1882,7 +1887,7 @@ git commit -m "feat(core): spec envelope and archetype registry"
 
 VS1 implements the linear spine only. `branches`, `lanes`, `phases`, `links` and `groups` are additive fields that arrive in VS3 — adding them later breaks no existing spec.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_flow.py
@@ -1961,12 +1966,12 @@ def test_steps_grow_the_diagram(ctx):
     assert four > two
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_flow.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'prism.archetypes'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 # prism/archetypes/flow/schema.py
@@ -2053,12 +2058,12 @@ Two things to verify against tesserax while implementing, rather than assuming:
 1. `Group.anchor(name)` returns a `Point` in the *parent's* coordinate space after the layout has run. If arrows land in the wrong place, the layout has not been applied at the time `anchor()` is evaluated — pass the callables form (`Arrow` accepts `Callable[[], Point]`) so resolution is deferred.
 2. Adding `spine` and `connectors` to one `Group` must not re-parent the boxes. `Group.add` raises `RuntimeError` on a shape that already has a parent unless `mode="loose"`. The boxes belong to `spine`; the connectors reference them but must not contain them.
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_flow.py -v`
 Expected: PASS (8 tests)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add prism/archetypes/ tests/test_flow.py
@@ -2081,7 +2086,7 @@ git commit -m "feat(flow): linear flow archetype"
 
 Two behaviours belong here and nowhere else: the deterministic RNG seed, and the guard against tesserax's global `Group.stack`.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```python
 # tests/test_render.py
@@ -2159,12 +2164,12 @@ def test_render_does_not_leak_into_a_users_canvas():
     assert canvas.shapes == []
 ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
 
 Run: `uv run pytest tests/test_render.py -v`
 Expected: FAIL — `AttributeError: module 'prism' has no attribute 'render_str'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 # prism/frame.py
@@ -2313,12 +2318,12 @@ def render(source: str | Path, out_path: str | Path) -> Path:
     return out
 ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
 
 Run: `uv run pytest tests/test_render.py -v`
 Expected: PASS (10 tests)
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add prism/frame.py prism/__init__.py tests/test_render.py
@@ -2338,7 +2343,7 @@ git commit -m "feat(render): framing, accessibility, determinism and public API"
 
 The golden test is the regression guard for the whole stack. Coordinates are rounded before comparison so float noise across platforms cannot cause false failures.
 
-- [ ] **Step 1: Write the failing test**
+- [x] **Step 1: Write the failing test**
 
 ```yaml
 # examples/flow-ingestion.yaml
@@ -2475,12 +2480,12 @@ def test_bad_spec_exits_nonzero_with_a_readable_message(tmp_path, capsys):
     assert "flow" in capsys.readouterr().err
 ```
 
-- [ ] **Step 2: Run tests to verify they fail**
+- [x] **Step 2: Run tests to verify they fail**
 
 Run: `uv run pytest tests/test_cli.py tests/test_golden.py -v`
 Expected: FAIL — `ModuleNotFoundError: No module named 'prism.cli'`
 
-- [ ] **Step 3: Write minimal implementation**
+- [x] **Step 3: Write minimal implementation**
 
 ```python
 # prism/cli.py
@@ -2548,7 +2553,7 @@ xdg-open tests/golden/flow-ingestion.svg
 
 Then rewrite `README.md`: what prism is, the `flow-ingestion.yaml` example, the rendered SVG inline, install instructions (`pip install prism-svg`), a note that the catalog is growing, and the tesserax + Lucide credits.
 
-- [ ] **Step 4: Run the full suite**
+- [x] **Step 4: Run the full suite**
 
 Run: `uv run pytest -v`
 Expected: PASS (all tests across all files)
@@ -2560,7 +2565,7 @@ uv run ruff check .
 uv run ruff format --check .
 ```
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add prism/cli.py examples/ tests/golden/ tests/test_golden.py tests/test_cli.py README.md
