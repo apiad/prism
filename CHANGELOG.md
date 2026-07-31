@@ -5,6 +5,11 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-07-31
+
+First release published to PyPI. `0.1.0` below was tagged in this file but
+never shipped, so `pip install prism-svg` starts here.
+
 ### Added
 
 - **`Node.badge` is drawn.** A short marker — a step number, a version, a count
@@ -35,26 +40,23 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   stop above a note that belonged inside it — or clip a taller event in the
   middle of the span.
 
-### Changed
-
-- `badge` and `note` are no longer part of the documented node vocabulary in
-  `SKILL.md` and the agent guide. Both are still accepted by the models — and
-  still appear in `prism schema` — but no archetype draws them, so emitting one
-  silently changed nothing. A drift guard now fails if the agent-facing docs
-  advertise a `Node` field that no builder reads.
-- README prose links point at the published docs site rather than at
-  `docs/*.qmd`, which GitHub renders as raw Quarto source.
-
-### Added
-
-- `AGENTS.md` and `know-how/` — the repo's own orientation and procedure docs
-  (adding an archetype, authoring a theme, typography and icons, releasing).
-
 - `prism new-theme <name> [--from <theme>] [-o <path>] [--force]` — scaffolds an
   editable theme file from a bundled one, renames it, prepends a header
   explaining the family and weight constraints, and validates the result before
   writing it. Replaces the `python -c "... shutil.copy ..."` incantation the
   tutorial previously asked readers to type.
+
+- A drift guard that fails if the agent-facing docs advertise a `Node` field no
+  builder reads. `GroupSpec` and `Link` remain declared and undrawn, and the
+  guard is what keeps them out of the vocabulary until they are not.
+
+- `AGENTS.md` and `know-how/` — the repo's own orientation and procedure docs
+  (adding an archetype, authoring a theme, typography and icons, releasing).
+
+### Changed
+
+- README prose links point at the published docs site rather than at
+  `docs/*.qmd`, which GitHub renders as raw Quarto source.
 
 ## [0.1.0] - 2026-07-29
 

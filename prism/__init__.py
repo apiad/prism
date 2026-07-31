@@ -19,7 +19,7 @@ from .nodes import walk_nodes
 from .registry import ARCHETYPES, Archetype, get
 from .theme import load_theme
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 __all__ = [
     "Diagram",

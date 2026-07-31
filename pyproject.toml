@@ -1,6 +1,6 @@
 [project]
 name = "prism-svg"
-version = "0.1.0"
+version = "0.2.0"
 description = "Declarative YAML to SVG diagrams"
 readme = "README.md"
 requires-python = ">=3.12"
