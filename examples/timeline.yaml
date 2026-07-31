@@ -1,8 +1,8 @@
 type: timeline
 title: Product history
 events:
-  - {id: seed, when: 2023 Q1, label: Seed, icon: sprout, accent: 0}
-  - {id: beta, when: 2023 Q4, label: Private beta, icon: flask-conical, accent: 1}
-  - {id: ga, when: 2024 Q2, label: General availability, icon: rocket, accent: 2}
+  - {id: seed, when: 2023 Q1, label: Seed, icon: sprout, accent: 0, note: 3 founders}
+  - {id: beta, when: 2023 Q4, label: Private beta, icon: flask-conical, accent: 1, badge: v0, note: 40 design partners}
+  - {id: ga, when: 2024 Q2, label: General availability, icon: rocket, accent: 2, badge: v1, note: self-serve}
 eras:
   - {label: Pre-revenue, span: [seed, beta], accent: 4}

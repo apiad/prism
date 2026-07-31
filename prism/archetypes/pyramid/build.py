@@ -18,6 +18,7 @@ MIN_BAND_FRACTION = 0.06
 class PyramidArchetype:
     name = "pyramid"
     spec_model = PyramidSpec
+    supports_note = False
 
     def build(self, spec: PyramidSpec, ctx: RenderContext) -> Group:
         theme = ctx.theme

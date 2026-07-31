@@ -17,6 +17,7 @@ DOT_RADIUS = 5.0
 class QuadrantArchetype:
     name = "quadrant"
     spec_model = QuadrantSpec
+    supports_note = False
 
     def build(self, spec: QuadrantSpec, ctx: RenderContext) -> Group:
         theme = ctx.theme

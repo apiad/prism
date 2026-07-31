@@ -37,14 +37,22 @@ id: ingest                 # optional; needed only when something references it
 label: "Ingest"            # required
 sublabel: "S3 + Kafka"     # optional
 icon: database             # optional; a Lucide icon name
+badge: "1"                 # optional; at most 4 characters
 accent: 2                  # optional; ramp index 0-5, or a palette token name
 emphasis: normal           # strong | normal | muted
+note: "runs nightly"       # optional; `flow` and `timeline` only
 ```
 
-Two fields are accepted but **not yet drawn**: `badge` and `note` validate and
-then change nothing about the output. They appear in `prism schema` because the
-model declares them; ignore them until this page says otherwise, and put the
-text in `sublabel` instead.
+A **badge** is a short marker — a step number, a version, a count — drawn as a
+filled pill inside the top-right of the node. Four characters is the cap, so it
+never wraps. Every archetype that draws a node box draws its badge.
+
+A **note** is a marginal annotation: muted, small, and set *outside* the node,
+below it in a left-to-right layout and beside it in a top-down one. Only `flow`
+and `timeline` have a free margin to put one in; on the other eight archetypes a
+note raises an error rather than being silently dropped, so an agent that emits
+one gets told instead of shipping a picture that quietly lost it. Fold the text
+into `sublabel` there.
 
 ## Getting the schema
 

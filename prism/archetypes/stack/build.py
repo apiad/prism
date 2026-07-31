@@ -16,6 +16,7 @@ MIN_WIDTH = 220.0
 class StackArchetype:
     name = "stack"
     spec_model = StackSpec
+    supports_note = False
 
     def build(self, spec: StackSpec, ctx: RenderContext) -> Group:
         theme = ctx.theme

@@ -15,7 +15,8 @@ from .envelope import Envelope, load_spec
 from .errors import PrismError, SpecError
 from .frame import frame, with_accessibility
 from .nodebox import RenderContext
-from .registry import get
+from .nodes import walk_nodes
+from .registry import ARCHETYPES, Archetype, get
 from .theme import load_theme
 
 __version__ = "0.1.0"
@@ -38,6 +39,25 @@ def _seed(data: dict) -> int:
     return int.from_bytes(hashlib.blake2b(canonical, digest_size=8).digest(), "big")
 
 
+def _reject_unplaceable_notes(spec, archetype: Archetype) -> None:
+    """A note nothing places is a silent no-op, which is the failure this
+    whole feature exists to remove. Fail instead, and name the nodes."""
+    if archetype.supports_note:
+        return
+
+    noted = [node.label for node in walk_nodes(spec) if node.note]
+    if not noted:
+        return
+
+    placing = sorted(name for name, a in ARCHETYPES.items() if a.supports_note)
+    raise SpecError(
+        f"'{archetype.name}' cannot place a marginal note, but "
+        f"{len(noted)} node(s) carry one: {noted}. Its layout leaves no margin "
+        f"to put one in. Archetypes that do place a note: {', '.join(placing)}; "
+        "elsewhere, fold the text into `sublabel` or drop it."
+    )
+
+
 def render_str(source: str | Path) -> str:
     """Render a spec to an SVG string."""
     data = load_spec(source)
@@ -49,6 +69,8 @@ def render_str(source: str | Path) -> str:
         spec = archetype.spec_model.model_validate(payload)
     except ValidationError as exc:
         raise SpecError(f"invalid '{envelope.type}' spec: {exc}") from exc
+
+    _reject_unplaceable_notes(spec, archetype)
 
     theme = load_theme(envelope.theme, envelope.tokens or None)
     ctx = RenderContext(

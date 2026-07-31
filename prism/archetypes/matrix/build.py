@@ -18,6 +18,7 @@ CELL_WIDTH = 130.0
 class MatrixArchetype:
     name = "matrix"
     spec_model = MatrixSpec
+    supports_note = False
 
     def build(self, spec: MatrixSpec, ctx: RenderContext) -> Group:
         theme = ctx.theme

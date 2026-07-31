@@ -6,13 +6,19 @@ from tesserax import Group
 from tesserax.layout import ColumnLayout, RowLayout
 
 from ...connectors import connect
-from ...nodebox import RenderContext, build_node_box
+from ...nodebox import NoteSide, RenderContext, build_node_box, place_note
 from .schema import FlowSpec
+
+
+def note_side(spec: FlowSpec) -> NoteSide:
+    """Notes go where the arrows do not: under a spine that runs sideways."""
+    return "below" if spec.direction == "right" else "right"
 
 
 class FlowArchetype:
     name = "flow"
     spec_model = FlowSpec
+    supports_note = True
 
     def build(self, spec: FlowSpec, ctx: RenderContext) -> Group:
         theme = ctx.theme
@@ -30,4 +36,11 @@ class FlowArchetype:
             for i in range(len(boxes) - 1)
         ]
 
-        return Group([spine, *connectors])
+        side = note_side(spec)
+        notes = [
+            note
+            for step, box in zip(spec.steps, boxes, strict=True)
+            if (note := place_note(step, box, ctx, side)) is not None
+        ]
+
+        return Group([spine, *connectors, *notes])

@@ -10,7 +10,7 @@ Three files under `prism/archetypes/<name>/`, and nothing else:
 | File | Holds |
 |---|---|
 | `schema.py` | one pydantic model, `extra="forbid"` |
-| `build.py` | a class with `name`, `spec_model`, and `build(spec, ctx) -> Group` |
+| `build.py` | a class with `name`, `spec_model`, `supports_note`, and `build(spec, ctx) -> Group` |
 | `__init__.py` | `register(TheArchetype())` |
 
 `flow` is the whole pattern in 56 lines across the three — read it first.
@@ -18,7 +18,15 @@ Three files under `prism/archetypes/<name>/`, and nothing else:
 `RowLayout` / `ColumnLayout`.
 
 The registry is a `Protocol`, not a base class. There is nothing to inherit; if
-your object has the three members it *is* an archetype.
+your object has the four members it *is* an archetype.
+
+`supports_note` has no default on purpose, and
+`tests/test_badge_and_note.py::test_every_archetype_declares_whether_it_places_notes`
+fails if you leave it out. Answer `True` only if your layout has a margin the
+annotation can live in *without* being folded into the node box — see
+`docs/specs/2026-07-31-node-badge-and-note-design.md` for why that distinction
+is not cosmetic. Answering `False` is a fine answer; it makes a note on your
+archetype a loud error rather than a silent no-op.
 
 ## The procedure
 

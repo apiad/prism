@@ -17,6 +17,11 @@ class Archetype(Protocol):
 
     name: str
     spec_model: type[BaseModel]
+    #: Whether this archetype places `Node.note` in its margin. Declared
+    #: explicitly by every archetype — there is no default, so adding one has
+    #: to answer the question rather than inherit a silent "no". A note on an
+    #: archetype that answers False is an error, not a no-op.
+    supports_note: bool
 
     def build(self, spec: BaseModel, ctx: RenderContext) -> Group: ...
 

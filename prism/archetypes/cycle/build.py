@@ -19,6 +19,7 @@ CURVATURE = 0.18
 class CycleArchetype:
     name = "cycle"
     spec_model = CycleSpec
+    supports_note = False
 
     def build(self, spec: CycleSpec, ctx: RenderContext) -> Group:
         theme = ctx.theme

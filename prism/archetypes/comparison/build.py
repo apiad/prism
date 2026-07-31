@@ -18,6 +18,7 @@ CELL_WIDTH = 150.0
 class ComparisonArchetype:
     name = "comparison"
     spec_model = ComparisonSpec
+    supports_note = False
 
     def build(self, spec: ComparisonSpec, ctx: RenderContext) -> Group:
         theme = ctx.theme

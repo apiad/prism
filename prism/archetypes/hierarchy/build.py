@@ -18,6 +18,7 @@ from .schema import HierarchySpec, TreeNode
 class HierarchyArchetype:
     name = "hierarchy"
     spec_model = HierarchySpec
+    supports_note = False
 
     def build(self, spec: HierarchySpec, ctx: RenderContext) -> Group:
         theme = ctx.theme

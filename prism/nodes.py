@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from typing import Literal
+from collections.abc import Iterator
+from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field
 
@@ -36,3 +37,22 @@ class Link(BaseModel):
     label: str | None = None
     style: Literal["solid", "dashed", "dotted"] = "solid"
     kind: Literal["forward", "back", "bidirectional"] = "forward"
+
+
+def walk_nodes(value: Any) -> Iterator[Node]:
+    """Every Node reachable in a validated spec, however deeply nested.
+
+    A tree recurses through `children` and a comparison hides its nodes one
+    model down, so a scan of the spec's own lists would miss them.
+    """
+    if isinstance(value, Node):
+        yield value
+    if isinstance(value, BaseModel):
+        for name in type(value).model_fields:
+            yield from walk_nodes(getattr(value, name))
+    elif isinstance(value, (list, tuple)):
+        for item in value:
+            yield from walk_nodes(item)
+    elif isinstance(value, dict):
+        for item in value.values():
+            yield from walk_nodes(item)

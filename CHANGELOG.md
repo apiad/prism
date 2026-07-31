@@ -5,6 +5,36 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+- **`Node.badge` is drawn.** A short marker — a step number, a version, a count
+  — rendered as an accent-filled pill inside the top-right of the node, lettered
+  in `surface` so it reads against its own fill. It is a flow-layout sibling of
+  the label rather than an overlay, so the box grows to hold it and its bounds
+  stay honest. Every archetype that builds a node box gets badges.
+
+- **`Node.note` is drawn, by `flow` and `timeline`.** A marginal annotation in
+  muted `note` type, placed *outside* the node box: below it when the layout
+  runs left-to-right, beside it when the layout runs top-down — always on the
+  side the spine and arrows do not use. Notes cannot disturb layout, and
+  `tests/test_badge_and_note.py` asserts that a flow's arrows land in exactly
+  the same place with and without them.
+
+  On the other eight archetypes a note now raises `SpecError` naming the
+  offending nodes, rather than validating and changing nothing. Each archetype
+  declares `supports_note` explicitly — there is no default to inherit.
+
+  Both fields are back in `SKILL.md` and the agent guide, which the drift guard
+  had kept them out of while nothing read them.
+
+### Fixed
+
+- A timeline era band now encloses the notes of the events it spans, and takes
+  its cross-axis extent from every event in the span rather than just the two
+  endpoints. The old bound came from the endpoint boxes alone, so a band could
+  stop above a note that belonged inside it — or clip a taller event in the
+  middle of the span.
+
 ### Changed
 
 - `badge` and `note` are no longer part of the documented node vocabulary in

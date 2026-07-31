@@ -1,16 +1,16 @@
-<svg width="436.29042968749997" height="144.0" viewBox="-218.14521484374998 -24.0 436.29042968749997 144.0" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="494.97499999999997" height="160.0" viewBox="-247.48749999999998 -24.0 494.97499999999997 160.0" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Ingestion pipeline</title>
 <desc>Ingestion pipeline</desc>
   <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(148,163,184,1.0)" stroke="rgba(148,163,184,1.0)" stroke-width="0"   /></marker></defs>
-  <g transform="translate(0.0 48.0) rotate(0.0) scale(1.0 1.0)">
-<rect x="-218.14521484374998" y="-72.0" width="436.29042968749997" height="144.0" stroke="rgba(0,0,0,0.0)" fill="rgba(15,23,42,1.0)" />
+  <g transform="translate(0.0 56.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-247.48749999999998" y="-80.0" width="494.97499999999997" height="160.0" stroke="rgba(0,0,0,0.0)" fill="rgba(15,23,42,1.0)" />
 </g>
   <g transform="translate(0.0 10.0) rotate(0.0) scale(1.0 1.0)">
 <text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="20.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">Ingestion pipeline</text>
 </g>
-<g transform="translate(-194.14521484374998 70.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(-223.48749999999998 70.0) rotate(0.0) scale(1.0 1.0)">
 <g transform="translate(12.0 0.0) rotate(0.0) scale(1.0 1.0)">
-<rect x="-12.0" y="-26.0" width="102.319140625" height="52.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(45,212,191,1.0)" stroke-width="1.5" />
+<rect x="-12.0" y="-26.0" width="121.8806640625" height="52.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(45,212,191,1.0)" stroke-width="1.5" />
 <g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
 <g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M3.0 5.0a9.0 3.0 0 1 0 18.0 0a9.0 3.0 0 1 0 -18.0 0ZM3 5V19A9 3 0 0 0 21 19V5M3 12A9 3 0 0 0 21 12" fill="none" stroke="rgba(226,232,240,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
 </g>
@@ -24,9 +24,13 @@
 </g>
 </g>
 </g>
+<g transform="translate(91.09990234375 -5.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-6.78076171875" y="-9.0" width="13.5615234375" height="18.0" rx="6.0" ry="6.0" fill="rgba(45,212,191,1.0)" stroke="rgba(45,212,191,1.0)" stroke-width="0" />
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(15,23,42,1.0)" text-anchor="middle" dominant-baseline="middle">1</text>
 </g>
-<g transform="translate(138.319140625 0.0) rotate(0.0) scale(1.0 1.0)">
-<rect x="-12.0" y="-26.0" width="135.95830078125" height="52.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(251,191,36,1.0)" stroke-width="1.5" />
+</g>
+<g transform="translate(157.8806640625 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-26.0" width="155.51982421875" height="52.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(251,191,36,1.0)" stroke-width="1.5" />
 <g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
 <g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1zM9 12l2 2 4-4" fill="none" stroke="rgba(226,232,240,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
 </g>
@@ -40,9 +44,13 @@
 </g>
 </g>
 </g>
+<g transform="translate(124.7390625 -5.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-6.78076171875" y="-9.0" width="13.5615234375" height="18.0" rx="6.0" ry="6.0" fill="rgba(251,191,36,1.0)" stroke="rgba(251,191,36,1.0)" stroke-width="0" />
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(15,23,42,1.0)" text-anchor="middle" dominant-baseline="middle">2</text>
 </g>
-<g transform="translate(298.27744140625 0.0) rotate(0.0) scale(1.0 1.0)">
-<rect x="-12.0" y="-26.0" width="102.01298828125" height="52.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(129,140,248,1.0)" stroke-width="1.5" />
+</g>
+<g transform="translate(337.40048828125 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-26.0" width="121.57451171875" height="52.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(129,140,248,1.0)" stroke-width="1.5" />
 <g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
 <g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11zM21.854 2.147l-10.94 10.939" fill="none" stroke="rgba(226,232,240,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
 </g>
@@ -56,8 +64,27 @@
 </g>
 </g>
 </g>
+<g transform="translate(90.79375 -5.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-6.78076171875" y="-9.0" width="13.5615234375" height="18.0" rx="6.0" ry="6.0" fill="rgba(129,140,248,1.0)" stroke="rgba(129,140,248,1.0)" stroke-width="0" />
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(15,23,42,1.0)" text-anchor="middle" dominant-baseline="middle">3</text>
 </g>
-<path d="M 102.319140625 0.0 L 126.31914062499999 0.0" fill="rgba(0,0,0,0.0)" stroke="rgba(148,163,184,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
-<path d="M 262.27744140625 0.0 L 286.27744140625 0.0" fill="rgba(0,0,0,0.0)" stroke="rgba(148,163,184,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+</g>
+<path d="M 121.8806640625 0.0 L 145.8806640625 0.0" fill="rgba(0,0,0,0.0)" stroke="rgba(148,163,184,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<path d="M 301.40048828125 0.0 L 325.40048828125 0.0" fill="rgba(0,0,0,0.0)" stroke="rgba(148,163,184,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<g transform="translate(0.0 32.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(148,163,184,1.0)" text-anchor="start" dominant-baseline="middle">continuous</text>
+</g>
+</g>
+<g transform="translate(145.8806640625 32.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(148,163,184,1.0)" text-anchor="start" dominant-baseline="middle">drops on conflict</text>
+</g>
+</g>
+<g transform="translate(325.40048828125 32.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(148,163,184,1.0)" text-anchor="start" dominant-baseline="middle">nightly</text>
+</g>
+</g>
 </g>
 </svg>

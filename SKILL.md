@@ -57,12 +57,16 @@ id: ingest              # only needed when something references it
 label: "Ingest"         # required
 sublabel: "S3 + Kafka"  # optional
 icon: database          # optional, Lucide name
+badge: "1"              # optional, <= 4 chars; a pill inside the node
 accent: 0               # optional, ramp index 0-5, or a palette token name
 emphasis: normal        # strong | normal | muted
+note: "runs nightly"    # optional, flow and timeline only; sits in the margin
 ```
 
-`prism schema <type>` also accepts `badge` and `note`, but nothing draws them
-yet — emitting them changes nothing. Put that text in `sublabel` instead.
+`note` is only placed by `flow` and `timeline` — the two archetypes with a free
+margin beside their spine. On the other eight it is an error, not a no-op, so
+you will hear about it rather than wonder why nothing changed. Put that text in
+`sublabel` there.
 
 ## The archetypes
 

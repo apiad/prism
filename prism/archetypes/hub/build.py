@@ -17,6 +17,7 @@ MIN_RADIUS = 130.0
 class HubArchetype:
     name = "hub"
     spec_model = HubSpec
+    supports_note = False
 
     def build(self, spec: HubSpec, ctx: RenderContext) -> Group:
         theme = ctx.theme

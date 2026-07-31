@@ -1,6 +1,6 @@
 type: flow
 title: Ingestion pipeline
 steps:
-  - {id: ingest, label: Ingest, sublabel: S3 + Kafka, icon: database, accent: 0}
-  - {id: verify, label: Verify, sublabel: schema + dedupe, icon: shield-check, accent: 1}
-  - {id: publish, label: Publish, sublabel: warehouse, icon: send, accent: 2}
+  - {id: ingest, label: Ingest, sublabel: S3 + Kafka, icon: database, accent: 0, badge: "1", note: continuous}
+  - {id: verify, label: Verify, sublabel: schema + dedupe, icon: shield-check, accent: 1, badge: "2", note: drops on conflict}
+  - {id: publish, label: Publish, sublabel: warehouse, icon: send, accent: 2, badge: "3", note: nightly}

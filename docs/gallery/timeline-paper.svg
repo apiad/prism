@@ -1,21 +1,21 @@
-<svg width="492.59687499999995" height="238.8" viewBox="-246.29843749999998 -26.0 492.59687499999995 238.8" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="544.9302083333333" height="256.3666666666667" viewBox="-272.46510416666666 -26.0 544.9302083333333 256.3666666666667" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>Product history</title>
 <desc>Product history</desc>
   <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(140,123,99,1.0)" stroke="rgba(140,123,99,1.0)" stroke-width="0"   /></marker></defs>
-  <g transform="translate(0.0 93.4) rotate(0.0) scale(1.0 1.0)">
-<rect x="-246.29843749999998" y="-119.4" width="492.59687499999995" height="238.8" stroke="rgba(0,0,0,0.0)" fill="rgba(253,251,246,1.0)" />
+  <g transform="translate(0.0 102.18333333333334) rotate(0.0) scale(1.0 1.0)">
+<rect x="-272.46510416666666" y="-128.18333333333334" width="544.9302083333333" height="256.3666666666667" stroke="rgba(0,0,0,0.0)" fill="rgba(253,251,246,1.0)" />
 </g>
   <g transform="translate(0.0 11.0) rotate(0.0) scale(1.0 1.0)">
 <text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="22.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">Product history</text>
 </g>
-<g transform="translate(-207.29843749999998 151.0) rotate(0.0) scale(1.0 1.0)">
-<g transform="translate(115.4466796875 -33.599999999999994) rotate(0.0) scale(1.0 1.0)" style="opacity: 0.1;">
-<rect x="-128.4466796875" y="-69.39999999999999" width="256.893359375" height="138.79999999999998" stroke="rgba(154,106,31,1.0)" fill="rgba(154,106,31,1.0)" />
+<g transform="translate(-233.46510416666666 151.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(128.53001302083334 -24.816666666666663) rotate(0.0) scale(1.0 1.0)" style="opacity: 0.1;">
+<rect x="-141.53001302083334" y="-78.18333333333332" width="283.0600260416667" height="156.36666666666665" stroke="rgba(154,106,31,1.0)" fill="rgba(154,106,31,1.0)" />
 </g>
 <g transform="translate(-6.5 -93.16666666666666) rotate(0.0) scale(1.0 1.0)">
 <text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="11.0" font-weight="700" fill="rgba(154,106,31,1.0)" text-anchor="start" dominant-baseline="middle">Pre-revenue</text>
 </g>
-<path d="M 40.05 -59.199999999999996 L 342.2451171875 -59.199999999999996" fill="rgba(0,0,0,0.0)" stroke="rgba(221,208,186,1.0)" stroke-width="1.7999999999999998"   />
+<path d="M 40.05 -59.199999999999996 L 381.4951171875 -59.199999999999996" fill="rgba(0,0,0,0.0)" stroke="rgba(221,208,186,1.0)" stroke-width="1.7999999999999998"   />
 <g transform="translate(13.0 0.0) rotate(0.0) scale(1.0 1.0)">
 <rect x="-13.0" y="-22.799999999999997" width="80.1" height="45.599999999999994" rx="2.0" ry="2.0" fill="rgba(253,251,246,1.0)" stroke="rgba(140,90,43,1.0)" stroke-width="1.2" />
 <g transform="translate(9.799999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
@@ -28,7 +28,7 @@
 </g>
 </g>
 <g transform="translate(119.1 0.0) rotate(0.0) scale(1.0 1.0)">
-<rect x="-13.0" y="-22.799999999999997" width="124.793359375" height="45.599999999999994" rx="2.0" ry="2.0" fill="rgba(253,251,246,1.0)" stroke="rgba(79,107,82,1.0)" stroke-width="1.2" />
+<rect x="-13.0" y="-22.799999999999997" width="150.96002604166665" height="45.666666666666664" rx="2.0" ry="2.0" fill="rgba(253,251,246,1.0)" stroke="rgba(79,107,82,1.0)" stroke-width="1.2" />
 <g transform="translate(9.799999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
 <g transform="scale(0.8166666666666665) translate(-12.0 -12.0)"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2M6.453 15h11.094M8.5 2h7" fill="none" stroke="rgba(47,37,25,1.0)" stroke-width="1.469387755102041" stroke-linecap="round" stroke-linejoin="round"/></g>
 </g>
@@ -37,9 +37,13 @@
 <text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="14.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">Private beta</text>
 </g>
 </g>
+<g transform="translate(115.12669270833332 0.033333333333333215) rotate(0.0) scale(1.0 1.0)">
+<rect x="-9.833333333333332" y="-9.833333333333332" width="19.666666666666664" height="19.666666666666664" rx="2.0" ry="2.0" fill="rgba(79,107,82,1.0)" stroke="rgba(79,107,82,1.0)" stroke-width="0" />
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="11.0" font-weight="700" fill="rgba(253,251,246,1.0)" text-anchor="middle" dominant-baseline="middle">v0</text>
 </g>
-<g transform="translate(269.893359375 0.0) rotate(0.0) scale(1.0 1.0)">
-<rect x="-13.0" y="-22.799999999999997" width="170.703515625" height="45.599999999999994" rx="2.0" ry="2.0" fill="rgba(253,251,246,1.0)" stroke="rgba(122,75,107,1.0)" stroke-width="1.2" />
+</g>
+<g transform="translate(296.0600260416667 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-13.0" y="-22.799999999999997" width="196.87018229166668" height="45.666666666666664" rx="2.0" ry="2.0" fill="rgba(253,251,246,1.0)" stroke="rgba(122,75,107,1.0)" stroke-width="1.2" />
 <g transform="translate(9.799999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
 <g transform="scale(0.8166666666666665) translate(-12.0 -12.0)"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2zM9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" fill="none" stroke="rgba(47,37,25,1.0)" stroke-width="1.469387755102041" stroke-linecap="round" stroke-linejoin="round"/></g>
 </g>
@@ -48,6 +52,10 @@
 <text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="14.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">General availability</text>
 </g>
 </g>
+<g transform="translate(161.03684895833334 0.033333333333333215) rotate(0.0) scale(1.0 1.0)">
+<rect x="-9.833333333333332" y="-9.833333333333332" width="19.666666666666664" height="19.666666666666664" rx="2.0" ry="2.0" fill="rgba(122,75,107,1.0)" stroke="rgba(122,75,107,1.0)" stroke-width="0" />
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="11.0" font-weight="700" fill="rgba(253,251,246,1.0)" text-anchor="middle" dominant-baseline="middle">v1</text>
+</g>
 </g>
 <g transform="translate(40.05 -59.199999999999996) rotate(0.0) scale(1.0 1.0)">
 <circle cx="0" cy="0" r="5.0" stroke="rgba(253,251,246,1.0)" fill="rgba(140,90,43,1.0)" />
@@ -55,17 +63,32 @@
 <g transform="translate(40.05 -77.69999999999999) rotate(0.0) scale(1.0 1.0)">
 <text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="11.0" font-weight="400" fill="rgba(140,123,99,1.0)" text-anchor="middle" dominant-baseline="middle">2023 Q1</text>
 </g>
-<g transform="translate(168.49667968749998 -59.199999999999996) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(181.58001302083335 -59.199999999999996) rotate(0.0) scale(1.0 1.0)">
 <circle cx="0" cy="0" r="5.0" stroke="rgba(253,251,246,1.0)" fill="rgba(79,107,82,1.0)" />
 </g>
-<g transform="translate(168.49667968749998 -77.69999999999999) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(181.58001302083335 -77.69999999999999) rotate(0.0) scale(1.0 1.0)">
 <text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="11.0" font-weight="400" fill="rgba(140,123,99,1.0)" text-anchor="middle" dominant-baseline="middle">2023 Q4</text>
 </g>
-<g transform="translate(342.2451171875 -59.199999999999996) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(381.4951171875 -59.199999999999996) rotate(0.0) scale(1.0 1.0)">
 <circle cx="0" cy="0" r="5.0" stroke="rgba(253,251,246,1.0)" fill="rgba(122,75,107,1.0)" />
 </g>
-<g transform="translate(342.2451171875 -77.69999999999999) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(381.4951171875 -77.69999999999999) rotate(0.0) scale(1.0 1.0)">
 <text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="11.0" font-weight="400" fill="rgba(140,123,99,1.0)" text-anchor="middle" dominant-baseline="middle">2024 Q2</text>
+</g>
+<g transform="translate(0.0 29.299999999999997) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="11.0" font-weight="400" fill="rgba(140,123,99,1.0)" text-anchor="start" dominant-baseline="middle">3 founders</text>
+</g>
+</g>
+<g transform="translate(106.1 29.366666666666667) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="11.0" font-weight="400" fill="rgba(140,123,99,1.0)" text-anchor="start" dominant-baseline="middle">40 design partners</text>
+</g>
+</g>
+<g transform="translate(283.0600260416667 29.366666666666667) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="11.0" font-weight="400" fill="rgba(140,123,99,1.0)" text-anchor="start" dominant-baseline="middle">self-serve</text>
+</g>
 </g>
 </g>
 </svg>

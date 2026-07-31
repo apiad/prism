@@ -64,9 +64,9 @@ Steps, in order. The workhorse: pipelines, processes, decisions.
 type: flow
 title: Ingestion pipeline
 steps:
-  - {id: ingest, label: Ingest, sublabel: S3 + Kafka, icon: database, accent: 0}
-  - {id: verify, label: Verify, sublabel: schema + dedupe, icon: shield-check, accent: 1}
-  - {id: publish, label: Publish, sublabel: warehouse, icon: send, accent: 2}
+  - {id: ingest, label: Ingest, sublabel: S3 + Kafka, icon: database, accent: 0, badge: "1", note: continuous}
+  - {id: verify, label: Verify, sublabel: schema + dedupe, icon: shield-check, accent: 1, badge: "2", note: drops on conflict}
+  - {id: publish, label: Publish, sublabel: warehouse, icon: send, accent: 2, badge: "3", note: nightly}
 ```
 
 See the full field list with `prism schema flow`.
@@ -212,9 +212,9 @@ Chronology, with optional era bands spanning a range of events.
 type: timeline
 title: Product history
 events:
-  - {id: seed, when: 2023 Q1, label: Seed, icon: sprout, accent: 0}
-  - {id: beta, when: 2023 Q4, label: Private beta, icon: flask-conical, accent: 1}
-  - {id: ga, when: 2024 Q2, label: General availability, icon: rocket, accent: 2}
+  - {id: seed, when: 2023 Q1, label: Seed, icon: sprout, accent: 0, note: 3 founders}
+  - {id: beta, when: 2023 Q4, label: Private beta, icon: flask-conical, accent: 1, badge: v0, note: 40 design partners}
+  - {id: ga, when: 2024 Q2, label: General availability, icon: rocket, accent: 2, badge: v1, note: self-serve}
 eras:
   - {label: Pre-revenue, span: [seed, beta], accent: 4}
 ```

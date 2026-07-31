@@ -114,11 +114,21 @@ their call site:
   layout onto the origin. Accepting the token without honouring it would be
   worse than refusing it.
 
-And one of our own: **`Node.badge`, `Node.note`, `GroupSpec` and `Link` are
-declared but never drawn.** They validate and are then silently ignored. Do not
-advertise them in agent-facing docs until a builder actually reads them —
+And one of our own: **`GroupSpec` and `Link` are declared but never drawn.**
+They validate and are then silently ignored. Do not advertise them in
+agent-facing docs until a builder actually reads them —
 `tests/test_docs.py::test_agent_docs_only_advertise_rendered_node_fields` is the
-guard.
+guard. (`Node.badge` and `Node.note` were in this list until 2026-07-31; see
+`docs/specs/2026-07-31-node-badge-and-note-design.md` for how they got out.)
+
+**A note is placed by the archetype, a badge by the node box.** A badge is a
+flow-layout sibling of the label, so the box grows around it and every archetype
+gets one for free. A note must *not* be inside the box — folding it in would
+grow the bounds that `connect()` reads for arrow attachment and that every row
+reads for alignment. `place_note` positions it against `box.bounds()` as a
+sibling of the layout, exactly like a connector. Only `flow` and `timeline`
+place notes today; each archetype declares `supports_note` explicitly and a note
+on one that answers `False` raises rather than vanishing.
 
 ## Know-how index — match your task, then load the doc
 
