@@ -1,0 +1,90 @@
+<svg width="479.63583984375" height="145.16666666666666" viewBox="-239.817919921875 -22.0 479.63583984375 145.16666666666666" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Ingestion pipeline</title>
+<desc>Ingestion pipeline</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(110,110,110,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 50.58333333333333) rotate(0.0) scale(1.0 1.0)">
+<rect x="-239.817919921875" y="-72.58333333333333" width="479.63583984375" height="145.16666666666666" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 8.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="17.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Ingestion pipeline</text>
+</g>
+<g transform="translate(-217.817919921875 62.83333333333333) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(11.0 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-23.833333333333332" width="122.54397786458334" height="47.666666666666664" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(20,20,20,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M3.0 5.0a9.0 3.0 0 1 0 18.0 0a9.0 3.0 0 1 0 -18.0 0ZM3 5V19A9 3 0 0 0 21 19V5M3 12A9 3 0 0 0 21 12" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(52.3048828125 -12.833333333333332) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Ingest</text>
+</g>
+<g transform="translate(0.0 15.666666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="10.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="middle" dominant-baseline="middle">S3 + Kafka</text>
+</g>
+</g>
+</g>
+<g transform="translate(94.17687174479167 -4.666666666666666) rotate(0.0) scale(1.0 1.0)">
+<rect x="-6.367106119791666" y="-8.166666666666666" width="12.734212239583332" height="16.333333333333332" rx="0.0" ry="0.0" fill="rgba(20,20,20,1.0)" stroke="rgba(20,20,20,1.0)" stroke-width="0" />
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="9.0" font-weight="700" fill="rgba(255,255,255,1.0)" text-anchor="middle" dominant-baseline="middle">1</text>
+</g>
+</g>
+<g transform="translate(155.54397786458333 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-23.833333333333332" width="152.54886067708333" height="47.666666666666664" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(74,74,74,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1zM9 12l2 2 4-4" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(67.30732421875 -12.833333333333332) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Verify</text>
+</g>
+<g transform="translate(0.0 15.666666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="10.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="middle" dominant-baseline="middle">schema + dedupe</text>
+</g>
+</g>
+</g>
+<g transform="translate(124.18175455729167 -4.666666666666666) rotate(0.0) scale(1.0 1.0)">
+<rect x="-6.367106119791666" y="-8.166666666666666" width="12.734212239583332" height="16.333333333333332" rx="0.0" ry="0.0" fill="rgba(74,74,74,1.0)" stroke="rgba(74,74,74,1.0)" stroke-width="0" />
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="9.0" font-weight="700" fill="rgba(255,255,255,1.0)" text-anchor="middle" dominant-baseline="middle">2</text>
+</g>
+</g>
+<g transform="translate(330.09283854166665 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-23.833333333333332" width="116.54300130208334" height="47.666666666666664" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11zM21.854 2.147l-10.94 10.939" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(49.30439453125 -12.833333333333332) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Publish</text>
+</g>
+<g transform="translate(0.0 15.666666666666666) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="10.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="middle" dominant-baseline="middle">warehouse</text>
+</g>
+</g>
+</g>
+<g transform="translate(88.17589518229167 -4.666666666666666) rotate(0.0) scale(1.0 1.0)">
+<rect x="-6.367106119791666" y="-8.166666666666666" width="12.734212239583332" height="16.333333333333332" rx="0.0" ry="0.0" fill="rgba(110,110,110,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="0" />
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="9.0" font-weight="700" fill="rgba(255,255,255,1.0)" text-anchor="middle" dominant-baseline="middle">3</text>
+</g>
+</g>
+<path d="M 122.54397786458334 0.0 L 144.54397786458333 0.0" fill="rgba(0,0,0,0.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<path d="M 297.09283854166665 0.0 L 319.09283854166665 0.0" fill="rgba(0,0,0,0.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<g transform="translate(0.0 29.33333333333333) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 4.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="9.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="start" dominant-baseline="middle">continuous</text>
+</g>
+</g>
+<g transform="translate(144.54397786458333 29.33333333333333) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 4.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="9.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="start" dominant-baseline="middle">drops on conflict</text>
+</g>
+</g>
+<g transform="translate(319.09283854166665 29.33333333333333) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 4.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="9.0" font-weight="400" fill="rgba(110,110,110,1.0)" text-anchor="start" dominant-baseline="middle">nightly</text>
+</g>
+</g>
+</g>
+</svg>

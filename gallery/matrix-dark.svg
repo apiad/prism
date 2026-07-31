@@ -1,0 +1,74 @@
+<svg width="234.728515625" height="252.0" viewBox="-117.3642578125 -24.0 234.728515625 252.0" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Revenue by quarter</title>
+<desc>Revenue by quarter</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(148,163,184,1.0)" stroke="rgba(148,163,184,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 102.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-117.3642578125" y="-126.0" width="234.728515625" height="252.0" stroke="rgba(0,0,0,0.0)" fill="rgba(15,23,42,1.0)" />
+</g>
+  <g transform="translate(0.0 10.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="20.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">Revenue by quarter</text>
+</g>
+<g transform="translate(-84.0390625 44.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(19.13818359375 6.5) rotate(0.0) scale(1.0 1.0)">
+
+</g>
+<g transform="translate(76.726806640625 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">Q1</text>
+</g>
+</g>
+<g transform="translate(141.627685546875 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">Q2</text>
+</g>
+</g>
+<g transform="translate(19.13818359375 37.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">EMEA</text>
+</g>
+</g>
+<g transform="translate(76.726806640625 37.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-26.450439453125" y="-12.0" width="52.90087890625" height="37.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(45,212,191,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">1.2M</text>
+</g>
+</g>
+<g transform="translate(141.627685546875 37.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-26.450439453125" y="-12.0" width="52.90087890625" height="37.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(45,212,191,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">1.4M</text>
+</g>
+</g>
+<g transform="translate(19.13818359375 86.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">AMER</text>
+</g>
+</g>
+<g transform="translate(76.726806640625 86.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-26.450439453125" y="-12.0" width="52.90087890625" height="37.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(251,191,36,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">2.1M</text>
+</g>
+</g>
+<g transform="translate(141.627685546875 86.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-26.450439453125" y="-12.0" width="52.90087890625" height="37.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(251,191,36,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">2.6M</text>
+</g>
+</g>
+<g transform="translate(19.13818359375 135.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">APAC</text>
+</g>
+</g>
+<g transform="translate(76.726806640625 141.5) rotate(0.0) scale(1.0 1.0)">
+
+</g>
+<g transform="translate(141.627685546875 135.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-26.450439453125" y="-12.0" width="52.90087890625" height="37.0" rx="6.0" ry="6.0" fill="rgba(15,23,42,1.0)" stroke="rgba(129,140,248,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(226,232,240,1.0)" text-anchor="middle" dominant-baseline="middle">0.8M</text>
+</g>
+</g>
+</g>
+</svg>

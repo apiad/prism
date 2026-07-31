@@ -1,0 +1,84 @@
+<svg width="426.29192660520044" height="385.035292041248" viewBox="-213.14596330260022 -22.0 426.29192660520044 385.035292041248" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Shared platform</title>
+<desc>Shared platform</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(110,110,110,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 170.517646020624) rotate(0.0) scale(1.0 1.0)">
+<rect x="-213.14596330260022" y="-192.517646020624" width="426.29192660520044" height="385.035292041248" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 8.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="17.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Shared platform</text>
+</g>
+<g transform="translate(1.8002929687500284 203.91289062500002) rotate(0.0) scale(1.0 1.0)">
+<path d="M 0 -19.4 L 8.910094786929258e-15 -126.112890625" fill="rgba(0,0,0,0.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2"   />
+<path d="M 59.707060621199915 -19.4 L 87.43629533385021 -28.409774519605296" fill="rgba(0,0,0,0.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2"   />
+<path d="M 14.094925043304 19.4 L 71.43540608451868 98.32240141624797" fill="rgba(0,0,0,0.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2"   />
+<path d="M -14.094925043303997 19.4 L -71.43540608451866 98.32240141624797" fill="rgba(0,0,0,0.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2"   />
+<path d="M -59.70706062119994 -19.4 L -83.83570939635024 -27.239873230532314" fill="rgba(0,0,0,0.0)" stroke="rgba(196,196,196,1.0)" stroke-width="1.2"   />
+<g transform="translate(-57.957617187500006 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="137.915234375" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(20,20,20,1.0)" stroke-width="2.4" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16ZM3.3 7l8.7 5 8.7-5M12 22V12" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(69.1076171875 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Core platform</text>
+</g>
+</g>
+</g>
+<g transform="translate(-39.95468749999999 -145.512890625) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="101.909375" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(20,20,20,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M4.0 5.0h16.0a2.0 2.0 0 0 1 2.0 2.0v10.0a2.0 2.0 0 0 1 -2.0 2.0h-16.0a2.0 2.0 0 0 1 -2.0 -2.0v-10.0a2.0 2.0 0 0 1 2.0 -2.0ZM2.0 10.0L22.0 10.0" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(51.1046875 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Payments</text>
+</g>
+</g>
+</g>
+<g transform="translate(98.43629533385021 -44.96595610374796) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="101.909375" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(74,74,74,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4zM16.0 7.5a0.5 0.5 0 1 0 1.0 0a0.5 0.5 0 1 0 -1.0 0Z" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(51.1046875 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Identity</text>
+</g>
+</g>
+</g>
+<g transform="translate(52.77681550282268 117.72240141624798) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="87.50703125" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(110,110,110,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M21 21l-4.34-4.34M3.0 11.0a8.0 8.0 0 1 0 16.0 0a8.0 8.0 0 1 0 -16.0 0Z" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(43.903515625 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Search</text>
+</g>
+</g>
+</g>
+<g transform="translate(-129.08560456532265 117.72240141624798) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="109.110546875" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(143,143,143,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(54.7052734375 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Messaging</text>
+</g>
+</g>
+</g>
+<g transform="translate(-181.94625627135025 -44.96595610374795) rotate(0.0) scale(1.0 1.0)">
+<rect x="-11.0" y="-19.4" width="109.110546875" height="38.8" rx="0.0" ry="0.0" fill="rgba(255,255,255,1.0)" stroke="rgba(47,47,47,1.0)" stroke-width="1.2" />
+<g transform="translate(8.399999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.6999999999999998) translate(-12.0 -12.0)"><path d="M3 3v16a2 2 0 0 0 2 2h16M19 9l-5 5-4-4-3 3" fill="none" stroke="rgba(20,20,20,1.0)" stroke-width="1.7142857142857146" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(54.7052734375 -6.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Courier New", monospace' font-size="12.0" font-weight="700" fill="rgba(20,20,20,1.0)" text-anchor="middle" dominant-baseline="middle">Analytics</text>
+</g>
+</g>
+</g>
+</g>
+</svg>

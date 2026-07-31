@@ -1,0 +1,54 @@
+<svg width="347.40693675201527" height="333.17683880400966" viewBox="-173.70346837600763 -24.0 347.40693675201527 333.17683880400966" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Editorial loop</title>
+<desc>Editorial loop</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(107,114,128,1.0)" stroke="rgba(107,114,128,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 142.58841940200483) rotate(0.0) scale(1.0 1.0)">
+<rect x="-173.70346837600763" y="-166.58841940200483" width="347.40693675201527" height="333.17683880400966" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 10.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="20.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Editorial loop</text>
+</g>
+<g transform="translate(-0.7204589843750284 185.1) rotate(0.0) scale(1.0 1.0)">
+<path d="M 47.72671905533023 -110.1006825056665 A 197.52203223104428 197.52203223104428 0 0 1 119.77734025730197 7.306761313092741" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<path d="M 66.21651104517868 100.07683880400964 A 191.42116997985605 191.42116997985605 0 0 1 -67.27950295344563 99.36532837130515" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<path d="M -119.69265010165569 8.583094526021606 A 199.02116495201236 199.02116495201236 0 0 1 -47.72671905533022 -110.10068250566651" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<g transform="translate(-27.267724609374994 -120.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="78.53544921875" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(15,118,110,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497zM15 5l4 4" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(39.367724609375 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Draft</text>
+</g>
+</g>
+</g>
+<g transform="translate(69.42216954788265 59.99999999999998) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="93.0017578125" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(180,83,9,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0M9.0 12.0a3.0 3.0 0 1 0 6.0 0a3.0 3.0 0 1 0 -6.0 0Z" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(46.60087890625 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Review</text>
+</g>
+</g>
+</g>
+<g transform="translate(-136.9830093916326 60.00000000000004) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="90.119921875" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(67,56,202,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(45.1599609375 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Revise</text>
+</g>
+</g>
+</g>
+<g transform="translate(0.0 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">A piece</text>
+</g>
+</g>
+</g>
+</svg>

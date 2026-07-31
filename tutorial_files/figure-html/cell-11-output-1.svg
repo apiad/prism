@@ -1,0 +1,48 @@
+<svg width="435.73457031249995" height="199.6" viewBox="-217.86728515624998 -44.0 435.73457031249995 199.6" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Wider gaps, square corners</title>
+<desc>Wider gaps, square corners</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(140,123,99,1.0)" stroke="rgba(140,123,99,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 55.8) rotate(0.0) scale(1.0 1.0)">
+<rect x="-217.86728515624998" y="-99.8" width="435.73457031249995" height="199.6" stroke="rgba(0,0,0,0.0)" fill="rgba(253,251,246,1.0)" />
+</g>
+  <g transform="translate(0.0 11.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="22.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">Wider gaps, square corners</text>
+</g>
+<g transform="translate(-173.86728515624998 88.8) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(13.0 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-13.0" y="-22.799999999999997" width="84.7484375" height="45.599999999999994" rx="0.0" ry="0.0" fill="rgba(253,251,246,1.0)" stroke="rgba(140,90,43,1.0)" stroke-width="1.2" />
+<g transform="translate(9.799999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.8166666666666665) translate(-12.0 -12.0)"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497zM15 5l4 4" fill="none" stroke="rgba(47,37,25,1.0)" stroke-width="1.469387755102041" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(42.424218749999994 -7.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 7.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="14.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">Draft</text>
+</g>
+</g>
+</g>
+<g transform="translate(141.7484375 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-13.0" y="-22.799999999999997" width="95.6380859375" height="45.599999999999994" rx="0.0" ry="0.0" fill="rgba(253,251,246,1.0)" stroke="rgba(79,107,82,1.0)" stroke-width="1.2" />
+<g transform="translate(9.799999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.8166666666666665) translate(-12.0 -12.0)"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0M9.0 12.0a3.0 3.0 0 1 0 6.0 0a3.0 3.0 0 1 0 -6.0 0Z" fill="none" stroke="rgba(47,37,25,1.0)" stroke-width="1.469387755102041" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(47.869042968749994 -7.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 7.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="14.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">Review</text>
+</g>
+</g>
+</g>
+<g transform="translate(281.3865234375 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-13.0" y="-22.799999999999997" width="79.348046875" height="45.599999999999994" rx="0.0" ry="0.0" fill="rgba(253,251,246,1.0)" stroke="rgba(122,75,107,1.0)" stroke-width="1.2" />
+<g transform="translate(9.799999999999999 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.8166666666666665) translate(-12.0 -12.0)"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2zM9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" fill="none" stroke="rgba(47,37,25,1.0)" stroke-width="1.469387755102041" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(39.724023437499994 -7.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 7.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family='"Times New Roman", Times, serif' font-size="14.0" font-weight="700" fill="rgba(47,37,25,1.0)" text-anchor="middle" dominant-baseline="middle">Ship</text>
+</g>
+</g>
+</g>
+<path d="M 84.7484375 0.0 L 128.7484375 0.0" fill="rgba(0,0,0,0.0)" stroke="rgba(140,123,99,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+<path d="M 224.3865234375 0.0 L 268.3865234375 0.0" fill="rgba(0,0,0,0.0)" stroke="rgba(140,123,99,1.0)" stroke-width="1.2"  marker-end="url(#prism-arrow)" />
+</g>
+</svg>

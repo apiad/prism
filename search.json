@@ -1,0 +1,345 @@
+[
+  {
+    "objectID": "tutorial.html",
+    "href": "tutorial.html",
+    "title": "Tutorial",
+    "section": "",
+    "text": "This page is meant to be followed along with. Every diagram below is rendered by prism while this page is built — nothing here is a screenshot, and if any step stopped working the site would fail to build."
+  },
+  {
+    "objectID": "tutorial.html#step-0-install",
+    "href": "tutorial.html#step-0-install",
+    "title": "Tutorial",
+    "section": "Step 0 — install",
+    "text": "Step 0 — install\npip install prism-svg\nThe import name is prism; the distribution is prism-svg because prism was already taken on PyPI. Check it worked:\nprism archetypes\nYou should see ten names. If you have uv, uvx --from prism-svg prism archetypes works without installing anything."
+  },
+  {
+    "objectID": "tutorial.html#step-1-your-first-diagram",
+    "href": "tutorial.html#step-1-your-first-diagram",
+    "title": "Tutorial",
+    "section": "Step 1 — your first diagram",
+    "text": "Step 1 — your first diagram\nA prism spec is YAML. It needs exactly one thing: a type, naming the archetype. Here is the smallest useful diagram there is.\n\nimport prism\n\nspec = \"\"\"\ntype: flow\nsteps:\n  - label: Draft\n  - label: Review\n  - label: Ship\n\"\"\"\n\nprism.diagram(spec)\n\n\n\n\n\n\n\n\nThat is the whole loop: write YAML, get SVG. You never positioned anything — prism chose the box sizes, the spacing, the arrow geometry and the colours.\nSave that YAML to first.yaml and you can do the same from a terminal:\nprism render first.yaml -o first.svg"
+  },
+  {
+    "objectID": "tutorial.html#step-2-give-the-nodes-some-substance",
+    "href": "tutorial.html#step-2-give-the-nodes-some-substance",
+    "title": "Tutorial",
+    "section": "Step 2 — give the nodes some substance",
+    "text": "Step 2 — give the nodes some substance\nEvery archetype in prism consumes the same node shape. Learn it once and it works in all ten. The useful fields are sublabel, icon and accent.\n\nspec = \"\"\"\ntype: flow\nsteps:\n  - label: Draft\n    sublabel: outline + notes\n    icon: pencil\n    accent: 0\n  - label: Review\n    sublabel: two readers\n    icon: eye\n    accent: 1\n  - label: Ship\n    sublabel: to production\n    icon: rocket\n    accent: 2\n\"\"\"\n\nprism.diagram(spec)\n\n\n\n\n\n\n\n\naccent is an index into the theme’s colour ramp, not a colour. That indirection is the point: the theme owns the palette, so the same spec restyles cleanly. There are 1756 icons available (prism icons), all from Lucide."
+  },
+  {
+    "objectID": "tutorial.html#step-3-title-subtitle-caption",
+    "href": "tutorial.html#step-3-title-subtitle-caption",
+    "title": "Tutorial",
+    "section": "Step 3 — title, subtitle, caption",
+    "text": "Step 3 — title, subtitle, caption\nThese live at the top level of the spec, alongside type, because they belong to the diagram rather than to any node.\n\nspec = \"\"\"\ntype: flow\ntitle: Editorial process\nsubtitle: for long-form pieces\ncaption: \"Source: the house style guide\"\nsteps:\n  - {label: Draft, icon: pencil, accent: 0}\n  - {label: Review, icon: eye, accent: 1}\n  - {label: Ship, icon: rocket, accent: 2}\n\"\"\"\n\nprism.diagram(spec)\n\n\n\n\n\n\n\n\nThat inline {label: Draft, icon: pencil} form is ordinary YAML — use whichever style you find more readable."
+  },
+  {
+    "objectID": "tutorial.html#step-4-change-the-direction",
+    "href": "tutorial.html#step-4-change-the-direction",
+    "title": "Tutorial",
+    "section": "Step 4 — change the direction",
+    "text": "Step 4 — change the direction\nMost archetypes take a small number of structural options. flow takes direction.\n\nspec = \"\"\"\ntype: flow\ndirection: down\nsteps:\n  - {label: Draft, icon: pencil, accent: 0}\n  - {label: Review, icon: eye, accent: 1}\n  - {label: Ship, icon: rocket, accent: 2}\n\"\"\"\n\nprism.diagram(spec)"
+  },
+  {
+    "objectID": "tutorial.html#step-5-pick-the-archetype-by-the-shape-of-the-meaning",
+    "href": "tutorial.html#step-5-pick-the-archetype-by-the-shape-of-the-meaning",
+    "title": "Tutorial",
+    "section": "Step 5 — pick the archetype by the shape of the meaning",
+    "text": "Step 5 — pick the archetype by the shape of the meaning\nThis is the one judgement prism asks of you. Not what is this about, but what shape is the idea. The same three-stage editorial process, told as a loop rather than a line, wants cycle:\n\nspec = \"\"\"\ntype: cycle\ntitle: Editorial loop\ncenter: {label: A piece}\nsteps:\n  - {label: Draft, icon: pencil, accent: 0}\n  - {label: Review, icon: eye, accent: 1}\n  - {label: Revise, icon: wrench, accent: 2}\n\"\"\"\n\nprism.diagram(spec)\n\n\n\n\n\n\n\n\nAnd the same content as a judgement about two independent dimensions wants quadrant, where items carry coordinates in 0..1:\n\nspec = \"\"\"\ntype: quadrant\ntitle: What to write next\naxes:\n  x: {label: Effort, low: Low, high: High}\n  y: {label: Reach, low: Narrow, high: Wide}\nquadrant_labels: [Quick posts, Flagship, Notes, Slog]\nitems:\n  - {label: Weekly note, x: 0.15, y: 0.3}\n  - {label: Field guide, x: 0.8, y: 0.85}\n  - {label: Talk writeup, x: 0.45, y: 0.6}\n\"\"\"\n\nprism.diagram(spec)\n\n\n\n\n\n\n\n\nThe catalog shows all ten with the spec that produced each."
+  },
+  {
+    "objectID": "tutorial.html#step-6-hierarchies-the-one-recursive-case",
+    "href": "tutorial.html#step-6-hierarchies-the-one-recursive-case",
+    "title": "Tutorial",
+    "section": "Step 6 — hierarchies, the one recursive case",
+    "text": "Step 6 — hierarchies, the one recursive case\nhierarchy is the only archetype whose data nests, through children. That is data recursion, not template composition — you still cannot put one archetype inside another.\n\nspec = \"\"\"\ntype: hierarchy\ntitle: A book\nroot:\n  label: Manuscript\n  icon: book\n  children:\n    - label: Part I\n      children:\n        - {label: Chapter 1}\n        - {label: Chapter 2}\n    - label: Part II\n      children:\n        - {label: Chapter 3}\n\"\"\"\n\nprism.diagram(spec)"
+  },
+  {
+    "objectID": "tutorial.html#step-7-switch-the-theme",
+    "href": "tutorial.html#step-7-switch-the-theme",
+    "title": "Tutorial",
+    "section": "Step 7 — switch the theme",
+    "text": "Step 7 — switch the theme\nAdd one line. Nothing else about the spec changes.\n\nspec = \"\"\"\ntype: flow\ntheme: dark\ntitle: Editorial process\nsteps:\n  - {label: Draft, icon: pencil, accent: 0}\n  - {label: Review, icon: eye, accent: 1}\n  - {label: Ship, icon: rocket, accent: 2}\n\"\"\"\n\nprism.diagram(spec)\n\n\n\n\n\n\n\n\nFour themes ship: default, dark, paper and mono. paper is the one to reach for in print — serif typography, warm surface, hairline strokes:\n\nprism.diagram(spec.replace(\"theme: dark\", \"theme: paper\"))"
+  },
+  {
+    "objectID": "tutorial.html#step-8-nudge-a-single-token",
+    "href": "tutorial.html#step-8-nudge-a-single-token",
+    "title": "Tutorial",
+    "section": "Step 8 — nudge a single token",
+    "text": "Step 8 — nudge a single token\nYou rarely need a whole new theme to change one thing. tokens: overrides individual theme values by dotted path.\n\nspec = \"\"\"\ntype: flow\ntheme: paper\ntokens:\n  geometry.radius: 0\n  geometry.gap: 44\ntitle: Wider gaps, square corners\nsteps:\n  - {label: Draft, icon: pencil, accent: 0}\n  - {label: Review, icon: eye, accent: 1}\n  - {label: Ship, icon: rocket, accent: 2}\n\"\"\"\n\nprism.diagram(spec)\n\n\n\n\n\n\n\n\nA mistyped path fails loudly rather than being ignored — try geometry.radiuss and prism will tell you what it expected."
+  },
+  {
+    "objectID": "tutorial.html#step-9-your-own-theme",
+    "href": "tutorial.html#step-9-your-own-theme",
+    "title": "Tutorial",
+    "section": "Step 9 — your own theme",
+    "text": "Step 9 — your own theme\nFor a whole document set you want a theme file of your own. Scaffold one:\nprism new-theme house\nThat writes house.yaml here, copied from the default theme and already carrying its new name. Start from whichever bundled theme is closest:\nprism new-theme house --from paper      # start from the print theme\nprism new-theme house -o themes/house.yaml\nThe file opens with a comment explaining the two rules you have to respect, so you do not have to remember them. Then point any spec at it:\ntype: flow\ntheme: ./house.yaml\nsteps:\n  - {label: Draft}\nEdit the tokens and every diagram that references the file restyles at once.\nThe two rules, since they surprise people: typography.family must be grotesque, serif or mono, and typography.weight values must be 400 or 700. Those are exactly the fonts and weights whose metrics prism has vendored. Anything else would mean measuring text against a font your reader does not have, and labels would overflow their boxes. prism new-theme validates the file it writes, so a bad edit fails when you next render rather than producing a quietly broken picture."
+  },
+  {
+    "objectID": "tutorial.html#step-10-when-something-is-wrong",
+    "href": "tutorial.html#step-10-when-something-is-wrong",
+    "title": "Tutorial",
+    "section": "Step 10 — when something is wrong",
+    "text": "Step 10 — when something is wrong\nprism’s errors are written to be acted on. Each names the bad value and points at the valid neighbours.\n\nprism.render_str(\"\"\"\ntype: flow\nsteps:\n  - {label: Draft, icon: pencl}\n\"\"\")\n\n\n---------------------------------------------------------------------------\nUnknownIcon                               Traceback (most recent call last)\nCell In[11], line 1\n----&gt; 1 prism.render_str(\"\"\"\n      2 type: flow\n      3 steps:\n      4   - {label: Draft, icon: pencl}\n\nFile ~/work/prism/prism/prism/__init__.py:89, in render_str(source)\n     87 saved, _TGroup.stack = _TGroup.stack, []\n     88 try:\n---&gt; 89     canvas = frame(archetype.build(spec, ctx), envelope, ctx)\n     90     svg = canvas._repr_svg_()\n     91 finally:\n\nFile ~/work/prism/prism/prism/archetypes/flow/build.py:25, in FlowArchetype.build(self, spec, ctx)\n     23 def build(self, spec: FlowSpec, ctx: RenderContext) -&gt; Group:\n     24     theme = ctx.theme\n---&gt; 25     boxes = [build_node_box(step, ctx) for step in spec.steps]\n     27     if spec.direction == \"right\":\n     28         spine = RowLayout(boxes, align=\"middle\", gap=theme.geometry.gap)\n\nFile ~/work/prism/prism/prism/nodebox.py:109, in build_node_box(node, ctx, max_width)\n    106 body: Group = ColumnLayout(stack, align=\"middle\", gap=theme.geometry.gap / 6)\n    108 if node.icon:\n--&gt; 109     glyph = build_icon(\n    110         node.icon,\n    111         size=theme.size(\"label\") * 1.4,\n    112         color=ink,\n    113         stroke=theme.geometry.stroke,\n    114     )\n    115     body = RowLayout([glyph, body], align=\"middle\", gap=theme.geometry.pad / 2)\n    117 badge = build_badge(node, ctx)\n\nFile ~/work/prism/prism/prism/icons.py:68, in build_icon(name, size, color, stroke)\n     66 def build_icon(name: str, size: float, color: Color, stroke: float) -&gt; IconShape:\n     67     \"\"\"Return the named icon as a shape, scaled to `size` and centred on origin.\"\"\"\n---&gt; 68     return IconShape(name, size, color, stroke)\n\nFile ~/work/prism/prism/prism/icons.py:44, in IconShape.__init__(self, name, size, color, stroke)\n     42 data = _icons()\n     43 if name not in data:\n---&gt; 44     raise UnknownIcon(name, data)\n     45 super().__init__(fill=Colors.Transparent, stroke=color, width=stroke)\n     46 self.name = name\n\nUnknownIcon: unknown icon 'pencl' — did you mean: pencil, pen, pencil-off?\n\n\n\nThe same holds for unknown archetypes, unknown theme tokens, and dangling references such as a matrix cell naming a row that does not exist."
+  },
+  {
+    "objectID": "tutorial.html#step-11-put-it-in-your-own-quarto-document",
+    "href": "tutorial.html#step-11-put-it-in-your-own-quarto-document",
+    "title": "Tutorial",
+    "section": "Step 11 — put it in your own Quarto document",
+    "text": "Step 11 — put it in your own Quarto document\nEverything above is a real Quarto page. The pattern is:\n```{python}\n#| label: fig-process\n#| fig-cap: \"The editorial process\"\n#| echo: false\nimport prism\nprism.diagram(\"figures/process.yaml\")\n```\nprism.diagram() accepts a path or a spec string and returns an object that knows how to display itself, so Quarto embeds the SVG directly — no intermediate file and no rasterisation. See In Quarto for PDF output and batch rendering."
+  },
+  {
+    "objectID": "tutorial.html#where-to-go-next",
+    "href": "tutorial.html#where-to-go-next",
+    "title": "Tutorial",
+    "section": "Where to go next",
+    "text": "Where to go next\n\nThe catalog — all ten archetypes and their fields.\nThemes — every archetype in every theme, side by side.\nFor agents — if you are wiring prism up to a language model.\n\nAnd when you want a field prism does not have, prism schema &lt;archetype&gt; is the authoritative answer on what a given archetype accepts."
+  },
+  {
+    "objectID": "quarto.html",
+    "href": "quarto.html",
+    "title": "In Quarto",
+    "section": "",
+    "text": "prism was built with books in mind as much as agents. Diagrams are SVG, so they stay sharp at any size, keep their text selectable and searchable, and diff sensibly in git."
+  },
+  {
+    "objectID": "quarto.html#the-short-version",
+    "href": "quarto.html#the-short-version",
+    "title": "In Quarto",
+    "section": "The short version",
+    "text": "The short version\nprism results render themselves in any IPython-compatible environment, which includes Quarto’s Jupyter engine. Return the object from a code cell:\n```{python}\n#| label: fig-pipeline\n#| fig-cap: \"The ingestion pipeline\"\n#| echo: false\nimport prism\nprism.diagram(\"pipeline.yaml\")\n```\nprism.diagram() returns an object with a _repr_svg_, so Quarto embeds the SVG inline — no intermediate file, no rasterisation."
+  },
+  {
+    "objectID": "quarto.html#writing-the-spec-inline",
+    "href": "quarto.html#writing-the-spec-inline",
+    "title": "In Quarto",
+    "section": "Writing the spec inline",
+    "text": "Writing the spec inline\nFor a one-off figure it is often clearest to keep the spec in the document:\n```{python}\n#| echo: false\nimport prism\nprism.diagram(\"\"\"\ntype: cycle\ntitle: Build-measure-learn\ncenter: {label: Kaizen}\nsteps:\n  - {label: Build, icon: hammer, accent: 0}\n  - {label: Measure, icon: gauge, accent: 1}\n  - {label: Learn, icon: lightbulb, accent: 2}\n\"\"\")\n```"
+  },
+  {
+    "objectID": "quarto.html#matching-the-documents-theme",
+    "href": "quarto.html#matching-the-documents-theme",
+    "title": "In Quarto",
+    "section": "Matching the document’s theme",
+    "text": "Matching the document’s theme\nPoint theme: at a YAML file next to your manuscript and every figure in the book picks up the same palette and typography:\ntype: flow\ntheme: ../theme/house.yaml\nsteps:\n  - {label: Draft}\n  - {label: Review}\n  - {label: Ship}\nThe bundled paper theme is a reasonable starting point for print: serif typography, warm surface, square corners, hairline strokes."
+  },
+  {
+    "objectID": "quarto.html#rendering-to-pdf",
+    "href": "quarto.html#rendering-to-pdf",
+    "title": "In Quarto",
+    "section": "Rendering to PDF",
+    "text": "Rendering to PDF\nQuarto’s Typst and LaTeX paths both accept SVG figures. Because prism paints its own surface colour, a figure keeps its intended background rather than inheriting the page.\nOne caveat worth stating plainly: prism measures text against the metrics of Arial, Times New Roman and Courier New. Those have metric-compatible clones almost everywhere (Helvetica on macOS; Liberation or Croscore on Linux), so boxes fit. If you override typography.family with a font prism has not measured, expect looser boxes — see Themes."
+  },
+  {
+    "objectID": "quarto.html#batch-rendering",
+    "href": "quarto.html#batch-rendering",
+    "title": "In Quarto",
+    "section": "Batch rendering",
+    "text": "Batch rendering\nFor a manuscript with many figures, render them all ahead of the build:\nfor spec in figures/*.yaml; do\n  prism render \"$spec\" -o \"figures/$(basename \"${spec%.yaml}\").svg\"\ndone\nThe same approach builds this site’s gallery — see scripts/build_gallery.py in the repository, which renders every bundled example in every bundled theme and generates the Catalog and Themes pages from the result. Documentation that is generated from the examples cannot drift from them."
+  },
+  {
+    "objectID": "catalog.html",
+    "href": "catalog.html",
+    "title": "Catalog",
+    "section": "",
+    "text": "prism ships 10 archetypes. Each one is opinionated: you describe the meaning of the picture and prism decides the geometry, spacing and colour.\nEvery diagram below is generated from the YAML shown beside it, by the same code path the library exposes. If an example stopped rendering, this page could not be built."
+  },
+  {
+    "objectID": "catalog.html#comparison",
+    "href": "catalog.html#comparison",
+    "title": "Catalog",
+    "section": "comparison",
+    "text": "comparison\nSide-by-side columns. Add criteria to align the rows.\n\ntype: comparison\ntitle: Build versus buy\ncriteria: [Time to value, Ongoing cost, Control]\ncolumns:\n  - header: {label: Build, icon: hammer}\n    items:\n      - {label: 6-9 months}\n      - {label: Engineering time}\n      - {label: Total}\n  - header: {label: Buy, icon: shopping-cart}\n    items:\n      - {label: 2 weeks}\n      - {label: Subscription}\n      - {label: Vendor roadmap}\nSee the full field list with prism schema comparison."
+  },
+  {
+    "objectID": "catalog.html#cycle",
+    "href": "catalog.html#cycle",
+    "title": "Catalog",
+    "section": "cycle",
+    "text": "cycle\nA closed loop. Iterative processes that return to their start.\n\ntype: cycle\ntitle: Build-measure-learn\ncenter: {label: Kaizen}\nsteps:\n  - {label: Build, icon: hammer, accent: 0}\n  - {label: Measure, icon: gauge, accent: 1}\n  - {label: Learn, icon: lightbulb, accent: 2}\nSee the full field list with prism schema cycle."
+  },
+  {
+    "objectID": "catalog.html#flow",
+    "href": "catalog.html#flow",
+    "title": "Catalog",
+    "section": "flow",
+    "text": "flow\nSteps, in order. The workhorse: pipelines, processes, decisions.\n\ntype: flow\ntitle: Ingestion pipeline\nsteps:\n  - {id: ingest, label: Ingest, sublabel: S3 + Kafka, icon: database, accent: 0, badge: \"1\", note: continuous}\n  - {id: verify, label: Verify, sublabel: schema + dedupe, icon: shield-check, accent: 1, badge: \"2\", note: drops on conflict}\n  - {id: publish, label: Publish, sublabel: warehouse, icon: send, accent: 2, badge: \"3\", note: nightly}\nSee the full field list with prism schema flow."
+  },
+  {
+    "objectID": "catalog.html#hierarchy",
+    "href": "catalog.html#hierarchy",
+    "title": "Catalog",
+    "section": "hierarchy",
+    "text": "hierarchy\nA tree — org charts, decomposition, taxonomies. The one archetype whose data is recursive.\n\ntype: hierarchy\ntitle: System decomposition\nroot:\n  label: Platform\n  icon: box\n  children:\n    - label: API\n      icon: server\n      children:\n        - {label: Auth}\n        - {label: Billing}\n    - label: Web\n      icon: globe\n      children:\n        - {label: Dashboard}\nSee the full field list with prism schema hierarchy."
+  },
+  {
+    "objectID": "catalog.html#hub",
+    "href": "catalog.html#hub",
+    "title": "Catalog",
+    "section": "hub",
+    "text": "hub\nA centre and its spokes.\n\ntype: hub\ntitle: Shared platform\ncenter: {label: Core platform, icon: box}\nspokes:\n  - {label: Payments, icon: credit-card, accent: 0}\n  - {label: Identity, icon: key-round, accent: 1}\n  - {label: Search, icon: search, accent: 2}\n  - {label: Messaging, icon: message-circle, accent: 3}\n  - {label: Analytics, icon: chart-line, accent: 4}\nSee the full field list with prism schema hub."
+  },
+  {
+    "objectID": "catalog.html#matrix",
+    "href": "catalog.html#matrix",
+    "title": "Catalog",
+    "section": "matrix",
+    "text": "matrix\nRow and column headers with sparse cells.\n\ntype: matrix\ntitle: Revenue by quarter\nrows:\n  - {id: emea, label: EMEA}\n  - {id: amer, label: AMER}\n  - {id: apac, label: APAC}\ncolumns:\n  - {id: q1, label: Q1}\n  - {id: q2, label: Q2}\ncells:\n  - {row: emea, column: q1, label: 1.2M, accent: 0}\n  - {row: emea, column: q2, label: 1.4M, accent: 0}\n  - {row: amer, column: q1, label: 2.1M, accent: 1}\n  - {row: amer, column: q2, label: 2.6M, accent: 1}\n  - {row: apac, column: q2, label: 0.8M, accent: 2}\nSee the full field list with prism schema matrix."
+  },
+  {
+    "objectID": "catalog.html#pyramid",
+    "href": "catalog.html#pyramid",
+    "title": "Catalog",
+    "section": "pyramid",
+    "text": "pyramid\nLayered magnitude. Give the levels value and it reads as a funnel.\n\ntype: pyramid\ntitle: Needs\nlevels:\n  - {label: Self-actualisation}\n  - {label: Esteem}\n  - {label: Belonging}\n  - {label: Safety}\n  - {label: Physiological}\nSee the full field list with prism schema pyramid."
+  },
+  {
+    "objectID": "catalog.html#quadrant",
+    "href": "catalog.html#quadrant",
+    "title": "Catalog",
+    "section": "quadrant",
+    "text": "quadrant\nA 2x2 field with named axes and items placed by coordinate.\n\ntype: quadrant\ntitle: Effort versus impact\naxes:\n  x: {label: Effort, low: Low, high: High}\n  y: {label: Impact, low: Low, high: High}\nquadrant_labels: [Quick wins, Big bets, Fill-ins, Thankless]\nitems:\n  - {label: Search rewrite, x: 0.8, y: 0.85}\n  - {label: Dark mode, x: 0.2, y: 0.7}\n  - {label: Log cleanup, x: 0.25, y: 0.2}\n  - {label: Legacy migration, x: 0.85, y: 0.25}\nSee the full field list with prism schema quadrant."
+  },
+  {
+    "objectID": "catalog.html#stack",
+    "href": "catalog.html#stack",
+    "title": "Catalog",
+    "section": "stack",
+    "text": "stack\nTiers, drawn as full-width bars, with optional side annotations.\n\ntype: stack\ntitle: Platform tiers\nlayers:\n  - {label: Application, sublabel: product surfaces, side: L7}\n  - {label: Services, sublabel: domain APIs, side: L5}\n  - {label: Data, sublabel: warehouse + lake, side: L3}\n  - {label: Infrastructure, sublabel: compute + network, side: L1}\nSee the full field list with prism schema stack."
+  },
+  {
+    "objectID": "catalog.html#timeline",
+    "href": "catalog.html#timeline",
+    "title": "Catalog",
+    "section": "timeline",
+    "text": "timeline\nChronology, with optional era bands spanning a range of events.\n\ntype: timeline\ntitle: Product history\nevents:\n  - {id: seed, when: 2023 Q1, label: Seed, icon: sprout, accent: 0, note: 3 founders}\n  - {id: beta, when: 2023 Q4, label: Private beta, icon: flask-conical, accent: 1, badge: v0, note: 40 design partners}\n  - {id: ga, when: 2024 Q2, label: General availability, icon: rocket, accent: 2, badge: v1, note: self-serve}\neras:\n  - {label: Pre-revenue, span: [seed, beta], accent: 4}\nSee the full field list with prism schema timeline."
+  },
+  {
+    "objectID": "agents.html",
+    "href": "agents.html",
+    "title": "For agents",
+    "section": "",
+    "text": "prism is built to be driven by a language model. The agent does the part models are good at — reading prose and deciding what shape the idea has — and prism does the part models are bad at: geometry, spacing, alignment and colour.\nprism itself never calls a model. It is deterministic: the same spec always produces byte-identical SVG."
+  },
+  {
+    "objectID": "agents.html#the-envelope",
+    "href": "agents.html#the-envelope",
+    "title": "For agents",
+    "section": "The envelope",
+    "text": "The envelope\nEvery spec is a YAML mapping whose top-level type selects an archetype.\ntype: flow                   # required — one of the ten archetypes\ntheme: default               # bundled name, or a path to your own YAML\ntitle: \"Ingestion pipeline\"  # optional\nsubtitle: \"as of Q3\"         # optional\ncaption: \"Source: review\"    # optional\nwidth: 900                   # layout hint in px; height follows the content\ntokens:                      # optional per-spec theme overrides, dotted paths\n  palette.ink: \"#0b1020\"\nEverything else in the mapping is the archetype’s own payload."
+  },
+  {
+    "objectID": "agents.html#the-shared-node",
+    "href": "agents.html#the-shared-node",
+    "title": "For agents",
+    "section": "The shared node",
+    "text": "The shared node\nEvery archetype consumes the same node shape. This is the vocabulary worth memorising, because it is the same in all ten:\nid: ingest                 # optional; needed only when something references it\nlabel: \"Ingest\"            # required\nsublabel: \"S3 + Kafka\"     # optional\nicon: database             # optional; a Lucide icon name\nbadge: \"1\"                 # optional; at most 4 characters\naccent: 2                  # optional; ramp index 0-5, or a palette token name\nemphasis: normal           # strong | normal | muted\nnote: \"runs nightly\"       # optional; `flow` and `timeline` only\nA badge is a short marker — a step number, a version, a count — drawn as a filled pill inside the top-right of the node. Four characters is the cap, so it never wraps. Every archetype that draws a node box draws its badge.\nA note is a marginal annotation: muted, small, and set outside the node, below it in a left-to-right layout and beside it in a top-down one. Only flow and timeline have a free margin to put one in; on the other eight archetypes a note raises an error rather than being silently dropped, so an agent that emits one gets told instead of shipping a picture that quietly lost it. Fold the text into sublabel there."
+  },
+  {
+    "objectID": "agents.html#getting-the-schema",
+    "href": "agents.html#getting-the-schema",
+    "title": "For agents",
+    "section": "Getting the schema",
+    "text": "Getting the schema\nprism schema flow\nemits JSON Schema for the archetype’s payload, suitable for structured output or a tool definition. Every archetype rejects unknown fields, so a typo fails loudly at validation rather than silently rendering the wrong picture."
+  },
+  {
+    "objectID": "agents.html#icons",
+    "href": "agents.html#icons",
+    "title": "For agents",
+    "section": "Icons",
+    "text": "Icons\nprism vendors all 1756 Lucide icons. That is far too many for a model to choose from reliably, so use this shortlist and reach for prism icons only when nothing here fits:\nactivity triangle-alert archive bell book box brain briefcase building calendar chart-line check circle-check clock cloud code cog compass cpu credit-card database eye file-text funnel flag flask-conical folder gauge git-branch globe hammer heart key-round layers lightbulb link lock mail map-pin message-circle package pencil phone chart-pie play plug rocket search send server settings shield shield-check shopping-cart sparkles sprout star target terminal trending-up truck upload users wallet wrench zap\nAn unknown icon name fails with a suggestion rather than rendering a blank."
+  },
+  {
+    "objectID": "agents.html#errors-are-part-of-the-interface",
+    "href": "agents.html#errors-are-part-of-the-interface",
+    "title": "For agents",
+    "section": "Errors are part of the interface",
+    "text": "Errors are part of the interface\nprism’s exceptions are written for a recovery loop, not for a stack trace. Each one names the offending value and points at the valid neighbours:\nunknown icon 'databse' — did you mean: database, data-flow?\nunknown archetype 'flowchart' — did you mean: flow?\nunknown token 'palette.inc' — did you mean: palette.ink, palette.line?\ncell references unknown row 'emae'; known rows: ['emea', 'amer', 'apac']\nera 'Pre-revenue' spans unknown event id(s) ['sed']; known ids: ['seed', 'beta']\nAn agent’s ability to fix its own output is bounded by the quality of the error string, so this is treated as a feature surface rather than as diagnostics."
+  },
+  {
+    "objectID": "agents.html#choosing-an-archetype",
+    "href": "agents.html#choosing-an-archetype",
+    "title": "For agents",
+    "section": "Choosing an archetype",
+    "text": "Choosing an archetype\nThe decision is about the shape of the meaning, not the subject matter:\n\n\n\nIf the content is…\nUse\n\n\n\n\nordered steps, a process, a pipeline\nflow\n\n\ncontainment or reporting structure\nhierarchy\n\n\na process that returns to its start\ncycle\n\n\nevents in time\ntimeline\n\n\ntwo or more options weighed against each other\ncomparison\n\n\nitems placed against two independent dimensions\nquadrant\n\n\nlayers of magnitude, or stages that shed volume\npyramid\n\n\ntiers of a system, bottom to top\nstack\n\n\none centre with several dependents\nhub\n\n\nvalues at the intersection of two lists\nmatrix\n\n\n\nWhen two fit, prefer the one with fewer nodes on screen."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "prism",
+    "section": "",
+    "text": "prism turns a short YAML spec into a single, well-designed SVG diagram. You describe what the picture means; prism decides the geometry, spacing, typography and colour."
+  },
+  {
+    "objectID": "index.html#why-this-exists",
+    "href": "index.html#why-this-exists",
+    "title": "prism",
+    "section": "Why this exists",
+    "text": "Why this exists\nDiagram-as-code tools — Mermaid, PlantUML, D2, Graphviz — model graph topology. They are very good at that. But a great many explanatory pictures are not graphs: pyramids, funnels, quadrants, timelines, comparisons, radial hubs. Those tools have no vocabulary for them, and theming is an afterthought, so the output reads as an engineering diagram rather than an explainer.\nAt the other end, tools like Napkin AI have exactly that vocabulary but ship it as closed SaaS with no library surface.\nprism is the missing middle: an open, template-rich, themeable, agent-first library that takes a declarative spec and renders a designed picture."
+  },
+  {
+    "objectID": "index.html#design-in-three-sentences",
+    "href": "index.html#design-in-three-sentences",
+    "title": "prism",
+    "section": "Design in three sentences",
+    "text": "Design in three sentences\nOne spec, one diagram. No multi-diagram documents, no charts, no prose-to-diagram — prism never calls a language model. An agent (or a person) writes the spec; prism deterministically renders it.\nDeep templates, no nesting. Complexity lives inside an archetype — rich typed nodes, swimlanes, era bands, axes — plus one generic groups: construct. Recursive schemas are where small models fail, and good-looking nesting needs per-combination tuning that never converges.\nThemes are data. A theme is a token set in YAML. Archetypes read tokens only; a literal colour inside an archetype is a bug."
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "prism",
+    "section": "Install",
+    "text": "Install\npip install prism-svg      # import name is `prism`\nIts only runtime dependencies are tesserax (pure-Python SVG and layout), PyYAML and pydantic."
+  },
+  {
+    "objectID": "index.html#use-it",
+    "href": "index.html#use-it",
+    "title": "prism",
+    "section": "Use it",
+    "text": "Use it\nimport prism\n\nprism.render(\"pipeline.yaml\", \"pipeline.svg\")\nsvg = prism.render_str(spec_text)          # returns the SVG as a string\nprism render spec.yaml -o out.svg\nprism archetypes                # list the catalog\nprism themes                    # list bundled themes\nprism icons                     # list available icon names\nprism schema flow               # JSON Schema, for tool calling\nIn a notebook or a Quarto document, the result renders inline — see In Quarto."
+  },
+  {
+    "objectID": "index.html#whats-here",
+    "href": "index.html#whats-here",
+    "title": "prism",
+    "section": "What’s here",
+    "text": "What’s here\n\nCatalog — all ten archetypes, each with the spec that produced it.\nThemes — the four bundled themes, and how to write your own.\nFor agents — the closed vocabulary, JSON Schema, and error design."
+  },
+  {
+    "objectID": "index.html#one-detail-worth-knowing",
+    "href": "index.html#one-detail-worth-knowing",
+    "title": "prism",
+    "section": "One detail worth knowing",
+    "text": "One detail worth knowing\nEvery label in a prism diagram is measured against vendored font metrics before its box is drawn. That sounds like a footnote; it is the difference between a diagram and a mess. The usual shortcut — estimating text width as characters x size x 0.6 — is wrong by +116% on lllll and −28% on MMMMM, so boxes come out either absurdly padded or overflowing their borders.\nprism vendors advance-width tables for the three font stacks that have metric-compatible clones on every platform (Arial, Times New Roman, Courier New), wraps text itself, and hands true bounds to the layout engine. That is also why typography.family and typography.weight are restricted: prism only offers what it can measure."
+  },
+  {
+    "objectID": "themes.html",
+    "href": "themes.html",
+    "title": "Themes",
+    "section": "",
+    "text": "A theme is data, not code — a token set in YAML covering palette, typography and geometry. Archetypes read tokens only; a literal colour anywhere in an archetype is a bug.\nBecause the tokens are semantic (ink, surface, muted) rather than literal (black, white), dark mode falls out for free.\nAny spec can also override individual tokens inline by dotted path:\nOr point theme: at your own YAML file, which is how you brand a whole document set."
+  },
+  {
+    "objectID": "themes.html#the-bundled-themes",
+    "href": "themes.html#the-bundled-themes",
+    "title": "Themes",
+    "section": "The bundled themes",
+    "text": "The bundled themes\n\n\n\n\ndark\n\n\n\n\n\ndefault\n\n\n\n\n\nmono\n\n\n\n\n\npaper"
+  },
+  {
+    "objectID": "themes.html#the-same-catalog-themed",
+    "href": "themes.html#the-same-catalog-themed",
+    "title": "Themes",
+    "section": "The same catalog, themed",
+    "text": "The same catalog, themed\nEvery archetype renders in every theme. A few, side by side:\n\nhierarchy\n\n\n\n\ndark\n\n\n\n\n\ndefault\n\n\n\n\n\nmono\n\n\n\n\n\npaper\n\n\n\n\n\npyramid\n\n\n\n\ndark\n\n\n\n\n\ndefault\n\n\n\n\n\nmono\n\n\n\n\n\npaper\n\n\n\n\n\nquadrant\n\n\n\n\ndark\n\n\n\n\n\ndefault\n\n\n\n\n\nmono\n\n\n\n\n\npaper"
+  },
+  {
+    "objectID": "themes.html#writing-your-own",
+    "href": "themes.html#writing-your-own",
+    "title": "Themes",
+    "section": "Writing your own",
+    "text": "Writing your own\nScaffold a theme file from whichever bundled theme is closest:\nprism new-theme house                 # from `default`\nprism new-theme house --from paper    # from the print theme\nprism new-theme house -o themes/house.yaml\nThen point a spec at it with theme: ./house.yaml. The generated file carries a header explaining the two constraints, which are enforced at load time:\n\ntypography.family must be grotesque, serif or mono — the three stacks whose font metrics prism vendors.\ntypography.weight.* must be 400 or 700, for the same reason. A weight prism has not measured would be synthesised by the viewer at a width prism never accounted for, and labels would overflow their boxes."
+  }
+]

@@ -1,0 +1,89 @@
+<svg width="394.7822265625" height="281.2" viewBox="-197.39111328125 -24.0 394.7822265625 281.2" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Build versus buy</title>
+<desc>Build versus buy</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(107,114,128,1.0)" stroke="rgba(107,114,128,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 116.6) rotate(0.0) scale(1.0 1.0)">
+<rect x="-197.39111328125" y="-140.6" width="394.7822265625" height="281.2" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 10.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="20.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Build versus buy</text>
+</g>
+<g transform="translate(-173.39111328125 44.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(33.013427734375 21.1) rotate(0.0) scale(1.0 1.0)">
+
+</g>
+<g transform="translate(114.410009765625 21.1) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="80.69365234375" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(15,118,110,1.0)" stroke-width="3.0" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M15 12l-9.373 9.373a1 1 0 0 1-3.001-3L12 9M18 15l4-4M21.5 11.5l-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(40.446826171875 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Build</text>
+</g>
+</g>
+</g>
+<g transform="translate(258.75498046875 21.1) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="72.75908203125" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(180,83,9,1.0)" stroke-width="3.0" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M7.0 21.0a1.0 1.0 0 1 0 2.0 0a1.0 1.0 0 1 0 -2.0 0ZM18.0 21.0a1.0 1.0 0 1 0 2.0 0a1.0 1.0 0 1 0 -2.0 0ZM2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(36.479541015625 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Buy</text>
+</g>
+</g>
+</g>
+<g transform="translate(33.013427734375 67.2) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="11.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">Time to value</text>
+</g>
+</g>
+<g transform="translate(142.7568359375 66.2) rotate(0.0) scale(1.0 1.0)">
+<rect x="-46.6708984375" y="-12.0" width="93.341796875" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">6-9 months</text>
+</g>
+</g>
+<g transform="translate(283.134521484375 66.2) rotate(0.0) scale(1.0 1.0)">
+<rect x="-36.936767578125" y="-12.0" width="73.87353515625" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">2 weeks</text>
+</g>
+</g>
+<g transform="translate(33.013427734375 116.2) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="11.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">Ongoing cost</text>
+</g>
+</g>
+<g transform="translate(142.7568359375 115.2) rotate(0.0) scale(1.0 1.0)">
+<rect x="-64.72998046875" y="-12.0" width="129.4599609375" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Engineering time</text>
+</g>
+</g>
+<g transform="translate(283.134521484375 115.2) rotate(0.0) scale(1.0 1.0)">
+<rect x="-51.7236328125" y="-12.0" width="103.447265625" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Subscription</text>
+</g>
+</g>
+<g transform="translate(33.013427734375 165.2) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 5.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="11.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">Control</text>
+</g>
+</g>
+<g transform="translate(142.7568359375 164.2) rotate(0.0) scale(1.0 1.0)">
+<rect x="-27.5263671875" y="-12.0" width="55.052734375" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Total</text>
+</g>
+</g>
+<g transform="translate(283.134521484375 164.2) rotate(0.0) scale(1.0 1.0)">
+<rect x="-63.647705078125" y="-12.0" width="127.29541015625" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Vendor roadmap</text>
+</g>
+</g>
+</g>
+</svg>

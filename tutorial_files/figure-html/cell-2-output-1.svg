@@ -1,0 +1,30 @@
+<svg width="271.3017578125" height="85.0" viewBox="-24.0 -24.0 271.3017578125 85.0" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>flow diagram</title>
+<desc>flow diagram</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(107,114,128,1.0)" stroke="rgba(107,114,128,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(111.65087890625 18.5) rotate(0.0) scale(1.0 1.0)">
+<rect x="-135.65087890625" y="-42.5" width="271.3017578125" height="85.0" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 12.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(27.167724609375 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-27.167724609375" y="-12.0" width="54.33544921875" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Draft</text>
+</g>
+</g>
+<g transform="translate(112.736328125 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-34.40087890625" y="-12.0" width="68.8017578125" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Review</text>
+</g>
+</g>
+<g transform="translate(197.219482421875 0.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-26.082275390625" y="-12.0" width="52.16455078125" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Ship</text>
+</g>
+</g>
+<path d="M 54.33544921875 6.5 L 78.33544921875 6.5" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<path d="M 147.13720703125 6.5 L 171.13720703125 6.5" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+</g>
+</svg>

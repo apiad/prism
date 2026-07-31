@@ -1,0 +1,59 @@
+<svg width="347.8798828125" height="285.0" viewBox="-173.93994140625 -24.0 347.8798828125 285.0" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>A book</title>
+<desc>A book</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(107,114,128,1.0)" stroke="rgba(107,114,128,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 118.5) rotate(0.0) scale(1.0 1.0)">
+<rect x="-173.93994140625" y="-142.5" width="347.8798828125" height="285.0" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 10.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="20.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">A book</text>
+</g>
+<g transform="translate(0.0 44.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(-46.7708984375 21.1) rotate(0.0) scale(1.0 1.0)">
+<rect x="-12.0" y="-21.1" width="117.541796875" height="42.2" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(9.1 0.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="scale(0.7583333333333333) translate(-12.0 -12.0)"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" fill="none" stroke="rgba(17,24,39,1.0)" stroke-width="1.978021978021978" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g transform="translate(58.8708984375 -6.5) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Manuscript</text>
+</g>
+</g>
+</g>
+<g transform="translate(-42.062255859375 92.60000000000001) rotate(0.0) scale(1.0 1.0)">
+<rect x="-28.25634765625" y="-12.0" width="56.5126953125" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Part I</text>
+</g>
+</g>
+<g transform="translate(-107.9599609375 168.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-41.97998046875" y="-12.0" width="83.9599609375" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Chapter 1</text>
+</g>
+</g>
+<g transform="translate(0.0 168.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-41.97998046875" y="-12.0" width="83.9599609375" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Chapter 2</text>
+</g>
+</g>
+<g transform="translate(40.25634765625 92.60000000000001) rotate(0.0) scale(1.0 1.0)">
+<rect x="-30.062255859375" y="-12.0" width="60.12451171875" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Part II</text>
+</g>
+</g>
+<g transform="translate(107.9599609375 168.0) rotate(0.0) scale(1.0 1.0)">
+<rect x="-41.97998046875" y="-12.0" width="83.9599609375" height="37.0" rx="6.0" ry="6.0" fill="rgba(255,255,255,1.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5" />
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Chapter 3</text>
+</g>
+</g>
+<path d="M -42.062255859375 117.60000000000001 L -107.9599609375 156.0" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<path d="M -42.062255859375 117.60000000000001 L 0.0 156.0" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<path d="M 0.0 42.2 L -42.062255859375 80.60000000000001" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<path d="M 40.25634765625 117.60000000000001 L 107.9599609375 156.0" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+<path d="M 0.0 42.2 L 40.25634765625 80.60000000000001" fill="rgba(0,0,0,0.0)" stroke="rgba(107,114,128,1.0)" stroke-width="1.5"  marker-end="url(#prism-arrow)" />
+</g>
+</svg>

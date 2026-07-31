@@ -1,0 +1,70 @@
+<svg width="498.396484375" height="551.0" viewBox="-249.1982421875 -24.0 498.396484375 551.0" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>What to write next</title>
+<desc>What to write next</desc>
+  <defs><marker id="arrow" viewBox="-10 -4 10 8" refX="0" refY="0" orient="auto" markerWidth="10" markerHeight="8"><path d="M -10 -4 L 0 0 L -10 4 Z" fill="rgba(0,0,0,1.0)" stroke="rgba(0,0,0,0.0)" stroke-width="1.0"   /></marker><marker id="prism-arrow" viewBox="-5 -2 5 4" refX="0" refY="0" orient="auto" markerWidth="5" markerHeight="4"><path d="M -5 -2 L 0 0 L -5 2 Z" fill="rgba(107,114,128,1.0)" stroke="rgba(107,114,128,1.0)" stroke-width="0"   /></marker></defs>
+  <g transform="translate(0.0 251.5) rotate(0.0) scale(1.0 1.0)">
+<rect x="-249.1982421875" y="-275.5" width="498.396484375" height="551.0" stroke="rgba(0,0,0,0.0)" fill="rgba(255,255,255,1.0)" />
+</g>
+  <g transform="translate(0.0 10.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="20.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">What to write next</text>
+</g>
+<g transform="translate(14.9150390625 273.5) rotate(0.0) scale(1.0 1.0)">
+<rect x="-200.0" y="-200.0" width="400.0" height="400.0" stroke="rgba(209,213,219,1.0)" fill="rgba(255,255,255,1.0)" />
+<path d="M -200.0 0 L 200.0 0" fill="rgba(0,0,0,0.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5"   />
+<path d="M 0 -200.0 L 0 200.0" fill="rgba(0,0,0,0.0)" stroke="rgba(209,213,219,1.0)" stroke-width="1.5"   />
+<g transform="translate(-182.0 -182.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(107,114,128,1.0)" text-anchor="start" dominant-baseline="middle">Quick posts</text>
+</g>
+<g transform="translate(182.0 -182.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(107,114,128,1.0)" text-anchor="end" dominant-baseline="middle">Flagship</text>
+</g>
+<g transform="translate(-182.0 182.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(107,114,128,1.0)" text-anchor="start" dominant-baseline="middle">Notes</text>
+</g>
+<g transform="translate(182.0 182.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="700" fill="rgba(107,114,128,1.0)" text-anchor="end" dominant-baseline="middle">Slog</text>
+</g>
+<g transform="translate(0.0 224.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="11.0" font-weight="400" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Effort</text>
+</g>
+<g transform="translate(-184.1015625 -224.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="11.0" font-weight="400" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Reach</text>
+</g>
+<g transform="translate(-200.0 212.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">Low</text>
+</g>
+<g transform="translate(200.0 212.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">High</text>
+</g>
+<g transform="translate(-224.0 200.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">Narrow</text>
+</g>
+<g transform="translate(-224.0 -200.0) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="10.0" font-weight="400" fill="rgba(107,114,128,1.0)" text-anchor="middle" dominant-baseline="middle">Wide</text>
+</g>
+<g transform="translate(-140.0 80.0) rotate(0.0) scale(1.0 1.0)">
+<circle cx="0" cy="0" r="5.0" stroke="rgba(255,255,255,1.0)" fill="rgba(15,118,110,1.0)" />
+</g>
+<g transform="translate(-140.0 56.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Weekly note</text>
+</g>
+</g>
+<g transform="translate(120.00000000000001 -140.0) rotate(0.0) scale(1.0 1.0)">
+<circle cx="0" cy="0" r="5.0" stroke="rgba(255,255,255,1.0)" fill="rgba(180,83,9,1.0)" />
+</g>
+<g transform="translate(120.00000000000001 -164.0) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Field guide</text>
+</g>
+</g>
+<g transform="translate(-19.999999999999996 -39.99999999999999) rotate(0.0) scale(1.0 1.0)">
+<circle cx="0" cy="0" r="5.0" stroke="rgba(255,255,255,1.0)" fill="rgba(67,56,202,1.0)" />
+</g>
+<g transform="translate(-19.999999999999996 -63.99999999999999) rotate(0.0) scale(1.0 1.0)">
+<g transform="translate(0.0 6.5) rotate(0.0) scale(1.0 1.0)">
+<text x="0" y="0" font-family="Arial, Helvetica, sans-serif" font-size="13.0" font-weight="700" fill="rgba(17,24,39,1.0)" text-anchor="middle" dominant-baseline="middle">Talk writeup</text>
+</g>
+</g>
+</g>
+</svg>
